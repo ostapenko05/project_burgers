@@ -1,0 +1,40 @@
+.hello__block {
+   background: url(./../../img/hello_background.png) no-repeat center center;
+   background-size: cover;
+   height: 650px;
+}
+
+
+.ul>li {
+    list-style: none;
+} 
+
+.button__block {
+    width: 97px;
+    height: 35px;
+    background-color: #c1401e;
+    border: transparent;
+    border-radius: 3px; 
+    margin: auto;
+}
+
+.button__text {
+    color: #ffffff;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    background
+}
+
+.menu__block {
+    display: flex;
+    justify-content: space;
+}
+
+.menu__list{
+    margin: auto 10px;
+    color: #ffffff;
+}

@@ -47,6 +47,33 @@
 }
 
 .menu__list{
-    margin: auto 10px;
+    margin: auto 13px;
     color: #ffffff;
+}
+
+.menu__list:first-child {
+    list-style: none;
+}
+
+.content__hello {
+    content: "";
+    display: flex;
+    justify-content: flex-start space-around;
+}
+
+.points {
+    display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+.content__mainhello {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content__picture {
+    background-image: url(./../../img/drops_hello.png);
 }

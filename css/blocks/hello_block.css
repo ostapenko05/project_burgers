@@ -2,7 +2,8 @@
   position: relative;
   background: url(./../../img/hello_background.png) no-repeat center center;
   background-size: cover;
-  height: 650px; }
+  height: 650px;
+  margin: 0 auto; }
 
 .hello__mask {
   position: relative;
@@ -45,7 +46,7 @@
   flex-direction: row-reverse;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-top: 20px; }
+  margin-top: 0 auto; }
 
 .header__content {
   display: -webkit-box;
@@ -125,4 +126,4 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 95px; }
+  margin: 50px 0 0 0; }

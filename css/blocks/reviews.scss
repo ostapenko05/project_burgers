@@ -1,0 +1,17 @@
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 0 auto;
+}
+
+.reviews__section {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+ul>li {
+    list-style: none;
+}
+

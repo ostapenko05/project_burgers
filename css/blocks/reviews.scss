@@ -1,17 +1,29 @@
+.container__reviews {
+    display: flex;
+    justify-content: center;
+}
+
+
 .reviews {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    margin: 0 auto;
-}
-
-.reviews__section {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    justify-content: center;
+    width: 1103px;
+    height: 650px;
+    margin: 0 0;
 }
 
 ul>li {
     list-style: none;
 }
 
+.reviews__section {
+    width: 25%;
+    margin: 0 0;
+}
+
+.reviews__foto {
+    display: block;
+    width: 100%;
+    margin: 0 0;
+}

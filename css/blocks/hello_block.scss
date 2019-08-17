@@ -1,137 +1,170 @@
 .hello__block {
+    height: 100vh;
+    min-height: 650px;
     position: relative;
-   background: url(./../../img/hello_background.png) no-repeat center center;
-   background-size: cover;
-   height: 650px;
-   margin: 0 auto;
-}
-
-.hello__mask {
-    position: relative;
-    background: url(./../../img/texture_.png);
+    background: url(./../../img/hello_background.png) no-repeat center center;
     background-size: cover;
     height: 650px;
 }
 
-.ul>li {
-    list-style: none;
-} 
-
-.button__block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 97px;
-    height: 35px;
-    background-color: #c1401e;
-    border: transparent;
-    border-radius: 7px;
-    text-transform: uppercase;
-    margin: auto 0;
-}
-
-.button__text {
-    margin: 0 auto;
-    color: #ffffff;
+.hello__mask {
+    position: relative;
+    background: url(./../../img/texture_.png) no-repeat center center;
+    background-size: cover;
+    height: 650px;
 }
 
 .header {
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-around;
-    margin-top: 0 auto;
+    padding-top: 12px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
 }
 
 .header__content {
     display: flex;
-    justify-content:center;
+    align-items: center;
+}
+
+.menu {
+    margin-right: 15px;
 }
 
 .menu__block {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
-.menu__list{
-    margin: auto 13px;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 500;
+.menu__list {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 13px;
     text-transform: uppercase;
+    &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+        margin-left: 15px;
+    }
+
+
+    &:last-child {
+        margin-right: 0;
+
+        &:after {
+            display: none;
+        }
+    }
 }
 
-.menu__list:first-child {
-    list-style: none;
+.menu__link {
+    text-decoration: none;
 }
 
-.content__hello {
-    content: "";
-    display: flex;
-    justify-content: flex-start space-around;
-}
-
-.content__mainhello {
-    display: flex;
-    justify-content: space-around;
-}
-
-.content__picture {
-    background: url(./../../img/drops_hello.png) center center no-repeat;
-    width: 451px;
-    // padding: 0 0 -20px 0;
-}
-
-.content__burger {
-    padding: 45px 0px 0 34px;
-}
-
-.content__text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-}
-
-
-
-//     width: 406px;
-// height: 213px;
-// color: #ffffff;
-// font-family: Lifehack;
-// font-size: 65px;
-// font-weight: 500;
-// /* Text style for "М, ы делае" */
-// color: #f9b43b;
-// font-family: Gagalin;
-// font-size: 72px;
-// font-weight: 400;
-// line-height: 85px;
-// /* Text style for "натуральны" */
-// font-family: "Lifehack Medium";
-// font-weight: 500;
-// letter-spacing: -1.63px;
-// line-height: 85px;
-// /* Text style for "бургеры" */
-// font-family: "Lifehack Medium";
-// font-weight: 500;
-// letter-spacing: -1.63px;
-// line-height: 60px;
-
-.points {
-    display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
-  color: #ffffff;
-}
-
-.points__list {
+.button__block {
+    padding: 3px 15px;
+    background-color: #e45028;
+    font-family: Ubuntu;
     color: #ffffff;
-    border: circle #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: transparent;
+    margin: 30px auto;
+    cursor: pointer;
 }
 
-.scroll__next {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0 0 0;
-}
+// .content__hello {
+//     content: "";
+//     display: flex;
+//     justify-content: space-around;
+// }
+
+// .content__mainhello {
+//     display: flex;
+//     justify-content: spac;
+// }
+
+// .content__picture {
+//     background: url(./../../img/drops_hello.png) center center no-repeat;
+// }
+
+// .content__burger {
+//     padding: 45px 0px 0 34px;
+// }
+
+// .content__text {
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: center;
+//     margin-left: 10px;
+// }
+
+// .content__text-we {
+//     height: 270px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-end;
+//     color: #f9b43b;
+//     font-size: 72px;
+//     font-family: Gagalin;
+//     line-height: 85px;
+//     font-weight: 400;
+//     margin: 0 0;
+// }
+
+// .content__text-one{
+//     margin: 0 0;
+// }
+
+// .content__text-burger {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     width: 406px;
+//     height: 213px;
+//     color: #ffffff;
+//     font-family: Lifehack;
+//     font-size: 65px;
+//     font-weight: 500;
+//     font-family: "Lifehack Medium";
+//     font-weight: 500;
+//     letter-spacing: -1.63px;
+//     line-height: 85px;
+// }
+
+// .content__text-two {
+//     margin: 0 0;
+// }
+
+// .points {
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     -webkit-box-pack: end;
+//     -ms-flex-pack: end;
+//     justify-content: end;
+//     color: #ffffff;
+// }
+
+// .points__list {
+//     color: #ffffff;
+//     border: circle #ffffff;
+// }
+
+// .scroll__next {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }

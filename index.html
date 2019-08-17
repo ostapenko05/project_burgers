@@ -12,27 +12,42 @@
 <body>
     <wrapper class="wrapper">
         <!-- приветственная страница -->
-        <div class="container hello__block">
+        <section class="container hello__block">
             <div class="hello__mask">
                 <header class="header">
                     <div class="header__content">
-                            <div class="header__logo">
-                                <img class="logo__pic" src="./img/logo.png" alt="логотип бургер">
-                            </div>
+                        <img class="logo__pic" src="./img/logo.png" alt="логотип бургер">
+                        <div class="header__menu">
                             <nav class="menu">
                                 <ul class="menu__block">
-                                    <li href="id_#" class="menu__list">о нас</li>
-                                    <li href="id_#" class="menu__list">бургеры</li>
-                                    <li href="id_#" class="menu__list">команда</li>
-                                    <li href="id_#" class="menu__list">меню</li>
-                                    <li href="id_#" class="menu__list">отзывы</li>
-                                    <li href="id_#" class="menu__list">как мы работаем</li>
-                                    <li href="id_#" class="menu__list">контакты</li>
+                                    <li href="id_#" class="menu__list">
+                                        <a href="menu__link">о нас</a>
+                                    </li>
+                                    <li href="id_#" class="menu__list">
+                                        <a href="menu__link">бургеры</a>
+                                    </li>
+                                    <li href="id_#" class="menu__list">
+                                        <a href="menu__link">команда</a>
+                                    </li>
+                                    <li href="id_#" class="menu__list">
+                                        <a href="menu__link">меню</a>
+                                    </li>
+                                    <li href="id_#" class="menu__list">
+                                        <a href="menu__link">отзывы</a>
+                                    </li>
+                                    <li href="id_#" class="menu__list">
+                                        <a href="menu__link">как мы работаем</a>
+                                    </li>
+                                    <li href="id_#" class="menu__list">
+                                        <a href="menu__link">контакты</a>
+                                    </li>
                                 </ul>
                             </nav>
-                            <button class="button__block">
-                                <p class="button__text">заказать</p>
+                            <button type="button" class="button__block">
+                                заказать
                             </button>
+                        </div>
+                        
                     </div>
                 </header>
                 <div class="content__mainhello">
@@ -49,25 +64,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="points">
-                        <ul class="points__container ">
-                            <li class="points__list"></li>
-                            <li class="points__list"></li>
-                            <li class="points__list"></li>
-                            <li class="points__list"></li>
-                            <li class="points__list"></li>
-                            <li class="points__list"></li>
-                            <li class="points__list"></li>
-                            <li class="points__list"></li>
-                            <li class="points__list"></li>
-                        </ul>
-                    </div>
                 </div>
-                <a href="#" class="scroll__next">
+                <button type="button" class="scroll__next">
                     <img class="scroll__arrow" src="./img/arrow-scroll.png" alt="следующая страница">
-                </a>
+                </button>
             </div>
-        </div>
+        </section>
         <!-- окончание приветсвенной страницы -->
         <!-- страница мы лучшие -->
         <div class="best">
@@ -234,6 +236,19 @@
         </div>
         <!-- окончание страницы отзывы -->
     </wrapper>
+    <div class="points">
+        <ul class="points__container ">
+            <li class="points__list"></li>
+            <li class="points__list"></li>
+            <li class="points__list"></li>
+            <li class="points__list"></li>
+            <li class="points__list"></li>
+            <li class="points__list"></li>
+            <li class="points__list"></li>
+            <li class="points__list"></li>
+            <li class="points__list"></li>
+        </ul>
+    </div>
 </body>
 
 </html>

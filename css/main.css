@@ -1,5 +1,11 @@
-@import url(./../css/blocks/hello_block.css);
 @import url(./normalize.css);
+@import url(./../fonts/Gagalin-Regular.woff);
+@import url(./../fonts/Lifehack-Medium.woff);
+@import url(./../fonts/Ubuntu-B.woff);
+@import url(./../fonts/Ubuntu-Light.woff);
+@import url(./../fonts/Ubuntu-Medium.woff);
+@import url(./../fonts/Ubuntu-Regular.woff);
+@import url(./../css/blocks/hello_block.css);
 @import url(./../css/blocks/header.css);
 @import url(./../css/blocks/best.css);
 @import url(./../css/blocks/reviews.css);

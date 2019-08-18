@@ -1,11 +1,15 @@
 .fixed-menu {
   position: fixed;
-  top: 95px;
+  top: 93px;
   right: 53px;
   z-index: 100;
 }
 
 .fixed-menu__item {
+  margin-bottom: 3px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &--active{
     .fixed-menu__dot {
       border-color: #ffffff;
@@ -18,22 +22,17 @@
   height: 16px;
   border-radius: 50%;
   border: 1px solid transparent;
-  margin-bottom: 3px;
   position: relative;
 
   &:before {
     content: "";
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     background: #ffffff;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  &:last-child {
-    margin-bottom: 0;
   }
 }

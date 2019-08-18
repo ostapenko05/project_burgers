@@ -2,7 +2,8 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 100%; }
+  width: 100%;
+  padding-top: 10px; }
 
 .header__logo {
   -webkit-box-flex: 1;

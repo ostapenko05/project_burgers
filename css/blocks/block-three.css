@@ -1,0 +1,55 @@
+.reviews {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews__block {
+  width: 25%;
+  height: 50%;
+  background: center center / cover no-repeat;
+  list-style: none;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .reviews__block:hover .reviews__block-hover {
+    opacity: 1; }
+
+.reviews__block-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(68, 70, 70, 0.5);
+  color: #fff;
+  padding: 50px 19px 19px 19px;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s; }
+
+.block-three {
+  height: 800px; }
+
+.hover__button {
+  border-style: none;
+  text-transform: uppercase;
+  border-radius: 7px;
+  background: #2f3234;
+  color: #fff;
+  padding: 15px;
+  font-family: ubuntu-regular; }
+
+.hover__text {
+  font-family: ubuntu-regular;
+  line-height: 1.8em;
+  margin-bottom: 20px;
+  font-size: 14px; }
+
+.hover__title {
+  font-family: gagalin-regular;
+  margin-bottom: 30px;
+  font-size: 17px; }

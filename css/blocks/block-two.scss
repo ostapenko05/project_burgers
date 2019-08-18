@@ -1,0 +1,53 @@
+.block-two {
+    background: url(../../img/bg_best.png) center center no-repeat;
+    background-size: cover;
+    height: 650px;
+ }
+ 
+ .block-two__title {
+    font-family: gagalin-regular;
+    font-size: 72px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #2f3234;
+ 
+ }
+ 
+ .container__block-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .content__list {
+    display: inline-flex;
+    justify-content: center;
+ }
+ 
+ .content__list-section {
+    width: calc(100%/3 - 25px);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2f3234;
+    margin-right: 25px;
+ }
+ 
+ .content__list-section:last-child {
+    margin-right: 0;;
+ } 
+ 
+ .list-section__title {
+    font-family: lifehack;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+ 
+ .list-section__text {
+    text-align: center;
+    font-family: ubuntu-regular;
+    color: #6d6e6e;
+    font-size: 14px;
+    line-height: 2em;
+ }

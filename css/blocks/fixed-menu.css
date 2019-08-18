@@ -1,0 +1,30 @@
+.fixed-menu {
+  position: fixed;
+  top: 95px;
+  right: 53px;
+  z-index: 100; }
+
+.fixed-menu__item--active .fixed-menu__dot {
+  border-color: #ffffff; }
+
+.fixed-menu__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-bottom: 3px;
+  position: relative; }
+  .fixed-menu__dot:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .fixed-menu__dot:last-child {
+    margin-bottom: 0; }

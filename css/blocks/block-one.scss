@@ -16,10 +16,13 @@
  
  .block1__leftside-splash {
     position: relative;
+    padding: 13px 0px 0px 17px;
  }
  
  .block1__leftside {
     position: relative;
+    margin-right: 13px;
+   //  padding: 95px 0 55px 50px;
  }
  
  .block1__leftside-burger {
@@ -27,7 +30,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20 px 0 0 20px;
+    padding: 53px 0px 0px 48px;
  }
  
  .content-block1 {
@@ -39,8 +42,10 @@
  .block1__rightside {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
+   padding-top: 125px;
+   padding-left: 0px;
  }
  
  .block1__rightside-title {
@@ -48,6 +53,7 @@
     font-family: gagalin-regular;
     text-transform: uppercase;
     font-size: 72px;
+    letter-spacing: -0.53px;
     margin-bottom: 23px;
  }
  
@@ -55,12 +61,15 @@
     color: #fff;
     font-size: 65px;
     font-family: lifehack;
+    letter-spacing: -1.63px;
     line-height: 90%;
+    padding-top: 5px;
  }
  
  .arrow-scroll {
     display: flex;
     align-items: center;
+    padding-top: 162px;
  }
  
  .arrow-scroll__btn {

@@ -5,12 +5,15 @@
  }
  
  .block-two__title {
+   text-align: center center;
     font-family: gagalin-regular;
     font-size: 72px;
     text-transform: uppercase;
-    margin: 0 auto;
     color: #2f3234;
- 
+    padding-bottom: 55px;
+ }
+ .block-two__content {
+    padding-top: 0px;
  }
  
  .container__block-two {
@@ -21,7 +24,7 @@
  
  .content__list {
     display: inline-flex;
-    justify-content: center;
+    justify-content: flex-start;
  }
  
  .content__list-section {
@@ -31,17 +34,26 @@
     flex-direction: column;
     align-items: center;
     color: #2f3234;
-    margin-right: 25px;
+   margin-right: 34px;
+   margin-bottom: 35px;
+ }
+
+ .list-section__img {
+    padding-bottom: 15px;
  }
  
  .content__list-section:last-child {
-    margin-right: 0;;
+    margin-right: 0px;
  } 
  
  .list-section__title {
     font-family: lifehack;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 24px;
+   font-weight: 500;
+   line-height: 28.14px;
+    letter-spacing: -0.6px;
  }
  
  .list-section__text {

@@ -13,10 +13,12 @@
   z-index: -1; }
 
 .block1__leftside-splash {
-  position: relative; }
+  position: relative;
+  padding: 13px 0px 0px 17px; }
 
 .block1__leftside {
-  position: relative; }
+  position: relative;
+  margin-right: 13px; }
 
 .block1__leftside-burger {
   position: absolute;
@@ -25,7 +27,7 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding: 20 px 0 0 20px; }
+  padding: 53px 0px 0px 48px; }
 
 .content-block1 {
   display: -webkit-inline-box;
@@ -45,26 +47,31 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-top: 125px;
+  padding-left: 0px; }
 
 .block1__rightside-title {
   color: #f9b43b;
   font-family: gagalin-regular;
   text-transform: uppercase;
   font-size: 72px;
+  letter-spacing: -0.53px;
   margin-bottom: 23px; }
 
 .block1__rightside-text {
   color: #fff;
   font-size: 65px;
   font-family: lifehack;
-  line-height: 90%; }
+  letter-spacing: -1.63px;
+  line-height: 90%;
+  padding-top: 5px; }
 
 .arrow-scroll {
   display: -webkit-box;
@@ -72,7 +79,8 @@
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 162px; }
 
 .arrow-scroll__btn {
   background: url(./../../img/arrow-scroll.png) center center/contain no-repeat;

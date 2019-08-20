@@ -1,0 +1,88 @@
+.section__team {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: url(../../img/bg_team.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.team__block-right {
+    background: #313436;
+    opacity: .95;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+}
+
+.team__block-in {
+    padding: 115px 96px 140px 96px;
+}
+
+.team__title {
+    color: #f9b43b;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 64.04px;
+    margin: 0 0 50px 0;
+}
+
+.team__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #2f3234;
+    opacity: 0.92;
+}
+
+.team__name h2 {
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28.13px;
+}
+
+.team__hover-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    // height: 0;
+    // overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.team__hover-block--active {
+    color: #f9b43b;
+
+}
+
+.team__pic {
+    border-radius: 50%;
+    margin: auto 20px;
+}
+
+.team__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.team__text h3 {
+    flex: 1;
+    color: #ffffff;
+    font-family: "Ubuntu - Bold";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24.01px;
+}
+
+.team__text>p {
+    flex: 2;
+    color: #ffffff;
+    font-family: "Ubuntu - Light";
+    font-size: 12px;
+    font-weight: 300;
+}

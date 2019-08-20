@@ -25,7 +25,11 @@
   position: relative;
 
   &:hover {
-    background: red;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    position: relative;
   }
 
   &:before {

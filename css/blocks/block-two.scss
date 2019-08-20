@@ -5,6 +5,13 @@
    width: 100%;
 }
 
+.container__block-two {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
 .block-two__title {
    text-align: center center;
    font-family: gagalin-regular;
@@ -12,12 +19,6 @@
    text-transform: uppercase;
    color: #2f3234;
    margin-bottom: 55px;
-}
-
-.container__block-two {
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
 .content__list {

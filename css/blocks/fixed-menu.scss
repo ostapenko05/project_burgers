@@ -7,16 +7,18 @@
 
 .fixed-menu__item {
   margin-bottom: 3px;
+
   &:last-child {
     margin-bottom: 0;
   }
-  &--active{
+
+  &--active {
     .fixed-menu__dot {
       border-color: #ffffff;
     }
   }
 }
-  
+
 .fixed-menu__dot {
   width: 16px;
   height: 16px;
@@ -25,7 +27,11 @@
   position: relative;
 
   &:hover {
-    background: red;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    position: relative;
   }
 
   &:before {

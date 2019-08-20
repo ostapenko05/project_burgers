@@ -28,7 +28,8 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #fff; }
+  color: #fff;
+  margin-right: 15px; }
 
 .nav__item {
   list-style: none;
@@ -81,7 +82,7 @@
   font-size: 13px;
   font-family: ubuntu-regular; }
 
-.section__block1 {
+.section--block {
   background: url(../../img/bg_texture.png) center center no-repeat;
   background-size: cover;
   position: relative;
@@ -104,7 +105,7 @@
   transform: translate(-50%, -50%);
   padding: 53px 0px 0px 48px; }
 
-.content-block1 {
+.content-block {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -148,22 +149,17 @@
   line-height: 90%;
   padding-top: 5px; }
 
-.arrow-scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 450px;
-  cursor: pointer; }
-
 .arrow-scroll__btn {
   background: url(./../../img/arrow-scroll.png) center center/contain no-repeat;
-  height: 14px;
+  display: block;
   width: 50px;
-  border-style: none;
-  cursor: pointer; }
+  height: 50px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .section__block-two {
   background: url(../../img/bg_best.png) center center no-repeat;
@@ -312,7 +308,11 @@
   border: 1px solid transparent;
   position: relative; }
   .fixed-menu__dot:hover {
-    background: red; }
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    position: relative; }
   .fixed-menu__dot:before {
     content: "";
     width: 5px;

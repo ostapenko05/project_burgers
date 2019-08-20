@@ -1,9 +1,9 @@
-.sidebar__section {
+.nav__list {
     display: inline-flex;
     color: #fff;
  }
  
- .sidebar__section-link {
+ .nav__item {
     list-style: none;
     display: inline-flex;
     align-items: center;
@@ -11,9 +11,12 @@
     font-size: 13px;
     font-family: ubuntu-regular;
    //  margin-right: 12px;
+   &:last-child {
+      margin-right: 0;
+   }
  }
  
- .sidebar__section-link:after {
+ .nav__item:after {
     content: '';
     display: inline-flex;
     align-items: center;
@@ -25,17 +28,17 @@
     margin: auto 12px;
  }
  
- .sidebar__section-link:last-child:after {
+ .nav__item:last-child:after {
     content: '';
     display: none;
  }
  
- .sidebar__section-link {
+ .nav__item {
     margin-right: 10px;
     text-transform: uppercase;
  }
  
- .sidebar__section-button {
+ .nav__section-button {
     background: #e45028;
     border-radius: 8px;
     border-style: none;

@@ -1,13 +1,13 @@
-@import './../blocks/header.css';
-@import './../blocks/sidebar.css';
-@import './../blocks/block-one.css';
-@import './../blocks/block-two.css';
-@import './../blocks/block-three.css';
-@import './../blocks/fixed-menu.css';
+@import './../blocks/header.scss';
+@import './../blocks/sidebar.scss';
+@import './../blocks/block-one.scss';
+@import './../blocks/block-two.scss';
+@import './../blocks/block-three.scss';
+@import './../blocks/fixed-menu.scss';
 
 
 
-@import './../layout/layout.css';
+@import './../layout/layout.scss';
 @import './normalize.scss';
 
 @font-face {
@@ -15,6 +15,8 @@
    src: url(./../../fonts/Ubuntu-Regular.woff);
    font-weight: normal;
    font-size: normal;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -22,6 +24,8 @@
    src: url(./../../fonts/Gagalin-Regular.woff);
    font-weight: normal;
    font-size: normal;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -29,6 +33,8 @@
    src: url(./../../fonts/Lifehack-Medium.woff);
    font-weight: normal;
    font-size: normal;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -36,6 +42,8 @@
    src: url(./../../fonts/Ubuntu-B.woff);
    font-weight: normal;
    font-size: normal;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -43,6 +51,8 @@
    src: url(./../../fonts/Ubuntu-Light.woff);
    font-weight: normal;
    font-size: normal;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -50,4 +60,6 @@
    src: url(./../../fonts/Ubuntu-Medium.woff);
    font-weight: normal;
    font-size: normal;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }

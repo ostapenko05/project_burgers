@@ -12,24 +12,23 @@
 <body>
    <div class="wrapper">
       <!-- начало приветственой страницы -->
-      <section class="block1">
-         <div class="block1-mask"></div>
+      <section class="section section__block1">
          <div class="container">
             <header class="header">
                <div class="header__logo">
                   <img src="./img/logo.png" alt="">
                </div>
-               <nav class="header__sidebar">
-                  <ul class="sidebar__section">
-                     <li class="sidebar__section-link">о нас</li>
-                     <li class="sidebar__section-link">бургеры</li>
-                     <li class="sidebar__section-link">команда</li>
-                     <li class="sidebar__section-link">меню</li>
-                     <li class="sidebar__section-link">отзывы</li>
-                     <li class="sidebar__section-link">как мы работаем</li>
-                     <li class="sidebar__section-link">контакты</li>
+               <nav class="nav">
+                  <ul class="nav__list">
+                     <li class="nav__item">о нас</li>
+                     <li class="nav__item">бургеры</li>
+                     <li class="nav__item">команда</li>
+                     <li class="nav__item">меню</li>
+                     <li class="nav__item">отзывы</li>
+                     <li class="nav__item">как мы работаем</li>
+                     <li class="nav__item">контакты</li>
                   </ul>
-                  <button class="sidebar__section-button">заказать</button>
+                  <button type="button" class="nav__section-button">заказать</button>
                </nav>
             </header>
             <div class="content-block1">
@@ -43,128 +42,132 @@
                </div>
             </div>
             <div class="arrow-scroll">
-               <button class="arrow-scroll__btn" type="button"></button>
+               <button type="button" class="arrow-scroll__btn" type="button"></button>
             </div>
          </div>
       </section>
       <!-- окончание приветственой страницы -->
       <!-- начало страницы мы лучшие -->
-      <section class="block-two">
+      <section class="section section__block-two">
          <div class="container container__block-two">
             <div class="block-two__title">мы лучшие</div>
-            <div class="block-two__content">
                <ul class="content__list">
                   <li class="content__list-section">
                      <img src="./img/meat_best.png" alt="" class="list-section__img">
-                     <h1 class="list-section__title">100% свежее мясо</h1>
+                     <div class="content__text">
+                     <h1>100% свежее мясо</h1>
                      <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
                         неравномерен.</p>
+                     </div>
                   </li>
                   <li class="content__list-section">
                      <img src="./img/hand_best.png" alt="" class="list-section__img">
-                     <h1 class="list-section__title">Ручная сборка</h1>
+                     <div class="content__text">
+                     <h1>Ручная сборка</h1>
                      <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое
                         полустишье притягивает сюжетный реформаторский пафос.</p>
+                     </div>
                   </li>
                   <li class="content__list-section">
                      <img src="./img/natural_best.png" alt="" class="list-section__img">
-                     <h1 class="list-section__title">Натуральные ингредиенты</h1>
+                     <div class="content__text">
+                     <h1>Натуральные ингредиенты</h1>
                      <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
                         неравномерен.</p>
+                     </div>
                   </li>
                </ul>
-            </div>
          </div>
       </section>
       <!-- окончание страницы мы лучшие -->
       <!-- начало страницы отзывы -->
-      <section class="block-three">
+      <section class="section section__reviews">
          <ul class="reviews">
             <li class="reviews__block" style="background-image: url(./img/avtor_1.png)">
                <div class="reviews__block-hover">
-                  <div class="hover__title">Константин Спилберг</div>
-                  <div class="hover__text">
+                  <div class="reviews__title">Константин Спилберг</div>
+                  <div class="reviews__text">
                      <p>Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                         что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
-                  <button class="hover__button" type="button">Подробнее</button>
+                  <button class="reviews__button" type="button">Подробнее</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_2.png)">
                <div class="reviews__block-hover">
-                  <div class="hover__title">Константин Спилберг</div>
-                  <div class="hover__text">
+                  <div class="reviews__title">Константин Спилберг</div>
+                  <div class="reviews__text">
                      <p>Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                         что булочки могут
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
-                  <button class="hover__button" type="button">Подробнее</button>
+                  <button class="reviews__button" type="button">Подробнее</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_3.png">
                <div class="reviews__block-hover">
-                  <div class="hover__title">Константин Спилберг</div>
-                  <div class="hover__text">
+                  <div class="reviews__title">Константин Спилберг</div>
+                  <div class="reviews__text">
                      <p>Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                         что булочки могут
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
-                  <button class="hover__button" type="button">Подробнее</button>
+                  <button class="reviews__button" type="button">Подробнее</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_4.png)">
                <div class="reviews__block-hover">
-                  <div class="hover__title">Константин Спилберг</div>
-                  <div class="hover__text">
+                  <div class="reviews__title">Константин Спилберг</div>
+                  <div class="reviews__text">
                      <p>Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                         что булочки могут
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
-                  <button class="hover__button" type="button">Подробнее</button>
+                  <button class="reviews__button" type="button">Подробнее</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_5.png)">
                <div class="reviews__block-hover">
-                  <div class="hover__title">Константин Спилберг</div>
-                  <div class="hover__text">
+                  <div class="reviews__title">Константин Спилберг</div>
+                  <div class="reviews__text">
                      <p>Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                         что булочки могут
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
-                  <button class="hover__button" type="button">Подробнее</button>
+                  <button class="reviews__button" type="button">Подробнее</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_6.png)">
                <div class="reviews__block-hover">
-                  <div class="hover__title">Константин Спилберг</div>
-                  <div class="hover__text">
+                  <div class="reviews__title">Константин Спилберг</div>
+                  <div class="reviews__text">
                      <p>Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                         что булочки могут
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
-                  <button class="hover__button" type="button">Подробнее</button>
+                  <button class="reviews__button" type="button">Подробнее</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_7.png)">
                <div class="reviews__block-hover">
-                  <div class="hover__title">Константин Спилберг</div>
-                  <div class="hover__text">
+                  <div class="reviews__title">Константин Спилберг</div>
+                  <div class="reviews__text">
                      <p>Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                         что булочки могут
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
-                  <button class="hover__button" type="button">Подробнее</button>
+                  <button class="reviews__button" type="button">Подробнее</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_8.png)">
                <div class="reviews__block-hover">
-                  <div class="hover__title">Константин Спилберг</div>
-                  <div class="hover__text">
+                  <div class="reviews__title">Константин Спилберг</div>
+                  <div class="reviews__text">
                      <p>Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                         что булочки могут
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
-                  <button class="hover__button" type="button">Подробнее</button>
+                  <button class="reviews__button" type="button">Подробнее</button>
                </div>
             </li>
          </ul>

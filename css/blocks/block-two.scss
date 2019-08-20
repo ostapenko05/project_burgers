@@ -1,65 +1,62 @@
-.block-two {
-    background: url(../../img/bg_best.png) center center no-repeat;
-    background-size: cover;
-    height: 650px;
- }
- 
- .block-two__title {
+.section__block-two {
+   background: url(../../img/bg_best.png) center center no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+}
+
+.block-two__title {
    text-align: center center;
-    font-family: gagalin-regular;
-    font-size: 72px;
-    text-transform: uppercase;
-    color: #2f3234;
-    padding-bottom: 55px;
- }
- .block-two__content {
-    padding-top: 0px;
- }
- 
- .container__block-two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- 
- .content__list {
-    display: inline-flex;
-    justify-content: flex-start;
- }
- 
- .content__list-section {
-    width: calc(100%/3 - 25px);
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #2f3234;
+   font-family: gagalin-regular;
+   font-size: 72px;
+   text-transform: uppercase;
+   color: #2f3234;
+   margin-bottom: 55px;
+}
+
+.container__block-two {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.content__list {
+   display: inline-flex;
+   justify-content: flex-start;
+}
+
+.content__list-section {
+   width: calc(100%/3);
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    margin-right: 34px;
    margin-bottom: 35px;
- }
+}
 
- .list-section__img {
-    padding-bottom: 15px;
- }
- 
- .content__list-section:last-child {
-    margin-right: 0px;
- } 
- 
- .list-section__title {
-    font-family: lifehack;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
+.list-section__img {
+   padding-bottom: 15px;
+}
+
+.content__list-section:last-child {
+   margin-right: 0px;
+}
+
+.content__text>h1{
+   color: #2f3234;
+   font-family: Lifehack;
+   font-size: 24px;
    font-weight: 500;
    line-height: 28.14px;
-    letter-spacing: -0.6px;
- }
- 
- .list-section__text {
-    text-align: center;
-    font-family: ubuntu-regular;
-    color: #6d6e6e;
-    font-size: 14px;
-    line-height: 2em;
- }
+   text-align: center;
+}
+
+.content__text>p{
+   opacity: 0.8;
+   color: #2f3234;
+   font-family: Ubuntu;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 24.07px;
+}

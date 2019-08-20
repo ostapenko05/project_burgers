@@ -45,6 +45,18 @@
     line-height: 28.13px;
 }
 
+.team__triangle {
+    display: flex;
+    height: 0;
+    width: 0;
+    border: 9px solid transparent;
+    border-top-width: 7px;
+    border-top-color: #f9b43b;
+    border-bottom-width: 0;
+    // padding: 14px 0 0 0;
+    margin: 10px 9px 0 0;
+}
+
 .team__hover-block {
     display: flex;
     flex-direction: row;

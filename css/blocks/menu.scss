@@ -1,0 +1,17 @@
+.section__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: url(../../img/bg_menu.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.menu h1 {
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 64px;
+}

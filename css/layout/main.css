@@ -86,7 +86,7 @@
   font-size: 13px;
   font-family: ubuntu-regular; }
 
-.section__block {
+.section--block {
   background: url(../../img/bg_texture.png) center center no-repeat;
   background-size: cover;
   position: relative;
@@ -165,7 +165,7 @@
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.section__block-two {
+.section--block-two {
   background: url(../../img/bg_best.png) center center no-repeat;
   background-size: cover;
   height: 100vh;
@@ -246,7 +246,7 @@
   position: relative;
   height: 100vh; }
 
-.section__team {
+.section--team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,7 +364,7 @@
   font-size: 12px;
   font-weight: 300; }
 
-.section__menu {
+.section--menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +387,7 @@
   font-weight: 400;
   line-height: 64px; }
 
-.section__reviews {
+.section--reviews {
   height: 100vh; }
 
 .reviews {

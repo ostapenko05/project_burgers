@@ -5,6 +5,8 @@ html {
 body {
   height: 100%;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -41,7 +43,8 @@ button {
   color: inherit;
 }
 
-h1, p {
+h1,
+p {
   margin: 0;
   padding: 0;
 }

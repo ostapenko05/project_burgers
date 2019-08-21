@@ -331,7 +331,9 @@ html {
 
 body {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .wrapper {
   overflow: hidden;
@@ -373,7 +375,8 @@ button {
   cursor: pointer;
   color: inherit; }
 
-h1, p {
+h1,
+p {
   margin: 0;
   padding: 0; }
 
@@ -690,46 +693,34 @@ template {
   font-family: ubuntu-regular;
   src: url(./../../fonts/Ubuntu-Regular.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: gagalin-regular;
   src: url(./../../fonts/Gagalin-Regular.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: lifehack;
   src: url(./../../fonts/Lifehack-Medium.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: ubuntu-bold;
   src: url(./../../fonts/Ubuntu-B.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: ubuntu-light;
   src: url(./../../fonts/Ubuntu-Light.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: ubuntu-medium;
   src: url(./../../fonts/Ubuntu-Medium.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }

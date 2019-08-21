@@ -3,4 +3,49 @@
     background-size: cover;
     position: relative;
     height: 100vh;
- }
+}
+
+.title__form {
+    color: #f9b43b;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 63.99px;
+}
+
+.form__elem {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+}
+
+.form__column-left {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.form__column-right {
+    flex: 1;
+    // width: 50%;
+}
+
+.form__block-title {
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.form__input {
+    background: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 21px;
+
+    &--textarea {
+        resize: none;
+        height: 110px;
+    }
+}

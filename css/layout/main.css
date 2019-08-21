@@ -156,8 +156,8 @@
 .arrow-scroll__btn {
   background: url(./../../img/arrow-scroll.png) center center no-repeat;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 29px;
+  height: 14px;
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -454,6 +454,50 @@
   background-size: cover;
   position: relative;
   height: 100vh; }
+
+.title__form {
+  color: #f9b43b;
+  font-family: Gagalin;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 63.99px; }
+
+.form__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.form__column-left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 20px;
+  max-width: 100%; }
+
+.form__column-right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.form__block-title {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.form__input {
+  background: #fff;
+  border-radius: 3px;
+  border: none;
+  padding: 8px 21px; }
+  .form__input--textarea {
+    resize: none;
+    height: 110px; }
 
 .contacts {
   background: url(../../img/bg_map.png) center center no-repeat;

@@ -44,7 +44,7 @@
   justify-content: center;
   font-size: 13px;
   font-family: ubuntu-regular;
-  margin-right: 10px;
+  margin-right: 0px;
   text-transform: uppercase; }
   .nav__item:last-child {
     margin-right: 0; }
@@ -64,15 +64,21 @@
   width: 5px;
   border-radius: 50%;
   background-color: #fff;
-  margin: auto 12px; }
+  margin: auto 15px; }
 
 .nav__item:last-child:after {
   content: '';
   display: none; }
 
+.nav__link {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none; }
+
 .nav__section-button {
   background: #e45028;
-  border-radius: 8px;
+  border-radius: 6px;
   border-style: none;
   color: #fff;
   padding: 10px 17px;
@@ -80,7 +86,7 @@
   font-size: 13px;
   font-family: ubuntu-regular; }
 
-.section__block1 {
+.section__block {
   background: url(../../img/bg_texture.png) center center no-repeat;
   background-size: cover;
   position: relative;
@@ -234,99 +240,11 @@
   font-weight: 300;
   line-height: 24.07px; }
 
-.section__reviews {
-  height: 100vh; }
-
-.reviews {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.reviews__block {
-  width: 25%;
-  height: 50%;
-  background: center center / cover no-repeat;
-  list-style: none;
+.burgers {
+  background: url(../../img/bg_burgers.png) center center no-repeat;
+  background-size: cover;
   position: relative;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
-  .reviews__block:hover .reviews__block-hover {
-    opacity: 1; }
-
-.reviews__block-hover {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(68, 70, 70, 0.5);
-  color: #fff;
-  padding: 50px 19px 19px 19px;
-  opacity: 0;
-  -webkit-transition: opacity .3s;
-  -o-transition: opacity .3s;
-  transition: opacity .3s; }
-
-.reviews__button {
-  border-style: none;
-  text-transform: uppercase;
-  border-radius: 7px;
-  background: #2f3234;
-  color: #fff;
-  padding: 15px;
-  font-family: ubuntu-regular; }
-
-.reviews__text {
-  font-family: ubuntu-regular;
-  line-height: 1.8em;
-  margin-bottom: 20px;
-  font-size: 14px; }
-
-.reviews__title {
-  font-family: gagalin-regular;
-  margin-bottom: 30px;
-  font-size: 17px; }
-
-.fixed-menu {
-  position: fixed;
-  top: 93px;
-  right: 53px;
-  z-index: 100; }
-
-.fixed-menu__item {
-  margin-bottom: 3px; }
-  .fixed-menu__item:last-child {
-    margin-bottom: 0; }
-  .fixed-menu__item--active .fixed-menu__dot {
-    border-color: #ffffff; }
-
-.fixed-menu__dot {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  position: relative; }
-  .fixed-menu__dot:hover {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    position: relative; }
-  .fixed-menu__dot:before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: #ffffff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+  height: 100vh; }
 
 .section__team {
   display: -webkit-box;
@@ -469,12 +387,126 @@
   font-weight: 400;
   line-height: 64px; }
 
+.section__reviews {
+  height: 100vh; }
+
+.reviews {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews__block {
+  width: 25%;
+  height: 50%;
+  background: center center / cover no-repeat;
+  list-style: none;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .reviews__block:hover .reviews__block-hover {
+    opacity: 1; }
+
+.reviews__block-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(68, 70, 70, 0.5);
+  color: #fff;
+  padding: 50px 19px 19px 19px;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s; }
+
+.reviews__button {
+  border-style: none;
+  text-transform: uppercase;
+  border-radius: 7px;
+  background: #2f3234;
+  color: #fff;
+  padding: 15px;
+  font-family: ubuntu-regular; }
+
+.reviews__text {
+  font-family: ubuntu-regular;
+  line-height: 1.8em;
+  margin-bottom: 20px;
+  font-size: 14px; }
+
+.reviews__title {
+  font-family: gagalin-regular;
+  margin-bottom: 30px;
+  font-size: 17px; }
+
+.work {
+  background: url(../../img/bg_work.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh; }
+
+.form {
+  background: url(../../img/bg_form.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh; }
+
+.contacts {
+  background: url(../../img/bg_map.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh; }
+
+.fixed-menu {
+  position: fixed;
+  top: 93px;
+  right: 53px;
+  z-index: 100; }
+
+.fixed-menu__item {
+  margin-bottom: 3px; }
+  .fixed-menu__item:last-child {
+    margin-bottom: 0; }
+  .fixed-menu__item--active .fixed-menu__dot {
+    border-color: #ffffff; }
+
+.fixed-menu__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: relative; }
+  .fixed-menu__dot:hover {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    position: relative; }
+  .fixed-menu__dot:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
 html {
   height: 100%; }
 
 body {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .wrapper {
   overflow: hidden;
@@ -516,7 +548,10 @@ button {
   cursor: pointer;
   color: inherit; }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0; }
 
@@ -833,46 +868,34 @@ template {
   font-family: ubuntu-regular;
   src: url(./../../fonts/Ubuntu-Regular.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: gagalin-regular;
   src: url(./../../fonts/Gagalin-Regular.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: lifehack;
   src: url(./../../fonts/Lifehack-Medium.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: ubuntu-bold;
   src: url(./../../fonts/Ubuntu-B.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: ubuntu-light;
   src: url(./../../fonts/Ubuntu-Light.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }
 
 @font-face {
   font-family: ubuntu-medium;
   src: url(./../../fonts/Ubuntu-Medium.woff);
   font-weight: normal;
-  font-size: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: normal; }

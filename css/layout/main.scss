@@ -2,10 +2,14 @@
 @import './../blocks/sidebar.scss';
 @import './../blocks/block-one.scss';
 @import './../blocks/block-two.scss';
-@import './../blocks/block-three.scss';
-@import './../blocks/fixed-menu.scss';
+@import './../blocks/burgers.scss';
 @import './../blocks/team.scss';
 @import './../blocks/menu.scss';
+@import './../blocks/reviews.scss';
+@import './../blocks/work.scss';
+@import './../blocks/form.scss';
+@import './../blocks/contacts.scss';
+@import './../blocks/fixed-menu.scss';
 
 
 @import './../layout/layout.scss';
@@ -16,8 +20,6 @@
    src: url(./../../fonts/Ubuntu-Regular.woff);
    font-weight: normal;
    font-size: normal;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -25,8 +27,6 @@
    src: url(./../../fonts/Gagalin-Regular.woff);
    font-weight: normal;
    font-size: normal;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -34,8 +34,6 @@
    src: url(./../../fonts/Lifehack-Medium.woff);
    font-weight: normal;
    font-size: normal;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -43,8 +41,6 @@
    src: url(./../../fonts/Ubuntu-B.woff);
    font-weight: normal;
    font-size: normal;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -52,8 +48,6 @@
    src: url(./../../fonts/Ubuntu-Light.woff);
    font-weight: normal;
    font-size: normal;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -61,6 +55,5 @@
    src: url(./../../fonts/Ubuntu-Medium.woff);
    font-weight: normal;
    font-size: normal;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+   
 }

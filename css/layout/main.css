@@ -109,7 +109,7 @@
   transform: translate(-50%, -50%);
   padding: 53px 0px 0px 48px; }
 
-.content-block1 {
+.content-block {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -154,7 +154,7 @@
   padding-top: 5px; }
 
 .arrow-scroll__btn {
-  background: url(./../../img/arrow-scroll.png) center center no-repeat;
+  background: url(./../../img/arrow-scroll.png) center center/contain no-repeat;
   display: block;
   width: 29px;
   height: 14px;

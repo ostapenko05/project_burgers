@@ -23,7 +23,7 @@
    padding: 53px 0px 0px 48px;
 }
 
-.content-block1 {
+.content-block {
    display: inline-flex;
    align-items: center;
    justify-content: center;
@@ -34,8 +34,8 @@
    align-items: flex-start;
    justify-content: flex-end;
    flex-direction: column;
-  padding-top: 125px;
-  padding-left: 0px;
+   padding-top: 125px;
+   padding-left: 0px;
 }
 
 .block1__rightside-title {
@@ -57,7 +57,7 @@
 }
 
 .arrow-scroll__btn {
-   background: url(./../../img/arrow-scroll.png)center center no-repeat;
+   background: url(./../../img/arrow-scroll.png) center center / contain no-repeat;
    display: block;
    width: 29px;
    height: 14px;

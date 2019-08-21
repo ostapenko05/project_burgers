@@ -152,8 +152,8 @@
 .arrow-scroll__btn {
   background: url(./../../img/arrow-scroll.png) center center/contain no-repeat;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 29px;
+  height: 14px;
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -161,7 +161,7 @@
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.section__block-two {
+.section--block-two {
   background: url(../../img/bg_best.png) center center no-repeat;
   background-size: cover;
   height: 100vh;
@@ -232,7 +232,7 @@
   font-weight: 300;
   line-height: 24.07px; }
 
-.section__reviews {
+.section--reviews {
   height: 100vh; }
 
 .reviews {

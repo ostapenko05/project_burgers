@@ -633,41 +633,60 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.radio__input {
-  display: none;
-  margin: 0; }
+.radio__block {
+  color: #fafafa;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
 
-.radio__input ~ .radio__block-call {
-  color: #fafafa; }
+.check__box {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-.radio__input:checked ~ .radio__checkbox {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white));
-  background-image: -webkit-linear-gradient(white);
-  background-image: -o-linear-gradient(white);
-  background-image: linear-gradient(white); }
-
-.radio__checkbox {
-  position: relative;
-  height: 15px;
+.check__input {
+  display: block;
   width: 15px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white));
-  background-image: -webkit-linear-gradient(white);
-  background-image: -o-linear-gradient(white);
-  background-image: linear-gradient(white); }
+  height: 15px;
+  background-color: #fa0000; }
 
-.radio__check-cub {
+.check__block {
+  margin-right: 8px; }
+
+.check__klick {
+  color: #fafafa;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.input[type="checkbox"] {
   display: none; }
 
-.radio__input:checked ~ .radio__checkbox .radio__check-cub {
-  display: block;
-  background-color: #fa0000;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+.btn {
+  width: 97px;
+  height: 35px;
+  background-color: #e45028;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-right: 10px; }
+
+.res {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
 
 .contacts {
   background: url(../../img/bg_map.png) center center no-repeat;

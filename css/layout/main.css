@@ -156,7 +156,7 @@
 .arrow-scroll__btn {
   fill: #fff;
   stroke: #fff;
-  stroke-width: 3px;
+  stroke-width: 0.13em;
   display: block;
   width: 29px;
   height: 14px;

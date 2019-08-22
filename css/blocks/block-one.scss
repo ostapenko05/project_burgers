@@ -57,7 +57,10 @@
 }
 
 .arrow-scroll__btn {
-   background: url(./../../img/arrow-scroll.png) center center / contain no-repeat;
+   // background: url(<use./../layout/sprite.svg#scroll_down) center center / contain no-repeat;
+   fill: #fff;
+   stroke: #fff;
+   stroke-width: 3px;
    display: block;
    width: 29px;
    height: 14px;

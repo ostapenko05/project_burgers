@@ -55,7 +55,11 @@
                   <div class="block1__rightside-text">натуральные бургеры</div>
                </div>
             </div>
-            <button type="button" class="arrow-scroll__btn"></button>
+            <button type="button" class="arrow-scroll">
+               <svg class="arrow-scroll__btn">
+                  <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
+               </svg>
+            </button>
          </div>
       </section>
       <!-- окончание приветственой страницы -->
@@ -379,12 +383,11 @@
                            <div class="radio__block">Оплата по карте</div>
                         </label>
                         <div class="radio">
-                           <label class="check__box">
-                              <input type="checkbox" name="check__name" class="check__input">
-                              <div class="check__block">
-                              </div>
-                              <div class="check__klick">Не перезванивать</div>
+                           <label class="checkbox">
+                              <input type="checkbox" class="checkbox__input" checked />
+                              <span class="checkbox__mark"></span>
                            </label>
+                           <span class="checkbox__content">Не перезванивать</span>
                         </div>
                      </div>
                      <div class="button__section">

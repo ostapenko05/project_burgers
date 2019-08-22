@@ -319,51 +319,79 @@
       <!-- начало секции форма -->
       <section class="section form">
          <div class="container container__form">
-            <div class="title__form">заказать доставку</div>
+            <div class="title__form">закажите доставку</div>
             <div class="form__area">
                <form action="" class="form__elem">
                   <div class="form__column-left">
-                     <div class="form__row">
+                     <div class="form__row-name">
                         <label class="form__block">
                            <div class="form__block-title">Имя</div>
                            <input type="text" class="form__input">
                         </label>
+                        <label class="form__block">
                            <div class="form__block-title">Телефон</div>
                            <input type="text" class="form__input">
                         </label>
                      </div>
                      <div class="form__row">
-                        <label class="form__block">
+                        <label class="form__block-street">
                            <div class="form__block-title">Улица</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input-street">
                         </label>
                      </div>
-                     <div class="form__row">
-                        <label class="form__block">
+                     <div class="form__row-location">
+                        <label class="form__block-location">
                            <div class="form__block-title">Дом</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input-location">
                         </label>
-                        <label class="form__block">
+                        <label class="form__block-location">
                            <div class="form__block-title">Корпус</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input-location">
                         </label>
-                        <label class="form__block">
+                        <label class="form__block-location">
                            <div class="form__block-title">Квартира</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input-location">
                         </label>
-                        <label class="form__block">
+                        <label class="form__block-location">
                            <div class="form__block-title">Этаж</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input-location">
                         </label>
                      </div>
                   </div>
                   <div class="form__column-right">
-                     <label class="form__block">
+                     <label class="form__block-right">
                         <div class="form__block-title">Комментарий</div>
-                        <textarea class="form__input form__input--textarea"></textarea>
+                        <textarea class="form__input-right form__input--textarea"></textarea>
                      </label>
-                     <button type="submit" class="btn">Заказать</button>
-                     <button type="reset">Очистить</button>
+                     <div class="radio__section">
+                        <label class="radio">
+                           <input name="radio__name" type="radio" checked="checked" class=radio__input>
+                           <div class="radio__check">
+                              <div class="radio__check-circle"></div>
+                           </div>
+                           <div class="radio__block">Потребуется сдача</div>
+                        </label>
+                        <label class="radio">
+                           <input name="radio__name" type="radio" class="radio__input">
+                           <div class="radio__check">
+                              <div class="radio__check-circle"></div>
+                           </div>
+                           <div class="radio__block">Оплата по карте</div>
+                        </label>
+                        <div class="radio__block-call">
+                           <label class="radio">
+                              <input name="radio__name" type="checkbox" class="radio__input">
+                              <div class="radio__checkbox">
+                                 <div class="radio__check-cub"></div>
+                              </div>
+                              <div class="radio__block">Не перезванивать</div>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="button__section">
+                        <button type="submit" class="btn">Заказать</button>
+                        <button type="reset" class="res">Очистить</button>
+                     </div>
                   </div>
                </form>
             </div>
@@ -373,8 +401,30 @@
       <!-- начало секции контакты -->
       <section class="section contacts">
          <div class="container container__contacts">
-
-
+            <footer class="footer">
+               <address class="footer__contacts-tel">
+                  <h3>Санкт-Петербург,ул.Бабушкина,д.12/1,15</h3>
+                  <img src="#" class="phone" alt="иконка телефона">
+                  <a href="tel:+78123771377" class="contacts__phone">
+                     +7(812) 377-13-77</a>
+               </address>
+               <address class="footer-contacts-soc">
+                  <ul class="footer__social">
+                     <li class="social__item">
+                        <img src="#" class="social__item-img"><img>
+                     </li>
+                     <li class="social__item">
+                        <img src="#" class="social__item-img"><img>
+                     </li>
+                     <li class="social__item">
+                        <img src="#" class="social__item-img"><img>
+                     </li>
+                     <li class="social__item">
+                        <img src="#" class="social__item-img"><img>
+                     </li>
+                  </ul>
+               </address>
+            </footer>
          </div>
       </section>
       <!-- окончание секции контакты -->

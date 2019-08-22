@@ -5,29 +5,92 @@
     height: 100vh;
 }
 
+.container__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title__form {
     color: #f9b43b;
     font-family: Gagalin;
     font-size: 72px;
     font-weight: 400;
     line-height: 63.99px;
+    margin-bottom: 50px;
+}
+
+.form_area {
+    // display: contents;
+    // width: 100%;
 }
 
 .form__elem {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
+    width: 940px;
+    // justify-content: space-around;
 }
 
 .form__column-left {
-    flex: 1;
+    // flex: 1;
     margin-right: 20px;
-    max-width: 100%;
+    width: 460px;
 }
 
 .form__column-right {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+}
+
+.form__input {
+    background: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 10px;
+}
+
+.form__row-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 13px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__row {
+    margin-bottom: 20px;
+}
+
+.form__input-street {
+    background: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 128px;
+}
+
+.form__row-location {
+    display: flex;
+    width: 460px;
+}
+
+.form__input-location {
     flex: 1;
-    // width: 50%;
+    width: 57px;
+    background: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 20px ; 
+    margin-right: 20px;
+}
+
+.form__input-location:last-child {
+    margin-right: none;
 }
 
 .form__block-title {
@@ -38,14 +101,112 @@
     line-height: 24px;
 }
 
-.form__input {
+.form__input-right {
     background: #fff;
     border-radius: 3px;
     border: none;
-    padding: 8px 21px;
+    padding: 8px 10px;
+    height: 90px;
+    width: 440px;
 
     &--textarea {
         resize: none;
-        height: 110px;
+        height: 90px;
     }
 }
+
+.form__block-right {
+    margin-bottom: 15px;
+}
+
+.radio__section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.radio {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	margin: 0 20px 25px 0;
+}
+
+.radio__input {
+	display: none;
+	margin: 0;
+}
+
+.radio__input ~ .radio__block {
+	color: rgb(250, 250 , 250);
+}
+
+.radio__input:checked ~ .radio__check {
+	background-image: linear-gradient(white);
+}
+
+.radio__check {
+	position: relative;
+	height: 15px;
+	width: 15px;
+	margin-right: 7px;
+	border-radius: 50%;
+    background-image: linear-gradient(white);
+}
+
+.radio__check-circle {
+	display: none;
+}
+
+.radio__input:checked ~ .radio__check .radio__check-circle {
+	display: block;
+	width: 7px;
+	height: 7px;
+	background-color: rgb(250, 0, 0);
+	border-radius: 50%;
+	margin: auto;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.radio__input {
+	display: none;
+	margin: 0;
+}
+
+.radio__input ~ .radio__block-call {
+	color: rgb(250, 250 , 250);
+}
+
+.radio__input:checked ~ .radio__checkbox {
+	background-image: linear-gradient(white);
+}
+
+.radio__checkbox {
+	position: relative;
+	height: 15px;
+	width: 15px;
+	// margin-right: 7px;
+	// border-radius: 50%;
+    background-image: linear-gradient(white);
+}
+
+.radio__check-cub {
+	display: none;
+}
+
+.radio__input:checked ~ .radio__checkbox .radio__check-cub {
+	display: block;
+	// width: 7px;
+	// height: 7px;
+	background-color: rgb(250, 0, 0);
+	// border-radius: 50%;
+	margin: auto;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+}
+

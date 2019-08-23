@@ -20,12 +20,15 @@
     margin-bottom: 0;
 }
 
-.footer__contacts-tel
+.footer__phone {
+    width: 12px;
+    height: 11px;
+    fill: #e25028;
+}
 
 .footer__contact-tel {
     display: flex;
     width: 50%;
-    // flex: 1;
 }
 
 .footer-contacts-soc {
@@ -61,7 +64,51 @@
 
 .contacts__phone {
     text-decoration: none;
-    color: #e45028;
+    color: #e25028;
     font-family: "Ubuntu - Bold";
     font-weight: 700;
+}
+
+.social__vk {
+    fill: grey;
+    width: 23px;
+    height: 13px;
+    opacity: 0.3;
+    &:hover {
+        background: #ffffff;
+        fill: black;
+    }
+}
+
+.social__fb {
+    fill: grey;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    &:hover {
+        background: #ffffff;
+        fill: black;
+    }
+}
+
+.social__inst {
+    fill: grey;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    &:hover {
+        background: #ffffff;
+        fill: black;
+    }
+}
+
+.social__twitter {
+    fill: grey;
+    width: 20px;
+    height: 16px;
+    opacity: 0.3;
+    &:hover {
+        background: #ffffff;
+        fill: black;
+    }
 }

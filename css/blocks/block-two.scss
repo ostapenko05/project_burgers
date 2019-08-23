@@ -36,11 +36,25 @@
    margin-bottom: 35px;
 }
 
-.list-section__img {
+.list-section__meat {
    padding-bottom: 15px;
    width: 97px;
    height: 89px;
    fill: #e25028;
+}
+
+.list-section__hand {
+   padding-bottom: 15px;
+   width: 73px;
+   height: 85px;
+   fill: #f8b43a;
+}
+
+.list-section__natural {
+   padding-bottom: 15px;
+   width: 88px;
+   height: 75px;
+   fill: #8ac03e;
 }
 
 .content__list-section:last-child {

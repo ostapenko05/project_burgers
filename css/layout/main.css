@@ -6,6 +6,8 @@
   padding: 12px 0 0px 0; }
 
 .header__logo {
+  width: 92px;
+  height: 69px;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1; }
@@ -156,10 +158,9 @@
 .arrow-scroll__btn {
   fill: #fff;
   stroke: #fff;
-  stroke-width: 0.13em;
   display: block;
   width: 29px;
-  height: 14px;
+  height: 15px;
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -220,8 +221,23 @@
   margin-right: 34px;
   margin-bottom: 35px; }
 
-.list-section__img {
-  padding-bottom: 15px; }
+.list-section__meat {
+  padding-bottom: 15px;
+  width: 97px;
+  height: 89px;
+  fill: #e25028; }
+
+.list-section__hand {
+  padding-bottom: 15px;
+  width: 73px;
+  height: 85px;
+  fill: #f8b43a; }
+
+.list-section__natural {
+  padding-bottom: 15px;
+  width: 88px;
+  height: 75px;
+  fill: #8ac03e; }
 
 .content__list-section:last-child {
   margin-right: 0px; }
@@ -735,7 +751,11 @@
   height: 80px;
   margin-bottom: 0; }
 
-.footer__contacts-tel
+.footer__phone {
+  width: 12px;
+  height: 11px;
+  fill: #e25028; }
+
 .footer__contact-tel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,9 +800,45 @@
 
 .contacts__phone {
   text-decoration: none;
-  color: #e45028;
+  color: #e25028;
   font-family: "Ubuntu - Bold";
   font-weight: 700; }
+
+.social__vk {
+  fill: grey;
+  width: 23px;
+  height: 13px;
+  opacity: 0.3; }
+  .social__vk:hover {
+    background: #ffffff;
+    fill: black; }
+
+.social__fb {
+  fill: grey;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3; }
+  .social__fb:hover {
+    background: #ffffff;
+    fill: black; }
+
+.social__inst {
+  fill: grey;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3; }
+  .social__inst:hover {
+    background: #ffffff;
+    fill: black; }
+
+.social__twitter {
+  fill: grey;
+  width: 20px;
+  height: 16px;
+  opacity: 0.3; }
+  .social__twitter:hover {
+    background: #ffffff;
+    fill: black; }
 
 .fixed-menu {
   position: fixed;

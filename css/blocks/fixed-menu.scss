@@ -1,12 +1,12 @@
 .fixed-menu {
   position: fixed;
-  top: 93px;
-  right: 53px;
+  top: 5.81rem;
+  right: 3.31rem;
   z-index: 100;
 }
 
 .fixed-menu__item {
-  margin-bottom: 3px;
+  margin-bottom: .19rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -20,15 +20,15 @@
 }
 
 .fixed-menu__dot {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border: 1px solid transparent;
   position: relative;
 
   &:hover {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     border: 1px solid #ffffff;
     position: relative;
@@ -36,8 +36,8 @@
 
   &:before {
     content: "";
-    width: 5px;
-    height: 5px;
+    width: .31rem;
+    height: .31rem;
     background: #ffffff;
     border-radius: 50%;
     position: absolute;

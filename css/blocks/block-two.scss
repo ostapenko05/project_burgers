@@ -15,10 +15,10 @@
 .block-two__title {
    text-align: center center;
    font-family: gagalin-regular;
-   font-size: 72px;
+   font-size: 4.5rem;
    text-transform: uppercase;
    color: #2f3234;
-   margin-bottom: 55px;
+   margin-bottom: 3.44rem;
 }
 
 .content__list {
@@ -32,41 +32,41 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-right: 34px;
-   margin-bottom: 35px;
+   margin-right: 2.12rem;
+   margin-bottom: 2.19rem;
 }
 
 .list-section__meat {
-   padding-bottom: 15px;
-   width: 97px;
-   height: 89px;
+   padding-bottom: .94rem;
+   width: 6.06rem;
+   height: 5.56rem;
    fill: #e25028;
 }
 
 .list-section__hand {
-   padding-bottom: 15px;
-   width: 73px;
-   height: 85px;
+   padding-bottom: .94rem;
+   width: 4.56rem;
+   height: 5.31rem;
    fill: #f8b43a;
 }
 
 .list-section__natural {
-   padding-bottom: 15px;
-   width: 88px;
-   height: 75px;
+   padding-bottom: .94rem;
+   width: 5.5rem;
+   height: 4.69rem;
    fill: #8ac03e;
 }
 
 .content__list-section:last-child {
-   margin-right: 0px;
+   margin-right: 0;
 }
 
 .content__text h1{
    color: #2f3234;
    font-family: Lifehack;
-   font-size: 24px;
+   font-size:  1.5rem;
    font-weight: 500;
-   line-height: 28.14px;
+   line-height: 1.76rem;
    text-align: center;
 }
 
@@ -74,7 +74,7 @@
    opacity: 0.8;
    color: #2f3234;
    font-family: Ubuntu;
-   font-size: 14px;
+   font-size: .88rem;
    font-weight: 300;
-   line-height: 24.07px;
+   line-height: 1.5rem;
 }

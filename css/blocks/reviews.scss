@@ -31,7 +31,7 @@
     bottom: 0;
     background: rgba(#444646, .5);
     color: #fff;
-    padding: 50px 19px 19px 19px;
+    padding: 3.13rem 1.19rem 1.19rem 1.19rem;
     opacity: 0;
     transition: opacity .3s;
  }
@@ -39,24 +39,23 @@
  .reviews__button {
     border-style: none;
     text-transform: uppercase;
-    border-radius: 7px;
+    border-radius: .44rem;
     background: #2f3234;
     color: #fff;
-    padding: 15px;
+    padding: .94rem;
     font-family: ubuntu-regular;
  
  }
  
  .reviews__text {
     font-family: ubuntu-regular;
-    line-height: 1.8em;
-    margin-bottom: 20px;
-    font-size: 14px;
+    line-height: 1.8rem;
+    margin-bottom: 1.25rem;
+    font-size: .88rem;
  }
  
  .reviews__title {
     font-family: gagalin-regular;
-    margin-bottom: 30px;
-    font-size: 17px;
- 
+    margin-bottom: 1.88rem;
+    font-size: 1.06rem;
  }

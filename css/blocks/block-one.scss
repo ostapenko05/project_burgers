@@ -7,12 +7,12 @@
 
 .block1__leftside-splash {
    position: relative;
-   padding: 13px 0px 0px 17px;
+   padding: .81rem 0rem 0rem 1.06rem;
 }
 
 .block1__leftside {
    position: relative;
-   margin-right: 13px;
+   margin-right: .81rem;
 }
 
 .block1__leftside-burger {
@@ -20,7 +20,7 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   padding: 53px 0px 0px 48px;
+   padding: 3.31rem 0rem 0rem 3rem;
 }
 
 .content-block {
@@ -34,36 +34,36 @@
    align-items: flex-start;
    justify-content: flex-end;
    flex-direction: column;
-   padding-top: 125px;
-   padding-left: 0px;
+   padding-top: 7.81rem;
+   padding-left: 0rem;
 }
 
 .block1__rightside-title {
    color: #f9b43b;
    font-family: gagalin-regular;
    text-transform: uppercase;
-   font-size: 72px;
-   letter-spacing: -0.53px;
-   margin-bottom: 23px;
+   font-size: 4.5rem;
+   letter-spacing: -0.03rem;
+   margin-bottom: 1.43rem;
 }
 
 .block1__rightside-text {
    color: #fff;
-   font-size: 65px;
+   font-size: 4.06rem;
    font-family: lifehack;
-   letter-spacing: -1.63px;
+   letter-spacing: -.1rem;
    line-height: 90%;
-   padding-top: 5px;
+   padding-top: 0.31rem;
 }
 
 .arrow-scroll__btn {
    fill: #fff;
    stroke: #fff;
    display: block;
-   width: 29px;
-   height: 15px;
+   width: 1.81rem;
+   height: .94rem;
    position: absolute;
-   bottom: 40px;
+   bottom: 2.5rem;
    left: 50%;
    transform: translateX(-50%);
 }

@@ -15,42 +15,42 @@
 .title__form {
     color: #f9b43b;
     font-family: Gagalin;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 400;
-    line-height: 63.99px;
-    margin-bottom: 50px;
+    line-height: 4rem;
+    margin-bottom: 3.13rem;
 }
 
 .form__elem {
     display: flex;
     flex-direction: row;
-    width: 940px;
+    width: 58.75rem;
 }
 
 .form__column-left {
-    margin-right: 20px;
-    width: 460px;
+    margin-right: 1.25rem;
+    width: 28.75rem;
 }
 
 .form__column-right {
     display: flex;
     flex-direction: column;
-    width: 460px;
+    width: 28.75rem;
 }
 
 .form__input {
     background: #fff;
-    border-radius: 3px;
+    border-radius: .19rem;
     border: none;
-    padding: 8px 10px;
+    padding: .5rem .63rem;
 }
 
 .form__row-name {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
-    margin-bottom: 13px;
+    margin-right: .63rem;
+    margin-bottom: .81rem;
 
     &:last-child {
         margin-right: 0;
@@ -58,29 +58,29 @@
 }
 
 .form__row {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .form__input-street {
     background: #fff;
-    border-radius: 3px;
+    border-radius: .19rem;
     border: none;
-    padding: 8px 128px;
+    padding: .5rem 8rem;
 }
 
 .form__row-location {
     display: flex;
-    width: 460px;
+    width: 28.75rem;
 }
 
 .form__input-location {
     flex: 1;
-    width: 57px;
+    width: 3.56rem;
     background: #fff;
-    border-radius: 3px;
+    border-radius: .19rem;
     border: none;
-    padding: 8px 20px;
-    margin-right: 20px;
+    padding: .5rem 1.25rem;
+    margin-right: 1.25rem;
 }
 
 .form__input-location:last-child {
@@ -90,40 +90,40 @@
 .form__block-title {
     color: #ffffff;
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: .88rem;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .form__input-right {
     background: #fff;
-    border-radius: 3px;
+    border-radius: .19rem;
     border: none;
-    padding: 8px 10px;
-    height: 90px;
-    width: 440px;
+    padding: .5rem .63rem;
+    height: 5.63rem;
+    width: 27.5rem;
 
     &--textarea {
         resize: none;
-        height: 90px;
+        height: 5.63rem;
     }
 }
 
 .form__block-right {
-    margin-bottom: 15px;
+    margin-bottom: .94rem;
 }
 
 .radio__section {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .radio {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    margin: 0 20px 25px 0;
+    margin: 0 1.25rem 1.56rem 0;
 }
 
 .radio__input {
@@ -141,9 +141,9 @@
 
 .radio__check {
     position: relative;
-    height: 15px;
-    width: 15px;
-    margin-right: 7px;
+    height: .94rem;
+    width: .94rem;
+    margin-right: .44rem;
     border-radius: 50%;
     background-image: linear-gradient(white);
 }
@@ -154,8 +154,8 @@
 
 .radio__input:checked~.radio__check .radio__check-circle {
     display: block;
-    width: 7px;
-    height: 7px;
+    width: .44rem;
+    height: .44rem;
     background-color: rgb(250, 0, 0);
     border-radius: 50%;
     margin: auto;
@@ -168,31 +168,31 @@
 .radio__block {
     color: rgb(250, 250, 250);
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: .88rem;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .btn {
-    width: 97px;
-    height: 35px;
+    width: 6.06rem;
+    height: 2.19rem;
     background-color: #e45028;
-    border-radius: 5px;
+    border-radius: .31rem;
     color: #ffffff;
     font-family: Ubuntu;
-    font-size: 13px;
+    font-size: .81rem;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.88rem;
     text-transform: uppercase;
-    margin-right: 10px;
+    margin-right: .63rem;
 }
 
 .res {
     color: #ffffff;
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: .88rem;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .checkbox {
@@ -200,9 +200,9 @@
     padding: 0;
     user-select: none;
     background-color: rgb(250, 250, 250);
-    width: 0.937em;
-    height: 0.937em;
-    margin-right: 8px;
+    width: 0.94rem;
+    height: 0.94rem;
+    margin-right: .5rem;
   }
     .checkbox__input {
       position: absolute;
@@ -211,19 +211,19 @@
     .checkbox__mark {
       display: inline-block;
       position: relative;
-      width: 0.937em;
-      height: 0.937em;
+      width: .94rem;
+      height: .94rem;
       vertical-align: middle;
-      margin-right: 0.2em;
-      border-radius: 0.1em;
+      margin-right: .2rem;
+      border-radius: .1rem;
     }
     .checkbox__content {
       vertical-align: middle;
       color: rgb(250, 250, 250);
       font-family: Ubuntu;
-      font-size: 14px;
+      font-size: .88rem;
       font-weight: 300;
-      line-height: 24px;
+      line-height: 1.5rem;
     }
     .checkbox__input:checked + .checkbox__mark {
       &::after {
@@ -231,10 +231,10 @@
         position: absolute;
         left: 30%;
         top: -20%;
-        width: 0.25em;
-        height: 0.4em;
+        width: 0.25rem;
+        height: 0.4rem;
         transform: rotate(45deg);
-        border: 0.1em solid #e45028;
+        border: 0.1rem solid #e45028;
         border-top-color: transparent;
         border-left-color: transparent;
       }

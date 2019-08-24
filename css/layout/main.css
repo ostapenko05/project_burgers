@@ -765,6 +765,22 @@
   display: flex;
   width: 50%; }
 
+.footer__contacts-tel h3 {
+  text-decoration: none;
+  width: 17.06rem;
+  height: 2.38rem;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: .88rem;
+  font-weight: 300;
+  line-height: 1.5rem; }
+
+.contacts__phone {
+  text-decoration: none;
+  color: #e25028;
+  font-family: "Ubuntu - Bold";
+  font-weight: 700; }
+
 .footer-contacts-soc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,55 +807,39 @@
   .social__item:last-child {
     margin-right: 0; }
 
-.footer__contacts-tel h3 {
-  text-decoration: none;
-  width: 17.06rem;
-  height: 2.38rem;
-  color: #ffffff;
-  font-family: Ubuntu;
-  font-size: .88rem;
-  font-weight: 300;
-  line-height: 1.5rem; }
-
-.contacts__phone {
-  text-decoration: none;
-  color: #e25028;
-  font-family: "Ubuntu - Bold";
-  font-weight: 700; }
-
-.social__vk {
+.social-vk {
   fill: grey;
   width: 1.44rem;
   height: .81rem;
   opacity: 0.3; }
-  .social__vk:hover {
+  .social-vk:hover {
     background: #ffffff;
     fill: black; }
 
-.social__fb {
+.social-fb {
   fill: grey;
   width: 1.25rem;
   height: 1.25rem;
   opacity: 0.3; }
-  .social__fb:hover {
+  .social-fb:hover {
     background: #ffffff;
     fill: black; }
 
-.social__inst {
+.social-inst {
   fill: grey;
   width: 1.25rem;
   height: 1.25rem;
   opacity: 0.3; }
-  .social__inst:hover {
+  .social-inst:hover {
     background: #ffffff;
     fill: black; }
 
-.social__twitter {
+.social-twitter {
   fill: grey;
   width: 1.25rem;
   height: 1rem;
   opacity: 0.3; }
-  .social__twitter:hover {
+  .social-twitter:hover {
     background: #ffffff;
     fill: black; }
 

@@ -35,7 +35,7 @@
 }
 
 .menu__trigger {
-    width: 80px;
+    width: 5rem;
     display: block;
     height: 100%;
     position: relative;
@@ -49,13 +49,13 @@
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0;
     white-space: nowrap;
-    margin-top: -20px;
+    margin-top: 1.25rem;
     color: #ffffff;
     font-family: Gagalin;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 63.75px;
-    padding-left: 20px;
+    line-height: 4rem;
+    padding-left: 1.25rem;
 }
 
 .menu__content {
@@ -66,14 +66,14 @@
 }
 
 .menu__text {
-    font-size: 14px;
+    font-size: .88rem;
     color: #ffffff;
-    padding: 60px 30px;
+    padding: 3.75rem 1.88rem;
     display: none;
 }
 
 .menu__content-act {
-    width: 550px;
+    width: 34.38rem;
 }
 
 .menu__text-act {

@@ -8,10 +8,80 @@
     height: 100vh;
 }
 
-.menu h1 {
+.menu__title {
     color: #ffffff;
     font-family: Gagalin;
     font-size: 4.5rem;
     font-weight: 400;
     line-height: 4rem;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__block {
+    height: 100%;
+    display: flex;
+
+    &.active {
+        trigger__text {
+            color: #ecad38;
+        }
+    }
+}
+
+.menu__trigger {
+    width: 80px;
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.trigger__text {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 100%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    margin-top: -20px;
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 63.75px;
+    padding-left: 20px;
+}
+
+.menu__content {
+    height: 100%;
+    background: rgba(#2f3234, .8);
+    width: 0;
+    overflow: hidden;
+}
+
+.menu__text {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 60px 30px;
+    display: none;
+}
+
+.menu__content-act {
+    width: 550px;
+}
+
+.menu__text-act {
+    display: block;
+}
+
+.menu__pic {
+    height: 100%;
+    width: 100%;
+    position: relative;
 }

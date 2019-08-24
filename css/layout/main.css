@@ -401,12 +401,77 @@
   position: relative;
   height: 100vh; }
 
-.menu h1 {
+.menu__title {
   color: #ffffff;
   font-family: Gagalin;
   font-size: 4.5rem;
   font-weight: 400;
-  line-height: 4rem; }
+  line-height: 4rem;
+  position: absolute;
+  top: 10%;
+  left: 10%; }
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__block {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .menu__block.active trigger__text {
+    color: #ecad38; }
+
+.menu__trigger {
+  width: 80px;
+  display: block;
+  height: 100%;
+  position: relative; }
+
+.trigger__text {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  white-space: nowrap;
+  margin-top: -20px;
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 63.75px;
+  padding-left: 20px; }
+
+.menu__content {
+  height: 100%;
+  background: rgba(47, 50, 52, 0.8);
+  width: 0;
+  overflow: hidden; }
+
+.menu__text {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 60px 30px;
+  display: none; }
+
+.menu__content-act {
+  width: 550px; }
+
+.menu__text-act {
+  display: block; }
+
+.menu__pic {
+  height: 100%;
+  width: 100%;
+  position: relative; }
 
 .section--reviews {
   height: 100vh; }
@@ -809,8 +874,8 @@
 
 .social-vk {
   fill: grey;
-  width: 1.44rem;
-  height: .81rem;
+  width: 1.9rem;
+  height: 1rem;
   opacity: 0.3; }
   .social-vk:hover {
     background: #ffffff;
@@ -937,6 +1002,9 @@ h3,
 p {
   margin: 0;
   padding: 0; }
+
+a {
+  text-decoration: none; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

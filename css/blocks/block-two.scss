@@ -19,11 +19,20 @@
    text-transform: uppercase;
    color: #2f3234;
    margin-bottom: 3.44rem;
+
+   @include phone {
+      margin-bottom: 10%;
+      font-size: 3.5rem;
+   }
 }
 
 .content__list {
    display: inline-flex;
    justify-content: flex-start;
+
+   @include phone {
+      flex-direction: column;
+   }
 }
 
 .content__list-section {
@@ -34,6 +43,13 @@
    align-items: center;
    margin-right: 2.12rem;
    margin-bottom: 2.19rem;
+
+   @include phone {
+      flex-direction: row;
+      display: inline-flex;
+      width: 100%;
+      margin: 0 0 2rem 0;
+   }
 }
 
 .list-section__meat {
@@ -41,6 +57,12 @@
    width: 6.06rem;
    height: 5.56rem;
    fill: #e25028;
+
+   @include phone {
+      width: 6.06rem;
+      height: 5.56rem;
+      margin-right: 1rem;
+   }
 }
 
 .list-section__hand {
@@ -48,6 +70,12 @@
    width: 4.56rem;
    height: 5.31rem;
    fill: #f8b43a;
+
+   @include phone {
+      width: 9rem;
+      height: 5.56rem;
+      margin-right: 1rem;
+   }
 }
 
 .list-section__natural {
@@ -55,10 +83,26 @@
    width: 5.5rem;
    height: 4.69rem;
    fill: #8ac03e;
+
+   @include phone {
+      width: 6.06rem;
+      height: 5.56rem;
+      margin-right: 1rem;
+   }
 }
 
 .content__list-section:last-child {
    margin-right: 0;
+}
+
+.content__text {
+
+   @include phone {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // text-align: right;
+   }
 }
 
 .content__text h1{

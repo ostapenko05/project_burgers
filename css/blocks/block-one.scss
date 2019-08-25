@@ -1,3 +1,144 @@
+.header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+   padding: .75rem 0 0 0;
+
+   @include tablets {
+      justify-content: center;
+      align-items: center;
+      text-align: right;
+   }
+}
+
+.header__logo {
+  width: 5.75rem;
+  height: 4.31rem;
+  flex: 1;
+}
+
+.nav {
+   flex: 6;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+
+   // @include tablets {
+   //    flex-direction: column-reverse;
+   //    justify-content: end;
+   //    align-items: flex-end;
+   // }
+}
+
+.nav__list {
+   display: inline-flex;
+   color: #fff;
+   margin-right: .94rem;
+
+   @include tablets {
+      display: none;
+      // position: absolute;
+      // left: 90%;
+      // margin-right: 4rem;
+   }
+}
+
+.nav__item {
+   list-style: none;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   font-size: .81rem;
+   font-family: ubuntu-regular;
+   margin-right: 0rem;
+   text-transform: uppercase;
+
+   &:last-child {
+      margin-right: 0rem;
+   }
+}
+
+.nav__item:after {
+   content: '';
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: .31rem;
+   width: .31rem;
+   border-radius: 50%;
+   background-color: #fff;
+   margin: auto .94rem;
+}
+
+.nav__item:last-child:after {
+   content: '';
+   display: none;
+}
+
+.nav__link {
+   font-size: .81rem;
+   color: #fff;
+   text-transform: uppercase;
+   text-decoration:none;
+}
+
+.nav__section-button {
+   background: #e45028;
+   border-radius: .38rem;
+   border-style: none;
+   color: #fff;
+   padding: .63rem 1.06rem;
+   text-transform: uppercase;
+   font-size: .81rem;
+   font-family: ubuntu-regular;
+}
+
+// menu-burger
+.menu__hamb {
+   cursor: pointer;
+   // margin: 0 auto;
+   padding: 0 2rem;
+   position: relative;
+   width: 24px;
+   height: 22px;
+   display: none;
+
+   @include tablets {
+      display: flex;
+      // flex-direction: column-reverse;
+   }
+ }
+
+ .menu__hamb-global {
+   position: absolute;
+   border-top: 4px solid white;
+   width: 24px;
+ }
+ .menu__hamb-top {
+   top: 0;
+ }
+ .menu__hamb-middle {
+   top: 10px;
+ }
+ .menu__hamb-bottom {
+   top: 20px;
+ }
+ .menu__hamb-top-click {
+   backface-visibility: hidden;
+   top: 15px;
+   transform: rotate(50deg);
+ }
+ .menu__hamb-middle-click {
+   opacity: 0;
+ }
+ .menu__hamb-bottom-click {
+   backface-visibility: hidden;
+   top: 15px;
+   transform: rotate(-410deg);
+   transition: 0.55s 0.5s;
+ }
+
 .section--block {
    background: url(../../img/bg_texture.png) center center no-repeat;
    background-size: cover;
@@ -13,6 +154,11 @@
 .block1__leftside {
    position: relative;
    margin-right: .81rem;
+   
+   @include tablets {
+      padding: 0 20%;
+      margin: 0 0;
+   }
 }
 
 .block1__leftside-burger {
@@ -27,6 +173,13 @@
    display: inline-flex;
    align-items: center;
    justify-content: center;
+
+   @include tablets {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20%;
+   }
 }
 
 .block1__rightside {
@@ -36,6 +189,13 @@
    flex-direction: column;
    padding-top: 7.81rem;
    padding-left: 0rem;
+
+   @include tablets {
+      flex-direction: column;
+      align-items: center;
+      // padding: 0 5%;
+      // font-size: 64px;
+   }
 }
 
 .block1__rightside-title {
@@ -45,6 +205,18 @@
    font-size: 4.5rem;
    letter-spacing: -0.03rem;
    margin-bottom: 1.43rem;
+
+   @include tablets {
+      justify-content: center;
+      text-align: center;
+      font-size: 4rem;
+   }
+
+   @include phone {
+      justify-content: center;
+      text-align: center;
+      font-size: 3rem;
+   }
 }
 
 .block1__rightside-text {
@@ -54,6 +226,18 @@
    letter-spacing: -.1rem;
    line-height: 90%;
    padding-top: 0.31rem;
+
+   @include tablets {
+      text-align: center;
+      padding: 10%;
+      font-size: 4rem;
+   }
+
+   @include phone {
+      text-align: center;
+      padding: 15%;
+      font-size: 3rem;
+   }
 }
 
 .arrow-scroll__btn {

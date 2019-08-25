@@ -26,6 +26,10 @@
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none; } }
+
 .nav__list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -87,6 +91,60 @@
   text-transform: uppercase;
   font-size: .81rem;
   font-family: ubuntu-regular; }
+
+.menu__hamb {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 2rem;
+  position: relative;
+  width: 24px;
+  height: 22px; }
+
+.menu__hamb-global {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 4px solid white;
+  border-radius: 2px;
+  width: 24px;
+  -webkit-transition: 0.55s;
+  -o-transition: 0.55s;
+  transition: 0.55s; }
+
+.menu__hamb-top {
+  top: 0; }
+
+.menu__hamb-middle {
+  top: 10px; }
+
+.menu__hamb-bottom {
+  top: 20px; }
+
+.menu__hamb-top-click {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  top: 15px;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  -webkit-transition: 0.55s 0.5s;
+  -o-transition: 0.55s 0.5s;
+  transition: 0.55s 0.5s; }
+
+.menu__hamb-middle-click {
+  opacity: 0; }
+
+.menu__hamb-bottom-click {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  top: 15px;
+  -webkit-transform: rotate(-410deg);
+  -ms-transform: rotate(-410deg);
+  transform: rotate(-410deg);
+  -webkit-transition: 0.55s 0.5s;
+  -o-transition: 0.55s 0.5s;
+  transition: 0.55s 0.5s; }
 
 .section--block {
   background: url(../../img/bg_texture.png) center center no-repeat;

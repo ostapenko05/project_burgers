@@ -14,6 +14,12 @@
     position: absolute;
     width: 50%;
     height: 100vh;
+
+    @include tablets {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .team__block-in {
@@ -21,6 +27,18 @@
     padding-right: 6rem;
     padding-bottom: 8,75rem; 
     padding-left: 6rem;
+
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.team__member {
+    
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .team__title {
@@ -38,6 +56,10 @@
     justify-content: flex-start;
     background-color: #2f3234;
     opacity: 0.92;
+
+    @include tablets {
+       justify-content: center;
+    }
 }
 
 .team__name h2 {
@@ -64,16 +86,35 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 2.12rem;
+    overflow: hidden;
+    height: 0;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .team__hover-block--active {
     color: #f9b43b;
+    display: flex;
+    height: 12.5rem;
+}
 
+.team__hover-block-act {
+    
 }
 
 .team__pic {
     border-radius: 50%;
     margin: auto 1.25rem;
+    
+    @include tablets {
+        margin: 0 auto;
+        // text-align: center;
+        // max-width: 30%;
+        // transform: translateX(-50%);
+    }
 }
 
 .team__text {

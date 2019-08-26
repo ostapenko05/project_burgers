@@ -18,12 +18,23 @@
     width: 100%;
     height: 10%;
     margin-bottom: 0;
+
+    @include phone {
+        flex-direction: column;
+        height: 15%;
+    }
 }
 
 .footer__phone {
     width: .75rem;
     height: .69rem;
     fill: #e25028;
+}
+
+.footer__tel {
+    @include phone {
+       text-align: center;
+    }
 }
 
 .footer__contact-tel {
@@ -49,6 +60,7 @@
     color: #e25028;
     font-family: "Ubuntu - Bold";
     font-weight: 700;
+
 }
 
 .footer-contacts-soc {
@@ -56,6 +68,11 @@
     flex-direction: row-reverse;
     justify-content: start;
     width: 50%;
+
+    @include phone {
+        margin-top: 1.5rem;
+        padding-right: 2rem;
+    }
 }
 
 .footer__social {

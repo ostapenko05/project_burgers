@@ -8,8 +8,8 @@
 .container__form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .title__form {
@@ -19,12 +19,28 @@
     font-weight: 400;
     line-height: 4rem;
     margin-bottom: 3.13rem;
+
+    @include tablets {
+        // text-align: center;
+        font-size: 3.5rem;
+    }
+
+    @include phone {
+        font-size: 3.5rem;
+    }
 }
 
 .form__elem {
     display: flex;
     flex-direction: row;
-    width: 58.75rem;
+    // width: 58.75rem;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 10%;
+        max-width: 80%;
+        // text-align: center;
+    }
 }
 
 .form__column-left {
@@ -35,7 +51,7 @@
 .form__column-right {
     display: flex;
     flex-direction: column;
-    width: 28.75rem;
+    // width: 28.75rem;
 }
 
 .form__input {
@@ -117,6 +133,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1.25rem;
+
+    @include tablets {
+        flex-direction: row;
+        justify-content: center
+    }
 }
 
 .radio {
@@ -171,6 +192,14 @@
     font-size: .88rem;
     font-weight: 300;
     line-height: 1.5rem;
+}
+
+.button__section {
+    
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .btn {

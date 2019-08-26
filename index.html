@@ -45,14 +45,13 @@
                      <span class="menu__hamb-global menu__hamb-top"></span>
                      <span class="menu__hamb-global menu__hamb-middle"></span>
                      <span class="menu__hamb-global menu__hamb-bottom"></span>
-                   </div>
+                  </div>
                </nav>
-               
+
             </header>
             <div class="content-block">
                <div class="block1__leftside">
-                  <img src="./img/steam_hello.png" alt="Burger" class="block1__leftside-burger">
-                  <img src="./img/drops_hello.png" alt="drops Burger" class="block1__leftside-splash">
+                  <img src="./img/burgers-drops.png" alt="Burger" class="block1__leftside-burger">
                </div>
                <div class="block1__rightside">
                   <div class="block1__rightside-title">мы делаем</div>
@@ -142,7 +141,7 @@
                            <div class="team__triangle"></div>
                            <h2>ричард джеймс</h2>
                         </div>
-                        <div class="team__hover-block">
+                        <div class="team__hover-block team__hover-block--active">
                            <img src="./img/Slice_1.png" class="team__pic" alt="">
                            <div class="team__text">
                               <h3>Оператор</h3>
@@ -156,7 +155,7 @@
                            <div class="team__triangle"></div>
                            <h2>джейк финн</h2>
                         </div>
-                        <div class="team__hover-block team__hover-block--active">
+                        <div class="team__hover-block">
                            <img src="./img/Slice_1.png" class="team__pic" alt="">
                            <div class="team__text">
                               <h3>Оператор</h3>
@@ -244,6 +243,7 @@
                         что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
                   <button class="reviews__button" type="button">Подробнее</button>
+                  <button class="reviews__button-phone" type="button">читать отзыв</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_2.png)">
@@ -255,6 +255,7 @@
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
                   <button class="reviews__button" type="button">Подробнее</button>
+                  <button class="reviews__button-phone" type="button">читать отзыв</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_3.png)">
@@ -266,6 +267,7 @@
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
                   <button class="reviews__button" type="button">Подробнее</button>
+                  <button class="reviews__button-phone" type="button">читать отзыв</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_4.png)">
@@ -277,6 +279,7 @@
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
                   <button class="reviews__button" type="button">Подробнее</button>
+                  <button class="reviews__button-phone" type="button">читать отзыв</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_5.png)">
@@ -288,6 +291,7 @@
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
                   <button class="reviews__button" type="button">Подробнее</button>
+                  <button class="reviews__button-phone" type="button">читать отзыв</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_6.png)">
@@ -299,6 +303,7 @@
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
                   <button class="reviews__button" type="button">Подробнее</button>
+                  <button class="reviews__button-phone" type="button">читать отзыв</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_7.png)">
@@ -310,6 +315,7 @@
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
                   <button class="reviews__button" type="button">Подробнее</button>
+                  <button class="reviews__button-phone" type="button">читать отзыв</button>
                </div>
             </li>
             <li class="reviews__block" style="background-image: url(./img/avtor_8.png)">
@@ -321,6 +327,7 @@
                         быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
                   </div>
                   <button class="reviews__button" type="button">Подробнее</button>
+                  <button class="reviews__button-phone" type="button">читать отзыв</button>
                </div>
             </li>
          </ul>
@@ -420,11 +427,13 @@
             <footer class="footer">
                <address class="footer__contacts-tel">
                   <h3>Санкт-Петербург,ул.Бабушкина,д.12/1,15</h3>
-                  <svg class="footer__phone">
-                     <use xlink:href="./css/layout/sprite.svg#phone"></use>
-                  </svg>
-                  <a href="tel:+78123771377" class="contacts__phone">
-                     +7(812) 377-13-77</a>
+                  <div class="footer__tel">
+                     <svg class="footer__phone">
+                        <use xlink:href="./css/layout/sprite.svg#phone"></use>
+                     </svg>
+                     <a href="tel:+78123771377" class="contacts__phone">
+                        +7(812) 377-13-77</a>
+                  </div>
                </address>
                <address class="footer-contacts-soc">
                   <ul class="footer__social">

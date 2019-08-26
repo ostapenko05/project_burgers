@@ -146,27 +146,24 @@
    height: 100vh;
 }
 
-.block1__leftside-splash {
-   position: relative;
-   padding: .81rem 0rem 0rem 1.06rem;
-}
-
 .block1__leftside {
-   position: relative;
+   // position: relative;
    margin-right: .81rem;
    
    @include tablets {
-      padding: 0 20%;
+      padding: 0 0%;
       margin: 0 0;
    }
 }
 
 .block1__leftside-burger {
-   position: absolute;
-   top: 50%;
+   position: relative;
    left: 50%;
-   transform: translate(-50%, -50%);
-   padding: 3.31rem 0rem 0rem 3rem;
+   transform: translateX(-50%);
+
+   @include tablets {
+      max-width: 100%;
+   }
 }
 
 .content-block {

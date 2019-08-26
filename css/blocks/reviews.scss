@@ -66,9 +66,9 @@
          display: none;
       }
 
-      // @include tablets {
-      //    display: none;
-      // }
+      @include tablets {
+        display: none;
+      }
 
       @include phone {
          display: block;
@@ -83,10 +83,10 @@
     color: #fff;
     padding: .94rem;
     font-family: ubuntu-regular;
-   
-    @include phone {
-       display: none;
-    }
+
+   @include phone {
+      display: none;
+   }    
  }
  
  .reviews__text {
@@ -103,8 +103,6 @@
        display: none;
     }
  }
-
-
  
  .reviews__title {
     font-family: gagalin-regular;

@@ -10,6 +10,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include phone {
+        max-width: 60%;
+    }
 }
 
 .form__area {
@@ -43,24 +47,24 @@
 .form__elem {
     display: flex;
     flex-direction: row;
-    width: 58.75rem;
+    // width: 58.75rem;
 
     @include tablets {
         flex-direction: column;
         flex: 1;
-        transform: translateX(25%);
+        transform: translateX(0%);
     }
 }
 
 .form__column-left {
     margin-right: 1.25rem;
-    width: 28.75rem;
+    // width: 28.75rem;
 }
 
 .form__column-right {
     display: flex;
     flex-direction: column;
-    width: 28.75rem;
+    // width: 28.75rem;
 }
 
 .form__input {

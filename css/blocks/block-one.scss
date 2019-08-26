@@ -97,7 +97,6 @@
 // menu-burger
 .menu__hamb {
    cursor: pointer;
-   // margin: 0 auto;
    padding: 0 2rem;
    position: relative;
    width: 24px;
@@ -106,7 +105,6 @@
 
    @include tablets {
       display: flex;
-      // flex-direction: column-reverse;
    }
  }
 
@@ -147,7 +145,7 @@
 }
 
 .block1__leftside {
-   // position: relative;
+   
    margin-right: .81rem;
    
    @include tablets {
@@ -190,6 +188,7 @@
    @include tablets {
       flex-direction: column;
       align-items: center;
+      padding: 0 0;
       // padding: 0 5%;
       // font-size: 64px;
    }
@@ -207,12 +206,15 @@
       justify-content: center;
       text-align: center;
       font-size: 4rem;
+      margin: 0 0;
    }
 
    @include phone {
       justify-content: center;
       text-align: center;
       font-size: 3rem;
+      margin: 0 0;
+
    }
 }
 
@@ -226,13 +228,13 @@
 
    @include tablets {
       text-align: center;
-      padding: 10%;
+      padding: 0 10%;
       font-size: 4rem;
    }
 
    @include phone {
       text-align: center;
-      padding: 15%;
+      padding: 0 15%;
       font-size: 3rem;
    }
 }

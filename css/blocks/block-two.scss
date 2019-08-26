@@ -112,12 +112,17 @@
    font-weight: 500;
    line-height: 1.76rem;
    text-align: center;
+
+   @include phone {
+      font-size: 1.3rem;
+      text-align: left;
+   }
 }
 
 .content__text p{
    opacity: 0.8;
    color: #2f3234;
-   font-family: Ubuntu;
+   font-family: Ubuntu-regular;
    font-size: .88rem;
    font-weight: 300;
    line-height: 1.5rem;

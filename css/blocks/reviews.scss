@@ -61,18 +61,13 @@
    color: #fff;
    padding: .94rem;
    font-family: ubuntu-regular;
+   font-size: .6rem;
+   display: none;
 
-      @include desctop {
-         display: none;
-      }
+   @include phone {
+      display: flex;
 
-      @include tablets {
-        display: none;
-      }
-
-      @include phone {
-         display: block;
-      }
+   }
  }
  
  .reviews__button {
@@ -86,6 +81,7 @@
 
    @include phone {
       display: none;
+   
    }    
  }
  

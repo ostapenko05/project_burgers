@@ -19,8 +19,7 @@
 .form__area {
 
     @include tablets {
-        // padding: 0 20%;
-        // max-width: 80%;
+        max-width: 95%;
     }
 }
 
@@ -59,6 +58,10 @@
 .form__column-left {
     margin-right: 1.25rem;
     // width: 28.75rem;
+
+    @include phone {
+        margin-right: 0;
+    }
 }
 
 .form__column-right {
@@ -67,11 +70,26 @@
     // width: 28.75rem;
 }
 
+.form__block-title {
+    color: #ffffff;
+    font-family: Ubuntu-regular;
+    font-size: .88rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
 .form__input {
     background: #fff;
     border-radius: .19rem;
     border: none;
     padding: .5rem .63rem;
+
+    @include phone {
+        padding: 0.5rem 0;
+        width: 9.7rem;
+    }
+
+    
 }
 
 .form__row-name {
@@ -84,6 +102,10 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @include phone {
+        margin: 0 0;
+    }
 }
 
 .form__row {
@@ -95,14 +117,17 @@
     border-radius: .19rem;
     border: none;
     padding: .5rem 8rem;
+
+    @include phone {
+        padding: .5rem 4.2rem;
+    }
 }
 
 .form__row-location {
     display: flex;
-    width: 28.75rem;
+    margin-bottom: 1.25rem;
 
     @include phone {
-        justify-content: space-between;
         :nth-child(4) {
             display: none;
         }
@@ -117,18 +142,14 @@
     border: none;
     padding: .5rem 1.25rem;
     margin-right: 1.25rem;
+
+    @include phone {
+        width: 3.45rem;
+    }
 }
 
 .form__input-location:last-child {
     margin-right: none;
-}
-
-.form__block-title {
-    color: #ffffff;
-    font-family: Ubuntu;
-    font-size: .88rem;
-    font-weight: 300;
-    line-height: 1.5rem;
 }
 
 .form__input-right {
@@ -153,6 +174,8 @@
     margin-bottom: .94rem;
 }
 
+// радиокнопки
+
 .radio__section {
     display: flex;
     flex-wrap: wrap;
@@ -160,7 +183,8 @@
 
     @include tablets {
         flex-direction: row;
-        justify-content: center
+        justify-content: center;
+        padding: 0 1%;
     }
 }
 
@@ -212,11 +236,13 @@
 
 .radio__block {
     color: rgb(250, 250, 250);
-    font-family: Ubuntu;
+    font-family: Ubuntu-regular;
     font-size: .88rem;
     font-weight: 300;
     line-height: 1.5rem;
 }
+
+// кнопки
 
 .button__section {
     
@@ -232,7 +258,7 @@
     background-color: #e45028;
     border-radius: .31rem;
     color: #ffffff;
-    font-family: Ubuntu;
+    font-family: Ubuntu-regular;
     font-size: .81rem;
     font-weight: 500;
     line-height: 1.88rem;
@@ -242,11 +268,13 @@
 
 .res {
     color: #ffffff;
-    font-family: Ubuntu;
+    font-family: Ubuntu-regular;
     font-size: .88rem;
     font-weight: 300;
     line-height: 1.5rem;
 }
+
+// checkbox
 
 .checkbox {
     cursor: pointer;
@@ -273,7 +301,7 @@
     .checkbox__content {
       vertical-align: middle;
       color: rgb(250, 250, 250);
-      font-family: Ubuntu;
+      font-family: Ubuntu-regular;
       font-size: .88rem;
       font-weight: 300;
       line-height: 1.5rem;

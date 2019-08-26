@@ -29,13 +29,12 @@
     padding-left: 6rem;
 
     @include tablets {
+        padding: auto 6rem;
         text-align: center;
     }
 }
 
 .team__member {
-    
-
     @include tablets {
         text-align: center;
     }
@@ -54,7 +53,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #2f3234;
     opacity: 0.92;
 
     @include tablets {
@@ -74,7 +72,7 @@
     display: flex;
     height: 0;
     width: 0;
-    border: 9px solid transparent;
+    border: 7px solid transparent;
     border-top-width: .44rem;
     border-top-color: #f9b43b;
     border-bottom-width: 0;
@@ -101,9 +99,6 @@
     height: 12.5rem;
 }
 
-.team__hover-block-act {
-    
-}
 
 .team__pic {
     border-radius: 50%;

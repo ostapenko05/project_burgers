@@ -225,7 +225,8 @@
       flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; } }
+      align-items: center;
+      padding: 0 0; } }
 
 .block1__rightside-title {
   color: #f9b43b;
@@ -240,14 +241,16 @@
       -ms-flex-pack: center;
       justify-content: center;
       text-align: center;
-      font-size: 4rem; } }
+      font-size: 4rem;
+      margin: 0 0; } }
   @media screen and (max-width: 480px) {
     .block1__rightside-title {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
       text-align: center;
-      font-size: 3rem; } }
+      font-size: 3rem;
+      margin: 0 0; } }
 
 .block1__rightside-text {
   color: #fff;
@@ -259,12 +262,12 @@
   @media screen and (max-width: 768px) {
     .block1__rightside-text {
       text-align: center;
-      padding: 10%;
+      padding: 0 10%;
       font-size: 4rem; } }
   @media screen and (max-width: 480px) {
     .block1__rightside-text {
       text-align: center;
-      padding: 15%;
+      padding: 0 15%;
       font-size: 3rem; } }
 
 .arrow-scroll__btn {
@@ -410,11 +413,15 @@
   font-weight: 500;
   line-height: 1.76rem;
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .content__text h1 {
+      font-size: 1.3rem;
+      text-align: left; } }
 
 .content__text p {
   opacity: 0.8;
   color: #2f3234;
-  font-family: Ubuntu;
+  font-family: Ubuntu-regular;
   font-size: .88rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -464,6 +471,7 @@
   padding-left: 6rem; }
   @media screen and (max-width: 768px) {
     .team__block-in {
+      padding: auto 6rem;
       text-align: center; } }
 
 @media screen and (max-width: 768px) {
@@ -489,7 +497,6 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  background-color: #2f3234;
   opacity: 0.92; }
   @media screen and (max-width: 768px) {
     .team__name {
@@ -510,7 +517,7 @@
   display: flex;
   height: 0;
   width: 0;
-  border: 9px solid transparent;
+  border: 7px solid transparent;
   border-top-width: .44rem;
   border-top-color: #f9b43b;
   border-bottom-width: 0;
@@ -737,16 +744,14 @@
   background: #2f3234;
   color: #fff;
   padding: .94rem;
-  font-family: ubuntu-regular; }
-  @media screen and (max-width: 1200px) {
-    .reviews__button-phone {
-      display: none; } }
-  @media screen and (max-width: 768px) {
-    .reviews__button-phone {
-      display: none; } }
+  font-family: ubuntu-regular;
+  font-size: .6rem;
+  display: none; }
   @media screen and (max-width: 480px) {
     .reviews__button-phone {
-      display: block; } }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .reviews__button {
   border-style: none;
@@ -807,6 +812,10 @@
     .container__form {
       max-width: 60%; } }
 
+@media screen and (max-width: 768px) {
+  .form__area {
+    max-width: 95%; } }
+
 .title__form {
   color: #f9b43b;
   font-family: Gagalin;
@@ -847,6 +856,9 @@
 
 .form__column-left {
   margin-right: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .form__column-left {
+      margin-right: 0; } }
 
 .form__column-right {
   display: -webkit-box;
@@ -857,11 +869,22 @@
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.form__block-title {
+  color: #ffffff;
+  font-family: Ubuntu-regular;
+  font-size: .88rem;
+  font-weight: 300;
+  line-height: 1.5rem; }
+
 .form__input {
   background: #fff;
   border-radius: .19rem;
   border: none;
   padding: .5rem .63rem; }
+  @media screen and (max-width: 480px) {
+    .form__input {
+      padding: 0.5rem 0;
+      width: 9.7rem; } }
 
 .form__row-name {
   display: -webkit-box;
@@ -878,6 +901,9 @@
   margin-bottom: .81rem; }
   .form__row-name:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .form__row-name {
+      margin: 0 0; } }
 
 .form__row {
   margin-bottom: 1.25rem; }
@@ -887,19 +913,18 @@
   border-radius: .19rem;
   border: none;
   padding: .5rem 8rem; }
+  @media screen and (max-width: 480px) {
+    .form__input-street {
+      padding: .5rem 4.2rem; } }
 
 .form__row-location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 28.75rem; }
+  margin-bottom: 1.25rem; }
   @media screen and (max-width: 480px) {
-    .form__row-location {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .form__row-location :nth-child(4) {
-        display: none; } }
+    .form__row-location :nth-child(4) {
+      display: none; } }
 
 .form__input-location {
   -webkit-box-flex: 1;
@@ -911,16 +936,12 @@
   border: none;
   padding: .5rem 1.25rem;
   margin-right: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .form__input-location {
+      width: 3.45rem; } }
 
 .form__input-location:last-child {
   margin-right: none; }
-
-.form__block-title {
-  color: #ffffff;
-  font-family: Ubuntu;
-  font-size: .88rem;
-  font-weight: 300;
-  line-height: 1.5rem; }
 
 .form__input-right {
   background: #fff;
@@ -954,7 +975,8 @@
       flex-direction: row;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      padding: 0 1%; } }
 
 .radio {
   display: -webkit-inline-box;
@@ -1009,7 +1031,7 @@
 
 .radio__block {
   color: #fafafa;
-  font-family: Ubuntu;
+  font-family: Ubuntu-regular;
   font-size: .88rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1029,7 +1051,7 @@
   background-color: #e45028;
   border-radius: .31rem;
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: Ubuntu-regular;
   font-size: .81rem;
   font-weight: 500;
   line-height: 1.88rem;
@@ -1038,7 +1060,7 @@
 
 .res {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: Ubuntu-regular;
   font-size: .88rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1071,7 +1093,7 @@
 .checkbox__content {
   vertical-align: middle;
   color: #fafafa;
-  font-family: Ubuntu;
+  font-family: Ubuntu-regular;
   font-size: .88rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1144,7 +1166,7 @@
   height: 2.38rem;
   color: #ffffff;
   font-style: normal;
-  font-family: Ubuntu;
+  font-family: Ubuntu-regular;
   font-size: .88rem;
   font-weight: 300;
   line-height: 1.5rem; }

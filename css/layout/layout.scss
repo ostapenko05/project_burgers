@@ -1,5 +1,14 @@
 html {
   height: 100%;
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phone {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -11,20 +20,21 @@ body {
 
 .wrapper {
   overflow: hidden;
-  min-width: 940px;
+  width: 100%;
+  // min-width: 58.75rem;
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .container {
-  width: 940px;
+  max-width: 58.75rem;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  // justify-content: center;
+  // align-items: center;
 }
 
 ul {
@@ -44,7 +54,13 @@ button {
 }
 
 h1,
+h2,
+h3,
 p {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }

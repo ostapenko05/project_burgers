@@ -1,0 +1,141 @@
+.section--team {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: url(../../img/bg_team.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.team__block-right {
+    background: #313436;
+    opacity: .95;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+
+    @include tablets {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.team__block-in {
+    padding-top: 7.19rem;
+    padding-right: 6rem;
+    padding-bottom: 8,75rem; 
+    padding-left: 6rem;
+
+    @include tablets {
+        padding: auto 1rem;
+        text-align: center;
+    }
+
+    @include phone {
+       padding: 0 5%; 
+    }
+}
+
+.team__member {
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.team__title {
+    color: #f9b43b;
+    font-family: gagalin-regular;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+    margin: 0 0 3.13rem 0;
+
+    @include phone {
+        margin: 0 0;
+    }
+}
+
+.team__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    opacity: 0.92;
+
+    @include tablets {
+       justify-content: center;
+    }
+}
+
+.team__name h2 {
+    color: #ffffff;
+    font-family: gagalin-regular;
+    font-size: .88rem;
+    font-weight: 400;
+    line-height: 1.76rem;
+}
+
+.team__triangle {
+    display: flex;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-top-width: .44rem;
+    border-top-color: #f9b43b;
+    border-bottom-width: 0;
+    margin: .63rem .56rem 0 0;
+}
+
+.team__hover-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 2.12rem;
+    overflow: hidden;
+    height: 0;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.team__hover-block--active {
+    color: #f9b43b;
+    display: flex;
+    height: 12.5rem;
+}
+
+
+.team__pic {
+    border-radius: 50%;
+    margin: auto 1.25rem;
+    
+    @include tablets {
+        margin: 0 auto;
+    }
+}
+
+.team__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.team__text h3 {
+    flex: 1;
+    color: #ffffff;
+    font-family: ubuntu-bold;
+    font-weight: 700;
+    font-size: .88rem;
+    line-height: 1.5rem;
+}
+
+.team__text>p {
+    flex: 2;
+    color: #ffffff;
+    font-family: ubuntu-light;
+    font-size: .75rem;
+    font-weight: 300;
+}

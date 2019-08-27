@@ -576,7 +576,7 @@
   -ms-flex: 1;
   flex: 1;
   color: #ffffff;
-  font-family: "Ubuntu - Bold";
+  font-family: ubuntu-bold;
   font-weight: 700;
   font-size: .88rem;
   line-height: 1.5rem; }
@@ -586,7 +586,7 @@
   -ms-flex: 2;
   flex: 2;
   color: #ffffff;
-  font-family: "Ubuntu - Light";
+  font-family: buntu-light;
   font-size: .75rem;
   font-weight: 300; }
 

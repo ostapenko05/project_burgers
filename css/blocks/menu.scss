@@ -17,6 +17,10 @@
     position: absolute;
     top: 10%;
     left: 10%;
+
+    @include phone {
+        font-size: 3.5rem;
+    }
 }
 
 .menu__list {
@@ -39,6 +43,10 @@
     display: block;
     height: 100%;
     position: relative;
+
+    @include phone {
+        width: 3.8rem;
+    }
 }
 
 .trigger__text {
@@ -74,6 +82,10 @@
 
 .menu__content-act {
     width: 34.38rem;
+
+    @include phone {
+        width: 0rem;
+    }
 }
 
 .menu__text-act {

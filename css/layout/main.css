@@ -480,7 +480,7 @@
 
 .team__title {
   color: #f9b43b;
-  font-family: Gagalin;
+  font-family: gagalin-regular;
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4rem;
@@ -506,7 +506,7 @@
 
 .team__name h2 {
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: gagalin-regular;
   font-size: .88rem;
   font-weight: 400;
   line-height: 1.76rem; }
@@ -608,7 +608,7 @@
 
 .menu__title {
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: gagalin-regular;
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 4rem;
@@ -629,7 +629,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .menu__block.active trigger__text {
+  .menu__block.active .trigger__text {
     color: #ecad38; }
 
 .menu__trigger {
@@ -655,7 +655,7 @@
   white-space: nowrap;
   margin-top: -1.25rem;
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: gagalin-regular;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 4rem;
@@ -926,11 +926,18 @@ textarea {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .radio__section {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 0 5%; } }
   @media screen and (max-width: 480px) {
     .radio__section {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      padding: 0 0; } }
 
 .radio {
   display: -webkit-inline-box;
@@ -992,6 +999,15 @@ textarea {
   font-size: .88rem;
   font-weight: 300;
   line-height: 1.5rem; }
+
+@media screen and (max-width: 768px) {
+  .button__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 @media screen and (max-width: 480px) {
   .button__section {
@@ -1123,7 +1139,7 @@ textarea {
   height: 2.38rem;
   color: #ffffff;
   font-style: normal;
-  font-family: Ubuntu-regular;
+  font-family: ubuntu-regular;
   font-size: .88rem;
   font-weight: 300;
   line-height: 1.5rem; }
@@ -1132,7 +1148,7 @@ textarea {
   text-decoration: none;
   font-style: normal;
   color: #e25028;
-  font-family: "Ubuntu - Bold";
+  font-family: ubuntu-bold;
   font-weight: 700; }
 
 .footer-contacts-soc {

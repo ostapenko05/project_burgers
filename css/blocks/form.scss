@@ -127,8 +127,14 @@ textarea {
     flex-wrap: wrap;
     margin-bottom: 1.25rem;
 
+    @include tablets {
+        justify-content: center;
+        padding: 0 5%;
+    }
+
     @include phone {
         justify-content: center;
+        padding: 0 0;
     }
 }
 
@@ -191,6 +197,11 @@ textarea {
 }
 
 .button__section {
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
 
     @include phone {
         display: flex;

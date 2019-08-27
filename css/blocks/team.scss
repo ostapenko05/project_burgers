@@ -29,8 +29,12 @@
     padding-left: 6rem;
 
     @include tablets {
-        padding: auto 6rem;
+        padding: auto 1rem;
         text-align: center;
+    }
+
+    @include phone {
+       padding: 0 5%; 
     }
 }
 
@@ -47,6 +51,10 @@
     font-weight: 400;
     line-height: 4rem;
     margin: 0 0 3.13rem 0;
+
+    @include phone {
+        margin: 0 0;
+    }
 }
 
 .team__name {

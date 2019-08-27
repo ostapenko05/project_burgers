@@ -471,8 +471,11 @@
   padding-left: 6rem; }
   @media screen and (max-width: 768px) {
     .team__block-in {
-      padding: auto 6rem;
+      padding: auto 1rem;
       text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .team__block-in {
+      padding: 0 5%; } }
 
 @media screen and (max-width: 768px) {
   .team__member {
@@ -485,6 +488,9 @@
   font-weight: 400;
   line-height: 4rem;
   margin: 0 0 3.13rem 0; }
+  @media screen and (max-width: 480px) {
+    .team__title {
+      margin: 0 0; } }
 
 .team__name {
   display: -webkit-box;

@@ -512,39 +512,6 @@
 .section__slider-left {
   padding: 0 0; }
 
-.section__ingred {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: #f08c33; }
-
-.section__ingred-pic {
-  fill: white;
-  stroke: #fff;
-  width: 2.75rem;
-  height: 2.75rem;
-  z-index: -9999; }
-
-.section__ingred p {
-  color: #ffffff;
-  font-family: gagalin-regular;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 28.11px;
-  text-align: center; }
-
 .section__title {
   color: #ffffff;
   font-family: gagalin-regular;
@@ -607,8 +574,7 @@
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  border-radius: 4px; }
+  align-items: center; }
 
 .section__kkal p {
   opacity: 0.5;
@@ -628,6 +594,39 @@
   position: relative;
   top: 40%; }
 
+.section__ingred {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: #f08c33; }
+
+.section__ingred-pic {
+  fill: white;
+  stroke: #fff;
+  width: 2.75rem;
+  height: 2.75rem;
+  z-index: -9999; }
+
+.section__ingred p {
+  color: #ffffff;
+  font-family: gagalin-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28.11px;
+  text-align: center; }
+
 .section__ingred-list {
   display: none; }
 
@@ -640,7 +639,6 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 10% 0 0 30%;
   padding: 65px 85px;
   background: #fff9f0;
   opacity: .8; }

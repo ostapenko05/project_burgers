@@ -612,12 +612,26 @@
   height: 5rem;
   background: #f08c33; }
 
+.section__ingred-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: baseline;
+  -ms-flex-pack: baseline;
+  justify-content: baseline;
+  -webkit-box-align: end baseline;
+  -ms-flex-align: end baseline;
+  align-items: end baseline; }
+
 .section__ingred-pic {
   fill: white;
   stroke: #fff;
   width: 2.75rem;
-  height: 2.75rem;
-  z-index: -9999; }
+  height: 2.75rem; }
 
 .section__ingred p {
   color: #ffffff;
@@ -631,7 +645,6 @@
   display: none; }
 
 .section__ingred:hover .section__ingred-list {
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,7 +652,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 65px 85px;
+  padding: 5px 20px;
   background: #fff9f0;
   opacity: .8; }
 

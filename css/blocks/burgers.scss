@@ -152,12 +152,19 @@
     background: #f08c33;
 }
 
+.section__ingred-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: end baseline;
+}
+
 .section__ingred-pic {
     fill: white;
     stroke: #fff;
     width: 2.75rem;
     height: 2.75rem;
-    z-index: -9999;
+    // z-index: -9999;
 }
 
 .section__ingred p {
@@ -174,11 +181,11 @@
 }
 
 .section__ingred:hover .section__ingred-list{
-    display: block;
+    // display: block;
     display: flex;
     flex-direction: column;
     // margin: 10% 0 0 30%;
-    padding: 65px 85px;
+    padding: 5px 20px;
     background: #fff9f0;
     opacity: .8;
     // width: 270px;

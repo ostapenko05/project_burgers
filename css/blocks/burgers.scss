@@ -1,6 +1,105 @@
 .burgers {
-    background: url(../../img/bg_burgers.png) center center no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f9b43b;
+    background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
     background-size: cover;
     position: relative;
     height: 100vh;
+}
+
+.arrow-scroll__btn-left {
+    fill: #fff;
+    stroke: #fff;
+    display: block;
+    width: 1.81rem;
+    height: .94rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 5%;
+    top: 50%;
+    transform: rotate(90deg) translateY(-50%);
+    transform-origin: 0 0;
+}
+
+.arrow-scroll__btn-right {
+    fill: #fff;
+    stroke: #fff;
+    display: block;
+    width: 1.81rem;
+    height: .94rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 95%;
+    top: 53.4%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+}
+
+.section__slider {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__slider-left .section__slider-right {
+    flex: 1;
+}
+
+.section__title {
+    color: #ffffff;
+    font-family: gagalin-regular;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 63.93px;
+}
+
+.section__text {
+    color: #ffffff;
+    font-family: ubuntu-bold;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.97px;
+
+}
+
+.secton__price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #e35028;
+    font-family: gagalin-regular;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 28.08px;
+}
+
+.btn-price {
+    width: 6.06rem;
+    height: 2.19rem;
+    background-color: #e45028;
+    border-radius: .31rem;
+    color: #ffffff;
+    font-family: ubuntu-regular;
+    font-size: .81rem;
+    font-weight: 500;
+    line-height: 1.88rem;
+    text-transform: uppercase;
+    margin-right: .63rem;
+}
+
+.section__ingred-pic {
+    fill: white;
+    stroke: #fff;
+    width: 5rem;
+    height: 5rem;
+}
+
+.section__kkal-pic {
+    stroke: #ffffff;
+    width: 3.75rem;
+    height: 3.75rem;
 }

@@ -24,7 +24,7 @@
     width: 1.81rem;
     height: .94rem;
     position: absolute;
-    bottom: 2.5rem;
+    // bottom: 2.5rem;
     left: 5%;
     top: 50%;
     transform: rotate(90deg) translateY(-50%);
@@ -38,7 +38,7 @@
     width: 1.81rem;
     height: .94rem;
     position: absolute;
-    bottom: 2.5rem;
+    // bottom: 2.5rem;
     left: 95%;
     top: 53.4%;
     transform: rotate(-90deg) translateY(-50%);
@@ -46,15 +46,46 @@
 }
 
 .section__slider {
-    padding: 0 10%;
+    padding: 0 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.section__slider-left .section__slider-right {
-    flex: 1;
+.section__slider-left {
+    padding: 0 0;
+
+}
+
+.section__slider-right {
+    // flex: 1;
+}
+
+.section__ingred {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: #f08c33;
+}
+
+.section__ingred-pic {
+    fill: white;
+    stroke: #fff;
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+.section__ingred p {
+    color: #ffffff;
+    font-family: gagalin-regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28.11px;
+    text-align: center;
 }
 
 .section__title {
@@ -65,7 +96,7 @@
     line-height: 63.93px;
 }
 
-.section__text {
+.section__text-burger {
     color: #ffffff;
     font-family: ubuntu-bold;
     font-size: 14px;
@@ -74,7 +105,7 @@
 
 }
 
-.secton__price {
+.section__price {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,6 +114,10 @@
     font-size: 30px;
     font-weight: 400;
     line-height: 28.08px;
+}
+
+.section__price h1 {
+    padding: 0 1rem 1.5rem 0;
 }
 
 .btn-price {
@@ -96,18 +131,50 @@
     font-weight: 500;
     line-height: 1.88rem;
     text-transform: uppercase;
-    margin-right: .63rem;
+    margin-left: 2rem;
 }
 
-.section__ingred-pic {
-    fill: white;
-    stroke: #fff;
-    width: 5rem;
-    height: 5rem;
+.section__kkal {
+    width: 6rem;
+    height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__kkal p {
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: gagalin-regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .section__kkal-pic {
+    fill: #fff;
     stroke: #ffffff;
     width: 3.75rem;
     height: 3.75rem;
+}
+
+.section__kkal-number {
+    position: relative;
+    top: 40%;
+}
+
+.section__ingred-hover {
+    display: none;
+}
+
+.section__ingred-hover:hover {
+    display: flex;
+}
+.section__list {
+    color: #2f3234;
+    font-family: ubuntu-regular;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
 }

@@ -77,6 +77,7 @@
     stroke: #fff;
     width: 2.75rem;
     height: 2.75rem;
+    z-index: -9999;
 }
 
 .section__ingred p {
@@ -141,6 +142,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 .section__kkal p {
@@ -164,17 +166,77 @@
     top: 40%;
 }
 
-.section__ingred-hover {
+.section__ingred-list {
     display: none;
 }
 
-.section__ingred-hover:hover {
+.section__ingred:hover .section__ingred-list{
+    display: block;
     display: flex;
+    flex-direction: column;
+    margin: 10% 0 0 30% ;
+    padding: 65px 85px;
+    background: #fff9f0;
+    opacity: .8;
+    // width: 270px;
+    // height: 332px;
 }
-.section__list {
+.section__ingred-item {
     color: #2f3234;
     font-family: ubuntu-regular;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.section__ingred-item {
+    display: flex;
+    flex-direction: row;
+    // justify-content: flex-start;
+    // align-items: stretch;
+}
+// картинки в составе
+
+.section_ingred-beef {
+    fill: #e25028;
+    // stroke: #2f3234;
+    width: 44px;
+    height: 39px;
+}
+
+.section_ingred-buns {
+    fill: #f8b43a;
+    // stroke: #2f3234;
+    width: 48px;
+    height: 30px;
+}
+
+.section_ingred-salad {
+    fill: #8ac03e;
+    // stroke: #2f3234;
+    width: 38px;
+    height: 38px;
+}
+
+.section_ingred-sauce {
+    fill: #e25028;
+    // stroke: #2f3234;
+    width: 41px;
+    height: 43px;
+}
+
+.section_ingred-cucumber {
+    fill: #8ac03e;
+    // stroke: #2f3234;
+    width: 43px;
+    height: 37px;
+}
+
+.section_ingred-beef {
+    fill: #f8b43a;
+    // stroke: #2f3234;
+    width: 39px;
+    height: 34px;
 }

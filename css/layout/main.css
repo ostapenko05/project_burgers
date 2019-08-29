@@ -534,7 +534,8 @@
   fill: white;
   stroke: #fff;
   width: 2.75rem;
-  height: 2.75rem; }
+  height: 2.75rem;
+  z-index: -9999; }
 
 .section__ingred p {
   color: #ffffff;
@@ -606,7 +607,8 @@
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  border-radius: 4px; }
 
 .section__kkal p {
   opacity: 0.5;
@@ -626,20 +628,70 @@
   position: relative;
   top: 40%; }
 
-.section__ingred-hover {
+.section__ingred-list {
   display: none; }
 
-.section__ingred-hover:hover {
+.section__ingred:hover .section__ingred-list {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 10% 0 0 30%;
+  padding: 65px 85px;
+  background: #fff9f0;
+  opacity: .8; }
 
-.section__list {
+.section__ingred-item {
   color: #2f3234;
   font-family: ubuntu-regular;
   font-size: 14px;
   font-weight: 500;
-  line-height: 24px; }
+  line-height: 24px;
+  margin: 0 0;
+  padding: 0 0; }
+
+.section__ingred-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.section_ingred-beef {
+  fill: #e25028;
+  width: 44px;
+  height: 39px; }
+
+.section_ingred-buns {
+  fill: #f8b43a;
+  width: 48px;
+  height: 30px; }
+
+.section_ingred-salad {
+  fill: #8ac03e;
+  width: 38px;
+  height: 38px; }
+
+.section_ingred-sauce {
+  fill: #e25028;
+  width: 41px;
+  height: 43px; }
+
+.section_ingred-cucumber {
+  fill: #8ac03e;
+  width: 43px;
+  height: 37px; }
+
+.section_ingred-beef {
+  fill: #f8b43a;
+  width: 39px;
+  height: 34px; }
 
 .section--team {
   display: -webkit-box;

@@ -234,6 +234,10 @@
    top: -12px;
 }
 
+.menu__hamb-button {
+   display: none;
+}
+
 .menu__hamb-lines::before {
    content: '';
    top: 12px;
@@ -255,10 +259,13 @@
 
 .menu__section-hover {
    padding: 0;
-   position: relative;
+   position: overlay;
+   display: block;
    z-index: 20;
-   height: 100%;
-   width: 100%;
+   top: 0;
+   right: 0;
+   width: 100wh;
+   height: 90vh;
    background: #303334;
    opacity: .5;
    right: -100%;

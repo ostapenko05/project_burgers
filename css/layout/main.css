@@ -266,6 +266,9 @@
   content: '';
   top: -12px; }
 
+.menu__hamb-button {
+  display: none; }
+
 .menu__hamb-lines::before {
   content: '';
   top: 12px; }
@@ -287,10 +290,13 @@
 
 .menu__section-hover {
   padding: 0;
-  position: relative;
+  position: overlay;
+  display: block;
   z-index: 20;
-  height: 100%;
-  width: 100%;
+  top: 0;
+  right: 0;
+  width: 100wh;
+  height: 90vh;
   background: #303334;
   opacity: .5;
   right: -100%; }
@@ -628,6 +634,24 @@
   height: 5rem;
   background: #f08c33;
   border-radius: 5px; }
+  .section__ingred:hover .section__ingred-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 5px 5px;
+    background: #fff9f0;
+    opacity: .8; }
+
+.section__ingred-list {
+  position: absolute;
+  left: 17.5%;
+  top: 22.3%;
+  border-radius: 5px;
+  display: none; }
 
 .section__ingred-item {
   display: -webkit-box;
@@ -639,7 +663,13 @@
   flex-direction: row;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  color: #2f3234;
+  font-family: ubuntu-regular;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 15rem; }
 
 .section__ingred-pic {
   fill: white;
@@ -647,40 +677,13 @@
   width: 2.75rem;
   height: 2.75rem; }
 
-.section__ingred p {
+.section__ingred-title {
   color: #ffffff;
   font-family: gagalin-regular;
   font-size: 14px;
   font-weight: 400;
   line-height: 28.11px;
   text-align: center; }
-
-.section__ingred-list {
-  position: absolute;
-  left: 18%;
-  top: 22.3%;
-  border-radius: 5px;
-  display: none; }
-
-.section__ingred:hover .section__ingred-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 5px 5px;
-  background: #fff9f0;
-  opacity: .8; }
-
-.section__ingred-item {
-  color: #2f3234;
-  font-family: ubuntu-regular;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  width: 250px; }
 
 .section__ingred-text {
   display: -webkit-box;

@@ -577,6 +577,7 @@
 .section__kkal {
   width: 6rem;
   height: 6.5rem;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,35 +695,44 @@
   justify-content: space-between;
   width: 100%; }
 
+.section__ingred-text-right {
+  margin-right: 5%; }
+
 .section_ingred-beef {
   fill: #e25028;
   width: 48px;
-  height: 43px; }
+  height: 43px;
+  margin: 0 1rem; }
 
 .section_ingred-buns {
   fill: #f8b43a;
   width: 48px;
-  height: 43px; }
+  height: 43px;
+  margin: 0 1rem; }
 
 .section_ingred-salad {
   fill: #8ac03e;
   width: 48px;
-  height: 43px; }
+  height: 43px;
+  margin: 0 1rem; }
 
 .section_ingred-sauce {
   fill: #e25028;
   width: 48px;
-  height: 43px; }
+  height: 43px;
+  margin: 0 1rem; }
 
 .section_ingred-cucumber {
   fill: #8ac03e;
   width: 48px;
-  height: 43px; }
+  height: 43px;
+  margin: 0 1rem; }
 
 .section_ingred-cheese {
   fill: #f8b43a;
   width: 48px;
-  height: 43px; }
+  height: 43px;
+  margin: 0 1rem; }
 
 .section--team {
   display: -webkit-box;

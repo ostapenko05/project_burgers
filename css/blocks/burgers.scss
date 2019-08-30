@@ -105,6 +105,7 @@
 .section__kkal {
     width: 6rem;
     height: 6.5rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,17 +185,12 @@
 }
 
 .section__ingred-item {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
     color: #2f3234;
     font-family: ubuntu-regular;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     width: 250px;
-    // margin: 0 0;
-    // padding: 0 0;
 }
 
 .section__ingred-text {
@@ -204,9 +200,10 @@
     width: 100%;
 }
 
-.section__ingred-text-right {
-//   margin-left: 50px;
+.section__ingred-text-right{
+    margin-right: 5%;
 }
+
 
 // картинки в составе
 
@@ -214,34 +211,40 @@
     fill: #e25028;
     width: 48px;
     height: 43px;
+    margin: 0 1rem;
 }
 
 .section_ingred-buns {
     fill: #f8b43a;
     width: 48px;
     height: 43px;
+    margin: 0 1rem;
 }
 
 .section_ingred-salad {
     fill: #8ac03e;
     width: 48px;
     height: 43px;
+    margin: 0 1rem;
 }
 
 .section_ingred-sauce {
     fill: #e25028;
     width: 48px;
     height: 43px;
+    margin: 0 1rem;
 }
 
 .section_ingred-cucumber {
     fill: #8ac03e;
     width: 48px;
     height: 43px;
+    margin: 0 1rem;
 }
 
 .section_ingred-cheese {
     fill: #f8b43a;
     width: 48px;
     height: 43px;
+    margin: 0 1rem;
 }

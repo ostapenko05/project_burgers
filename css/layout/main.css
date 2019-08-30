@@ -18,8 +18,7 @@
       justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
-      text-align: right; } }
+      align-items: center; } }
 
 .header__logo {
   width: 5.75rem;
@@ -106,55 +105,6 @@
   text-transform: uppercase;
   font-size: .81rem;
   font-family: ubuntu-regular; }
-
-.menu__hamb {
-  cursor: pointer;
-  padding: 0 2rem;
-  position: relative;
-  width: 24px;
-  height: 22px;
-  display: none; }
-  @media screen and (max-width: 768px) {
-    .menu__hamb {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
-
-.menu__hamb-global {
-  position: absolute;
-  border-top: 4px solid white;
-  width: 24px; }
-
-.menu__hamb-top {
-  top: 0; }
-
-.menu__hamb-middle {
-  top: 10px; }
-
-.menu__hamb-bottom {
-  top: 20px; }
-
-.menu__hamb-top-click {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  top: 15px;
-  -webkit-transform: rotate(50deg);
-  -ms-transform: rotate(50deg);
-  transform: rotate(50deg); }
-
-.menu__hamb-middle-click {
-  opacity: 0; }
-
-.menu__hamb-bottom-click {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  top: 15px;
-  -webkit-transform: rotate(-410deg);
-  -ms-transform: rotate(-410deg);
-  transform: rotate(-410deg);
-  -webkit-transition: 0.55s 0.5s;
-  -o-transition: 0.55s 0.5s;
-  transition: 0.55s 0.5s; }
 
 .section--block {
   background: url(../../img/bg_texture.png) center center no-repeat;
@@ -282,6 +232,71 @@
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+.menu__hamb {
+  cursor: pointer;
+  margin: 0 2rem;
+  position: relative;
+  width: 24px;
+  height: 32px;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .menu__hamb {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.menu__hamb-lines,
+.menu__hamb-lines::after,
+.menu__hamb-lines::before {
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background: #fff;
+  border-radius: 2px; }
+
+.menu__hamb-lines {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.menu__hamb-lines::after {
+  content: '';
+  top: -12px; }
+
+.menu__hamb-lines::before {
+  content: '';
+  top: 12px; }
+
+.menu__hamb_active .menu__hamb-lines {
+  background-color: transparent; }
+
+.menu__hamb_active .menu__hamb-lines::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu__hamb_active .menu__hamb-lines::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.menu__section-hover {
+  padding: 0;
+  position: relative;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  background: #303334;
+  opacity: .5;
+  right: -100%; }
+
+.menu__hamb_active .menu__section-hover {
+  right: 0; }
 
 .section--block-two {
   background: url(../../img/bg_best.png) center center no-repeat;
@@ -610,7 +625,8 @@
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: #f08c33; }
+  background: #f08c33;
+  border-radius: 5px; }
 
 .section__ingred-item {
   display: -webkit-box;
@@ -620,12 +636,9 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: baseline;
-  -ms-flex-pack: baseline;
-  justify-content: baseline;
-  -webkit-box-align: end baseline;
-  -ms-flex-align: end baseline;
-  align-items: end baseline; }
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
 
 .section__ingred-pic {
   fill: white;
@@ -642,6 +655,10 @@
   text-align: center; }
 
 .section__ingred-list {
+  position: absolute;
+  left: 18%;
+  top: 22.3%;
+  border-radius: 5px;
   display: none; }
 
 .section__ingred:hover .section__ingred-list {
@@ -673,6 +690,14 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row; }
+
+.section__ingred-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .section_ingred-beef {
   fill: #e25028;

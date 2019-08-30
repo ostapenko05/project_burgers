@@ -41,13 +41,47 @@
                      </li>
                   </ul>
                   <button type="button" class="nav__section-button">заказать</button>
-                  <div class="menu__hamb">
-                     <span class="menu__hamb-global menu__hamb-top"></span>
-                     <span class="menu__hamb-global menu__hamb-middle"></span>
-                     <span class="menu__hamb-global menu__hamb-bottom"></span>
+                  <!-- menu for tablets and mobile -->
+                  <div class="menu__hamb menu__hamb_active">
+                     <a href="#" class="menu__hamb-button">
+                        <span class="menu__hamb-lines"></span>
+                     </a>
+                     <div class="menu__section-hover">
+                        <div class="menu__hover">
+                           <img class="menu-hover-logo" src="./img/logo.png" alt="logo MrBurger">
+                           <div class="menu__hover-x">
+                              <span class="menu__hover-xone"></span>
+                              <span class="menu__hover-xtwo"></span>
+                           </div>
+                        </div>
+                        <nav class="menu__m-nav">
+                           <ul class="nav__list-hover">
+                              <li class="nav__item-hover">
+                                 <a href="#" class="nav__link-hover">о нас</a>
+                              </li>
+                              <li class="nav__item-hover">
+                                 <a href="#" class="nav__link-hover">бургеры</a>
+                              </li>
+                              <li class="nav__item-hover">
+                                 <a href="#" class="nav__link-hover">команда</a>
+                              </li>
+                              <li class="nav__item-hover">
+                                 <a href="#" class="nav__link-hover">меню</a>
+                              </li>
+                              <li class="nav__item-hover">
+                                 <a href="#" class="nav__link-hover">отзывы</a>
+                              </li>
+                              <li class="nav__item-hover">
+                                 <a href="#" class="nav__link-hover">как мы работаем</a>
+                              </li>
+                              <li class="nav__item-hover">
+                                 <a href="#" class="nav__link-hover">контакты</a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
                   </div>
                </nav>
-
             </header>
             <div class="content-block">
                <div class="block1__leftside">
@@ -63,7 +97,9 @@
                   <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
                </svg>
             </button>
+
          </div>
+
       </section>
       <!-- окончание приветственой страницы -->
       <!-- начало страницы мы лучшие -->
@@ -107,11 +143,11 @@
       <!-- окончание страницы мы лучшие -->
       <!-- начало секции бургеры-->
       <section class="section burgers">
-            <button type="button" class="arrow-scroll-left">
-                  <svg class="arrow-scroll__btn-left">
-                     <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
-                  </svg>
-               </button>
+         <button type="button" class="arrow-scroll-left">
+            <svg class="arrow-scroll__btn-left">
+               <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
+            </svg>
+         </button>
 
          <div class="container container__burgers">
             <div class="section__slider">
@@ -123,40 +159,58 @@
                      <p>состав</p>
                      <ul class="section__ingred-list">
                         <li class="section__ingred-item">
-                              <svg class="section_ingred-beef">
-                                 <use xlink:href="./css/layout/sprite.svg#beef"></use>
-                              </svg>
-                              <h4>Говядина&nbsp;300&nbsp;г</h4>
+                           <svg class="section_ingred-beef">
+                              <use xlink:href="./css/layout/sprite.svg#beef"></use>
+                           </svg>
+                           <div class="section__ingred-text">
+                              <h4>Говядина</h4>
+                              <h4>300&nbsp;г</h4>
+                           </div>
                         </li>
                         <li class="section__ingred-item">
-                              <svg class="section_ingred-buns">
-                                 <use xlink:href="./css/layout/sprite.svg#buns"></use>
-                              </svg>
-                              <h4>Булочки&nbsp;100&nbsp;г</h4>
+                           <svg class="section_ingred-buns">
+                              <use xlink:href="./css/layout/sprite.svg#buns"></use>
+                           </svg>
+                           <div class="section__ingred-text">
+                              <h4>Булочки</h4>
+                              <h4>100&nbsp;г</h4>
+                           </div>
                         </li>
                         <li class="section__ingred-item">
-                              <svg class="section_ingred-salad">
-                                 <use xlink:href="./css/layout/sprite.svg#salad"></use>
-                              </svg>
-                              <h4>Зелень&nbsp;70&nbsp;г</h4>
+                           <svg class="section_ingred-salad">
+                              <use xlink:href="./css/layout/sprite.svg#salad"></use>
+                           </svg>
+                           <div class="section__ingred-text">
+                              <h4>Зелень</h4>
+                              <h4>70&nbsp;г</h4>
+                           </div>
                         </li>
                         <li class="section__ingred-item">
-                              <svg class="section_ingred-sauce">
-                                 <use xlink:href="./css/layout/sprite.svg#sauce"></use>
-                              </svg>
-                              <h4>Соус&nbsp;150&nbsp;г</h4>
+                           <svg class="section_ingred-sauce">
+                              <use xlink:href="./css/layout/sprite.svg#sauce"></use>
+                           </svg>
+                           <div class="section__ingred-text">
+                              <h4>Соус</h4>
+                              <h4>150&nbsp;г</h4>
+                           </div>
                         </li>
                         <li class="section__ingred-item">
-                              <svg class="section_ingred-cucumber">
-                                 <use xlink:href="./css/layout/sprite.svg#cucumber"></use>
-                              </svg>
-                              <h4>Овощи&nbsp;200&nbsp;г</h4>
+                           <svg class="section_ingred-cucumber">
+                              <use xlink:href="./css/layout/sprite.svg#cucumber"></use>
+                           </svg>
+                           <div class="section__ingred-text">
+                              <h4>Овощи</h4>
+                              <h4>200&nbsp;г</h4>
+                           </div>
                         </li>
                         <li class="section__ingred-item">
-                              <svg class="section_ingred-cheese">
-                                 <use xlink:href="./css/layout/sprite.svg#cheese"></use>
-                              </svg>
-                              <h4>Сыр&nbsp;80&nbsp;г</h4>
+                           <svg class="section_ingred-cheese">
+                              <use xlink:href="./css/layout/sprite.svg#cheese"></use>
+                           </svg>
+                           <div class="section__ingred-text">
+                              <h4>Сыр</h4>
+                              <h4>80&nbsp;г</h4>
+                           </div>
                         </li>
                      </ul>
                   </div>

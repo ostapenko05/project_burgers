@@ -637,7 +637,8 @@
   width: 5rem;
   height: 5rem;
   background: #f08c33;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
   .section__ingred:hover .section__ingred-list {
     display: -webkit-box;
     display: -ms-flexbox;

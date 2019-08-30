@@ -147,6 +147,7 @@
     height: 5rem;
     background: #f08c33;
     border-radius: 5px;
+    cursor: pointer;
     &:hover .section__ingred-list {
         display: flex;
         flex-direction: column;

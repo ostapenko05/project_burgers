@@ -748,6 +748,9 @@
       position: absolute;
       left: 85%;
       top: 5%; } }
+  @media screen and (max-width: 480px) {
+    .section__kkal {
+      top: 10%; } }
 
 .section__kkal p {
   opacity: 0.5;
@@ -790,6 +793,7 @@
   cursor: pointer; }
   @media screen and (max-width: 480px) {
     .section__ingred {
+      top: 2.75rem;
       left: -2rem; } }
   .section__ingred:hover .section__ingred-list {
     display: -webkit-box;

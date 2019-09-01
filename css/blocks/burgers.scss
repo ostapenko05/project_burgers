@@ -187,6 +187,10 @@
         left: 85%;
         top: 5%;
     }
+
+    @include phone {
+        top: 10%;
+    }
 }
 
 .section__kkal p {
@@ -226,6 +230,7 @@
     cursor: pointer;
 
     @include phone {
+        top: 2.75rem;
         left: -2rem;
     }
 

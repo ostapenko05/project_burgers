@@ -44,6 +44,7 @@
    font-family: ubuntu-regular;
    margin-right: 0rem;
    text-transform: uppercase;
+   cursor: pointer;
 
    &:last-child {
       margin-right: 0rem;
@@ -276,15 +277,15 @@
    background-color: transparent;
 }
 
-// .menu__hover-line::after {
-//    content: '';
-//    top: -.75rem;
-// }
+.menu__hover-line::after {
+   content: '';
+   top: -.75rem;
+}
 
-// .menu__hover-line::before {
-//    content: '';
-//    top: .75rem;
-// }
+.menu__hover-line::before {
+   content: '';
+   top: .75rem;
+}
 
 .menu__hover-line::before {
    top: 0;

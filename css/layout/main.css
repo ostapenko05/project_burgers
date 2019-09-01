@@ -65,7 +65,8 @@
   font-size: .81rem;
   font-family: ubuntu-regular;
   margin-right: 0rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
   .nav__item:last-child {
     margin-right: 0rem; }
 
@@ -304,6 +305,14 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: transparent; }
+
+.menu__hover-line::after {
+  content: '';
+  top: -.75rem; }
+
+.menu__hover-line::before {
+  content: '';
+  top: .75rem; }
 
 .menu__hover-line::before {
   top: 0;
@@ -980,7 +989,8 @@
   border-top-width: .44rem;
   border-top-color: #f9b43b;
   border-bottom-width: 0;
-  margin: .63rem .56rem 0 0; }
+  margin: .63rem .56rem 0 0;
+  cursor: pointer; }
 
 .team__hover-block {
   display: -webkit-box;
@@ -1636,7 +1646,8 @@ textarea {
   align-items: center; }
 
 .social__item {
-  margin-right: 1.25rem; }
+  margin-right: 1.25rem;
+  cursor: pointer; }
   .social__item:last-child {
     margin-right: 0; }
 

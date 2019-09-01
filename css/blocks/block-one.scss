@@ -276,15 +276,15 @@
    background-color: transparent;
 }
 
-.menu__hover-line::after {
-   content: '';
-   top: -.75rem;
-}
+// .menu__hover-line::after {
+//    content: '';
+//    top: -.75rem;
+// }
 
-.menu__hover-line::before {
-   content: '';
-   top: .75rem;
-}
+// .menu__hover-line::before {
+//    content: '';
+//    top: .75rem;
+// }
 
 .menu__hover-line::before {
    top: 0;

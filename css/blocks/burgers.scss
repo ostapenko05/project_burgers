@@ -59,17 +59,17 @@
 .section__title {
     color: #ffffff;
     font-family: gagalin-regular;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 400;
-    line-height: 63.93px;
+    line-height: 4rem;
 }
 
 .section__text-burger {
     color: #ffffff;
     font-family: ubuntu-bold;
-    font-size: 14px;
+    font-size: .87rem;
     font-weight: 300;
-    line-height: 23.97px;
+    line-height: 1.5rem;
 
 }
 
@@ -79,9 +79,9 @@
     align-items: center;
     color: #e35028;
     font-family: gagalin-regular;
-    font-size: 30px;
+    font-size: 1.87rem;
     font-weight: 400;
-    line-height: 28.08px;
+    line-height: 1.75rem;
 }
 
 .section__price h1 {
@@ -117,9 +117,9 @@
     opacity: 0.5;
     color: #ffffff;
     font-family: gagalin-regular;
-    font-size: 14px;
+    font-size: .87rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .section__kkal-pic {
@@ -146,13 +146,12 @@
     width: 5rem;
     height: 5rem;
     background: #f08c33;
-    border-radius: 5px;
+    border-radius: .31rem;
     cursor: pointer;
     &:hover .section__ingred-list {
         display: flex;
         flex-direction: column;
-        padding: 5px 5px;
-        // left: 9999rem;
+        padding: .31rem .31rem;
         background: #fff9f0;
         opacity: .8;
     }
@@ -162,7 +161,7 @@
     position: absolute;
     left: 5rem;
     top: 0;
-    border-radius: 5px;
+    border-radius: .31rem;
     display: none;
 }
 
@@ -172,9 +171,9 @@
     justify-content: flex-start;
     color: #2f3234;
     font-family: ubuntu-regular;
-    font-size: 14px;
+    font-size: .87rem;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5rem;
     width: 15rem;
 }
 
@@ -188,9 +187,9 @@
 .section__ingred-title {
     color: #ffffff;
     font-family: gagalin-regular;
-    font-size: 14px;
+    font-size: .87rem;
     font-weight: 400;
-    line-height: 28.11px;
+    line-height: 1.75rem;
     text-align: center;
 }
 
@@ -210,42 +209,42 @@
 
 .section_ingred-beef {
     fill: #e25028;
-    width: 48px;
-    height: 43px;
+    width: 3rem;
+    height: 2.68rem;
     margin: 0 1rem;
 }
 
 .section_ingred-buns {
     fill: #f8b43a;
-    width: 48px;
-    height: 43px;
+    width: 3rem;
+    height: 2.68rem;
     margin: 0 1rem;
 }
 
 .section_ingred-salad {
     fill: #8ac03e;
-    width: 48px;
-    height: 43px;
+    width: 3rem;
+    height: 2.68rem;
     margin: 0 1rem;
 }
 
 .section_ingred-sauce {
     fill: #e25028;
-    width: 48px;
-    height: 43px;
+    width: 3rem;
+    height: 2.68rem;
     margin: 0 1rem;
 }
 
 .section_ingred-cucumber {
     fill: #8ac03e;
-    width: 48px;
-    height: 43px;
+    width: 3rem;
+    height: 2.68rem;
     margin: 0 1rem;
 }
 
 .section_ingred-cheese {
     fill: #f8b43a;
-    width: 48px;
-    height: 43px;
+    width: 3rem;
+    height: 2.68rem;
     margin: 0 1rem;
 }

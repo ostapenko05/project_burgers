@@ -14,6 +14,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    @include phone {
+        // padding: 0 10%;
+    }
 }
 
 
@@ -49,11 +53,37 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 5%;
+        // max-width: 20%;
+        // max-height: 50%;
+    }
+
+    @include phone {
+
+    }
 }
 
 .section__slider-left {
     padding: 0 0;
     position: relative;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.section__slider-right {
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 8%;
+    }
 }
 
 .section__title {
@@ -62,6 +92,18 @@
     font-size: 4.5rem;
     font-weight: 400;
     line-height: 4rem;
+
+    @include tablets {
+        // font-size: 3rem;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    @include phone {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        padding: 0 20%;
+    }
 }
 
 .section__text-burger {
@@ -71,6 +113,10 @@
     font-weight: 300;
     line-height: 1.5rem;
 
+    @include tablets {
+        text-align: center;
+        margin: 5% 0;
+    }
 }
 
 .section__price {
@@ -111,6 +157,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include tablets {
+        position: absolute;
+        left: 90%;
+        top: 5%;
+    }
 }
 
 .section__kkal p {
@@ -148,6 +200,7 @@
     background: #f08c33;
     border-radius: .31rem;
     cursor: pointer;
+
     &:hover .section__ingred-list {
         display: flex;
         flex-direction: column;

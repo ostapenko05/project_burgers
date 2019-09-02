@@ -42,7 +42,7 @@
                   </ul>
                   <button type="button" class="nav__section-button">заказать</button>
                   <!-- menu for tablets and mobile -->
-                  <div class="menu__hamb menu__hamb_active">
+                  <div id="menu__hamb-act" class="menu__hamb menu__hamb_active">
                      <a href="#" class="menu__hamb-button">
                         <span class="menu__hamb-lines"></span>
                      </a>
@@ -63,10 +63,10 @@
                   <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
                </svg>
             </button>
-            <div class="menu__section-hover">
+            <div id="menu__section-close" class="menu__section-hover">
                <div class="menu__hover">
                   <img class="menu-hover-logo" src="./img/logo.png" alt="logo MrBurger">
-                  <div class="menu__hover-x">
+                  <div id="menu__cross" class="menu__hover-x">
                      <a href="#" class="menu__hover-button">
                         <span class="menu__hover-line menu__hover-line_active"></span>
                      </a>
@@ -661,6 +661,7 @@
       </ul>
       <!-- окончание fixed menu -->
    </div>
+   <script src="./script.js"></script>
 </body>
 
 </html>

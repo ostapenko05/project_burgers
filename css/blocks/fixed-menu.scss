@@ -15,6 +15,7 @@
 
 .fixed-menu__item {
   margin-bottom: .19rem;
+  // cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
@@ -33,6 +34,7 @@
   border-radius: 50%;
   border: 1px solid transparent;
   position: relative;
+  cursor: pointer;
 
   &:hover {
     width: 1rem;

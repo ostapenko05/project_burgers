@@ -27,6 +27,7 @@
     top: 50%;
     transform: rotate(90deg) translateY(-50%);
     transform-origin: 0 0;
+    cursor: pointer;
 }
 
 .arrow-scroll__btn-right {
@@ -40,6 +41,7 @@
     top: 53.4%;
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0;
+    cursor: pointer;
 }
 
 .section__slider {
@@ -170,6 +172,7 @@
     line-height: 1.88rem;
     text-transform: uppercase;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 .section__kkal {

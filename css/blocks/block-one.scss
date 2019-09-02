@@ -8,7 +8,6 @@
    @include tablets {
       justify-content: center;
       align-items: center;
-      // text-align: right;
    }
 }
 
@@ -214,6 +213,10 @@
    }
 }
 
+.menu__hamb-button {
+   cursor: pointer;
+}
+
 .menu__hamb-lines,
 .menu__hamb-lines::after,
 .menu__hamb-lines::before {
@@ -252,7 +255,6 @@
    display: none;
 
    @include tablets {
-      // display: block;
    }
 }
 

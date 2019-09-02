@@ -235,7 +235,6 @@
   transform: translateX(-50%); }
 
 .menu__hamb {
-  cursor: pointer;
   margin: 0 2rem;
   position: relative;
   width: 1.5rem;
@@ -247,6 +246,9 @@
       display: -ms-flexbox;
       display: flex;
       cursor: pointer; } }
+
+.menu__hamb-button {
+  cursor: pointer; }
 
 .menu__hamb-lines,
 .menu__hamb-lines::after,
@@ -267,11 +269,13 @@
 
 .menu__hamb-lines::after {
   content: '';
-  top: -.75rem; }
+  top: -.75rem;
+  cursor: pointer; }
 
 .menu__hamb-lines::before {
   content: '';
-  top: .75rem; }
+  top: .75rem;
+  cursor: pointer; }
 
 .menu__section-hover {
   position: absolute;
@@ -280,7 +284,7 @@
   padding: 0 0;
   opacity: 0.99;
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: none; }
 
 .menu-hover-logo {
@@ -295,7 +299,8 @@
   height: .31rem;
   width: 1.87rem;
   background: #fff;
-  border-radius: .12rem; }
+  border-radius: .12rem;
+  cursor: pointer; }
 
 .menu__hover-line {
   top: 7%;
@@ -303,7 +308,8 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
 
 .menu__hover-line::after {
   content: '';
@@ -360,7 +366,8 @@
   font-weight: 400;
   line-height: 2.5rem;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   @media screen and (max-width: 480px) {
     .nav__link-hover {
       font-size: 1rem; } }
@@ -1799,7 +1806,8 @@ p {
   padding: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

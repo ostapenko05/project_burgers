@@ -1112,48 +1112,64 @@
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  cursor: pointer; }
-  .menu__block.active .menu__trigger {
-    width: 5rem;
-    display: block;
-    height: 100%;
-    position: relative; }
-    @media screen and (max-width: 480px) {
-      .menu__block.active .menu__trigger {
-        width: 3.8rem; } }
-  .menu__block.active .trigger__text {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    top: 100%;
-    -webkit-transform: rotate(-90deg) translateY(-50%);
-    -ms-transform: rotate(-90deg) translateY(-50%);
-    transform: rotate(-90deg) translateY(-50%);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-    white-space: nowrap;
-    margin-top: -1.25rem;
-    color: #ffffff;
-    font-family: gagalin-regular;
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 4rem;
-    padding-left: 1.25rem; }
+  display: flex; }
   .menu__block.active .trigger__text {
     color: #ecad38; }
-  .menu__block.active .menu__text {
-    font-size: .88rem;
-    color: #ffffff;
-    padding: 3.75rem 1.88rem;
-    display: none; }
-  .menu__block.active .menu__pic {
-    height: 100%;
-    width: 100%;
-    position: relative; }
-  .menu__block.active .menu__content {
-    width: rem(550px); }
+
+.menu__trigger {
+  width: 5rem;
+  display: block;
+  height: 100%;
+  position: relative; }
+  @media screen and (max-width: 480px) {
+    .menu__trigger {
+      width: 3.8rem; } }
+
+.trigger__text {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  white-space: nowrap;
+  margin-top: -1.25rem;
+  color: #ffffff;
+  font-family: gagalin-regular;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 4rem;
+  padding-left: 1.25rem; }
+
+.menu__content {
+  height: 100%;
+  background: rgba(47, 50, 52, 0.8);
+  width: 0;
+  overflow: hidden; }
+
+.menu__text {
+  font-size: .88rem;
+  color: #ffffff;
+  padding: 3.75rem 1.88rem;
+  display: none; }
+
+.menu__content-act {
+  width: 34.38rem; }
+  @media screen and (max-width: 480px) {
+    .menu__content-act {
+      width: 0rem; } }
+
+.menu__text-act {
+  display: block; }
+
+.menu__pic {
+  height: 100%;
+  width: 100%;
+  position: relative; }
 
 .section--reviews {
   height: 100vh; }

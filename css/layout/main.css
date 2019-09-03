@@ -1115,6 +1115,8 @@
   display: flex; }
   .menu__block.active .trigger__text {
     color: #ecad38; }
+  .menu__block.active .menu__content {
+    width: rem(550px); }
 
 .menu__trigger {
   width: 5rem;
@@ -1156,15 +1158,6 @@
   color: #ffffff;
   padding: 3.75rem 1.88rem;
   display: none; }
-
-.menu__content-act {
-  width: 34.38rem; }
-  @media screen and (max-width: 480px) {
-    .menu__content-act {
-      width: 0rem; } }
-
-.menu__text-act {
-  display: block; }
 
 .menu__pic {
   height: 100%;

@@ -10,14 +10,14 @@ hamburgerMenu.addEventListener('click', function (e) {
     e.preventDefault();
 
     hoverMenu.style.display = 'block';
-    scroll.style.position = 'fixed';
+    scroll.style.overflow = 'hidden';
 });
 
 cross.addEventListener('click', function (e) {
     e.preventDefault();
 
     hoverMenu.style.display = 'none';
-    scroll.style.position = 'inherit';
+    scroll.style.overflow = 'auto';
 });
 
 ///////////секция команды вертикальный аккордеон

@@ -73,12 +73,18 @@
     overflow: hidden;
 }
 
+.menu__content--active {
+    display: block;
+    width: 34.38rem;
+}
+
 .menu__text {
     font-size: .88rem;
     color: #ffffff;
     padding: 3.75rem 1.88rem;
-    display: none;
 }
+
+
 
 .menu__content-act {
     width: 34.38rem;
@@ -88,9 +94,9 @@
     }
 }
 
-.menu__text-act {
-    display: block;
-}
+// .menu__text-act {
+//     display: block;
+// }
 
 .menu__pic {
     height: 100%;

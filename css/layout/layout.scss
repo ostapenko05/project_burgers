@@ -35,6 +35,11 @@ body {
   display: flex;
   flex-direction: column;
   // align-items: center;
+
+  @include tablets {
+    width: 100%;
+    // max-width: 100wh;
+  }
 }
 
 ul {
@@ -49,7 +54,7 @@ ul>li {
 button {
   background: transparent;
   border: none;
-  cursor: pointer;
+  // cursor: pointer;
   color: inherit;
 }
 
@@ -63,4 +68,5 @@ p {
 
 a {
   text-decoration: none;
+  // cursor: pointer;
 }

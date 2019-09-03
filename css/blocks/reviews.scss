@@ -63,6 +63,7 @@
    font-family: ubuntu-regular;
    font-size: .6rem;
    display: none;
+   cursor: pointer;
 
    @include phone {
       display: flex;
@@ -78,6 +79,7 @@
     color: #fff;
     padding: .94rem;
     font-family: ubuntu-regular;
+    cursor: pointer;
 
    @include phone {
       display: none;

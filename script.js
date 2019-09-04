@@ -22,39 +22,71 @@ cross.addEventListener('click', function (e) {
 
 ///////////секция команды вертикальный аккордеон
 
+const team = document.querySelector('.team'),
+    teamMember = document.querySelectorAll('.team__member'),
+    teamMemberLength = teamMember.length;
 
-////////секция меню горизонтальный аккордеон
-const menu = document.querySelector('menu__content--active'),
-    menuBlock = document.querySelectorAll('menu__block'),
-    menuContentLength = menuContent.length;
-
-menu.addEventListener('click', function (e) {
+    team.addEventListener('click', function(e) {
     
-    for (let i = 0; i < menuContentLength; i++) {
-        menu[i].classList.remove('menu__content--active');
+    for (let i = 0; i < teamMemberLength; i++) {
+        team[i].classList.remove('team__member--active');
 
     }
 });
 
-for (let i = 0; i < menuContentLength; i++) {
+for (let i = 0; i < teamMemberLength; i++) {
     
-    menu[i].addEventListener('click', function (e) {
+    teamMember[i].addEventListener('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
 
-        if (menu[i].classList.contains('menu__content--active')) {
-            menu[i].classList.remove('menu__content--active')
+        if (teamMember[i].classList.contains('team__member--active')) {
+            teamMember[i].classList.remove('team__member--active')
         } else {
-            for (let i = 0; i < menuContentLength; i++) {
-                menu[i].classList.remove('menu__content--active');
+            for (let i = 0; i < teamMemberLength; i++) {
+                teamMember[i].classList.remove('team__member--active');
             }
-            menu[i].classList.add('menu__content--active')
+            teamMember[i].classList.add('team__member--active')
+        }
+    })
+};
+
+////// изменение ширины контента
+
+
+
+////////секция меню горизонтальный аккордеон
+const menu = document.querySelector('.menu'),
+    menuBlock = document.querySelectorAll('.menu__block'),
+    menuBlockLength = menuBlock.length;
+
+menu.addEventListener('click', function(e) {
+    
+    for (let i = 0; i < menuBlockLength; i++) {
+        menu[i].classList.remove('menu__block--active');
+
+    }
+});
+
+for (let i = 0; i < menuBlockLength; i++) {
+    
+    menuBlock[i].addEventListener('click', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        if (menuBlock[i].classList.contains('menu__block--active')) {
+            menuBlock[i].classList.remove('menu__block--active')
+        } else {
+            for (let i = 0; i < menuBlockLength; i++) {
+                menuBlock[i].classList.remove('menu__block--active');
+            }
+            menuBlock[i].classList.add('menu__block--active')
         }
     })
 };
 
 
-// var menu = document.querySelectorAll('menu__content--active');
+// var menu = document.querySelectorAll('menu__block--active');
 
 // for (var i = 0; i < menu.length; i++) {
     

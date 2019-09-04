@@ -69,6 +69,14 @@
 
     & .menu__content {
         width: 34.38rem;
+
+        @include tablets {
+            width: 20rem;
+        }
+
+        @include phone {
+            width: 11.5rem;
+        }
     }
 
     & .menu__text {

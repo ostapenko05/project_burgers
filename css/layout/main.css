@@ -974,9 +974,14 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  @media screen and (max-width: 768px) {
+    .team__member {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .team__member--active .team__name h2 {
   color: #f9b43b; }
@@ -1013,8 +1018,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  opacity: 0.92;
-  width: 9rem; }
+  opacity: 0.92; }
   @media screen and (max-width: 768px) {
     .team__name {
       -webkit-box-pack: center;

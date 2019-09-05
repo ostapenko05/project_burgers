@@ -550,28 +550,9 @@
   background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
   background-size: cover;
   position: relative;
-  height: 100vh;
-  width: 100%; }
-
-.slider {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  margin: 0 0; }
+  height: 100vh; }
 
 .items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 100%; }
-
-.section__slider-one
-.section__slider-two
-.section__slider-three
-.section__slider-four
-.section__slider-five {
-  padding: 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,29 +560,82 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 500%;
+  overflow: hidden; }
+
+.slider {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.arrow-scroll__btn-left {
+  fill: #fff;
+  stroke: #fff;
+  display: block;
+  width: 1.81rem;
+  height: .94rem;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  -webkit-transform: rotate(90deg) translateY(-50%);
+  -ms-transform: rotate(90deg) translateY(-50%);
+  transform: rotate(90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  cursor: pointer; }
+
+.arrow-scroll__btn-right {
+  fill: #fff;
+  stroke: #fff;
+  display: block;
+  width: 1.81rem;
+  height: .94rem;
+  position: absolute;
+  left: 95%;
+  top: 53.4%;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  cursor: pointer; }
+
+.section__slider {
+  padding: 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
-    .section__slider-one
-.section__slider-two
-.section__slider-three
-.section__slider-four
-.section__slider-five {
+    .section__slider {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
       padding: 0 5%; } }
   @media screen and (max-width: 480px) {
-    .section__slider-one
-.section__slider-two
-.section__slider-three
-.section__slider-four
-.section__slider-five {
+    .section__slider {
       padding: 0 0; } }
 
 .section__slider-left {
@@ -645,7 +679,7 @@
 @media screen and (max-width: 768px) {
   .section__picture-box {
     text-align: center;
-    max-width: 100%; } }
+    max-width: 75%; } }
 
 @media screen and (max-width: 480px) {
   .section__picture-box {
@@ -776,7 +810,8 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  top: 2.5rem;
+  right: 1.5rem;
+  top: .5rem;
   width: 5rem;
   height: 5rem;
   background: #f08c33;
@@ -784,7 +819,7 @@
   cursor: pointer; }
   @media screen and (max-width: 480px) {
     .section__ingred {
-      top: 2.75rem;
+      top: 3.75rem;
       left: -2rem; } }
   .section__ingred:hover .section__ingred-list {
     display: -webkit-box;
@@ -888,40 +923,6 @@
   width: 3rem;
   height: 2.68rem;
   margin: 0 1rem; }
-
-.arrow-scroll__btn-left {
-  fill: #fff;
-  stroke: #fff;
-  display: block;
-  width: 1.81rem;
-  height: .94rem;
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  -webkit-transform: rotate(90deg) translateY(-50%);
-  -ms-transform: rotate(90deg) translateY(-50%);
-  transform: rotate(90deg) translateY(-50%);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  cursor: pointer; }
-
-.arrow-scroll__btn-right {
-  fill: #fff;
-  stroke: #fff;
-  display: block;
-  width: 1.81rem;
-  height: .94rem;
-  position: absolute;
-  left: 95%;
-  top: 53.4%;
-  -webkit-transform: rotate(-90deg) translateY(-50%);
-  -ms-transform: rotate(-90deg) translateY(-50%);
-  transform: rotate(-90deg) translateY(-50%);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  cursor: pointer; }
 
 .team {
   display: -webkit-box;

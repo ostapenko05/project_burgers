@@ -1,24 +1,37 @@
 //////////секция приветствия всплывающее полноэкранное меню
-
 const hoverMenu = document.querySelector('#menu__section-close');
 const hamburgerMenu = document.querySelector('#menu__hamb-act');
 const cross = document.querySelector('#menu__cross');
 const scroll = document.querySelector('body');
-
-
 hamburgerMenu.addEventListener('click', function (e) {
     e.preventDefault();
-
     hoverMenu.style.display = 'block';
     scroll.style.overflow = 'hidden';
 });
-
 cross.addEventListener('click', function (e) {
     e.preventDefault();
-
     hoverMenu.style.display = 'none';
     scroll.style.overflow = 'auto';
 });
+
+////// слайдер в секции бургер
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const items = document.querySelector("#items");
+
+right.addEventListener("click", function() {
+  loop("right");
+});
+left.addEventListener("click", function() {
+  loop("left");
+});
+function loop(direction) {
+  if (direction === "right") {
+    items.appendChild(items.firstElementChild);
+  } else {
+    items.insertBefore(items.lastElementChild, items.firstElementChild);
+  }
+}
 
 ///////////секция команды вертикальный аккордеон
 
@@ -50,10 +63,6 @@ for (let i = 0; i < teamMemberLength; i++) {
         }
     })
 };
-
-////// изменение ширины контента
-
-
 
 ////////секция меню горизонтальный аккордеон
 const menu = document.querySelector('.menu'),
@@ -100,25 +109,3 @@ for (let i = 0; i < menuBlockLength; i++) {
 //         }
 //     })
 // }
-
-////// слайдер в секции бургер
-
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
-const items = document.querySelector("#items");
-
-right.addEventListener("click", function() {
-  loop("right");
-});
-
-left.addEventListener("click", function() {
-  loop("left");
-});
-
-function loop(direction) {
-  if (direction === "right") {
-    items.appendChild(items.firstElementChild);
-  } else {
-    items.insertBefore(items.lastElementChild, items.firstElementChild);
-  }
-}

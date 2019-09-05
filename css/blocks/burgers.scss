@@ -7,40 +7,57 @@
     background-size: cover;
     position: relative;
     height: 100vh;
-    width: 100%;
-}
-
-// slider style
-.slider {
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    // justify-content: flex-start;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    margin: 0 0;
 }
 
 .items {
     display: flex;
-    position: relative;
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500%;
+    overflow: hidden;
 }
 
-.section__slider-one 
-.section__slider-two 
-.section__slider-three 
-.section__slider-four
-.section__slider-five 
-{
-    padding: 0 0;
+.slider {
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-scroll__btn-left {
+    fill: #fff;
+    stroke: #fff;
+    display: block;
+    width: 1.81rem;
+    height: .94rem;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: rotate(90deg) translateY(-50%);
+    transform-origin: 0 0;
+    cursor: pointer;
+}
+
+.arrow-scroll__btn-right {
+    fill: #fff;
+    stroke: #fff;
+    display: block;
+    width: 1.81rem;
+    height: .94rem;
+    position: absolute;
+    left: 95%;
+    top: 53.4%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    cursor: pointer;
+}
+
+.section__slider {
+    padding: 0 20%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    // box-sizing: border-box;
-    // overflow: hidden;
+    overflow: hidden;
 
     @include tablets {
         flex-direction: column;
@@ -52,10 +69,6 @@
 
     }
 }
-
-
-
-// end slider stule
 
 .section__slider-left {
     padding: 0 0;
@@ -95,7 +108,7 @@
 
     @include tablets {
         text-align: center;
-        max-width: 100%;
+        max-width: 75%;
     }
 
     @include phone {
@@ -220,7 +233,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 2.5rem;
+    right: 1.5rem;
+    top: .5rem;
     width: 5rem;
     height: 5rem;
     background: #f08c33;
@@ -228,7 +242,7 @@
     cursor: pointer;
 
     @include phone {
-        top: 2.75rem;
+        top: 3.75rem;
         left: -2rem;
     }
 
@@ -331,32 +345,4 @@
     width: 3rem;
     height: 2.68rem;
     margin: 0 1rem;
-}
-
-.arrow-scroll__btn-left {
-    fill: #fff;
-    stroke: #fff;
-    display: block;
-    width: 1.81rem;
-    height: .94rem;
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: rotate(90deg) translateY(-50%);
-    transform-origin: 0 0;
-    cursor: pointer;
-}
-
-.arrow-scroll__btn-right {
-    fill: #fff;
-    stroke: #fff;
-    display: block;
-    width: 1.81rem;
-    height: .94rem;
-    position: absolute;
-    left: 95%;
-    top: 53.4%;
-    transform: rotate(-90deg) translateY(-50%);
-    transform-origin: 0 0;
-    cursor: pointer;
 }

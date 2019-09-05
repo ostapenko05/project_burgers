@@ -2,54 +2,45 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
     background-size: cover;
     position: relative;
     height: 100vh;
+    width: 100%;
 }
 
-.container__burgers {
+// slider style
+.slider {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: flex-start;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+}
+
+.items {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    width: 100%;
 }
 
-
-.arrow-scroll__btn-left {
-    fill: #fff;
-    stroke: #fff;
-    display: block;
-    width: 1.81rem;
-    height: .94rem;
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: rotate(90deg) translateY(-50%);
-    transform-origin: 0 0;
-    cursor: pointer;
-}
-
-.arrow-scroll__btn-right {
-    fill: #fff;
-    stroke: #fff;
-    display: block;
-    width: 1.81rem;
-    height: .94rem;
-    position: absolute;
-    left: 95%;
-    top: 53.4%;
-    transform: rotate(-90deg) translateY(-50%);
-    transform-origin: 0 0;
-    cursor: pointer;
-}
-
-.section__slider {
+.section__slider-one 
+.section__slider-two 
+.section__slider-three 
+.section__slider-four
+.section__slider-five 
+{
     padding: 0 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    // box-sizing: border-box;
+    // overflow: hidden;
 
     @include tablets {
         flex-direction: column;
@@ -61,6 +52,10 @@
 
     }
 }
+
+
+
+// end slider stule
 
 .section__slider-left {
     padding: 0 0;
@@ -336,4 +331,32 @@
     width: 3rem;
     height: 2.68rem;
     margin: 0 1rem;
+}
+
+.arrow-scroll__btn-left {
+    fill: #fff;
+    stroke: #fff;
+    display: block;
+    width: 1.81rem;
+    height: .94rem;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: rotate(90deg) translateY(-50%);
+    transform-origin: 0 0;
+    cursor: pointer;
+}
+
+.arrow-scroll__btn-right {
+    fill: #fff;
+    stroke: #fff;
+    display: block;
+    width: 1.81rem;
+    height: .94rem;
+    position: absolute;
+    left: 95%;
+    top: 53.4%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    cursor: pointer;
 }

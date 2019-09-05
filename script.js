@@ -100,3 +100,25 @@ for (let i = 0; i < menuBlockLength; i++) {
 //         }
 //     })
 // }
+
+////// слайдер в секции бургер
+
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const items = document.querySelector("#items");
+
+right.addEventListener("click", function() {
+  loop("right");
+});
+
+left.addEventListener("click", function() {
+  loop("left");
+});
+
+function loop(direction) {
+  if (direction === "right") {
+    items.appendChild(items.firstElementChild);
+  } else {
+    items.insertBefore(items.lastElementChild, items.firstElementChild);
+  }
+}

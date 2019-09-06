@@ -32,47 +32,19 @@ function loop(direction) {
         items.insertBefore(items.lastElementChild, items.firstElementChild);
     }
 }
-/////////////////////// modal window reviews
-
-const open = document.querySelectorAll(".reviews__button-phone");
-const rmx = document.querySelector("#x");
-const rm = document.querySelector("#revmodal");
-const bg = document.querySelector('body');
-
-open.addEventListener('click', function (e) {
-    e.preventDefault();
-    rm.style.display = 'block';
-    bg.style.overflow = 'hidden';
-    bg.style.background = '#2d3233';
-});
-
-rmx.addEventListener('click', function (e) {
-    e.preventDefault();
-    rm.style.display = 'none';
-    bg.style.overflow = 'auto';
-    bg.style.background = 'none';
-});
-
 ///////////секция команды вертикальный аккордеон
-
 const team = document.querySelector('.team'),
     teamMember = document.querySelectorAll('.team__member'),
     teamMemberLength = teamMember.length;
-
 team.addEventListener('click', function (e) {
-
     for (let i = 0; i < teamMemberLength; i++) {
         team[i].classList.remove('team__member--active');
-
     }
 });
-
 for (let i = 0; i < teamMemberLength; i++) {
-
     teamMember[i].addEventListener('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
-
         if (teamMember[i].classList.contains('team__member--active')) {
             teamMember[i].classList.remove('team__member--active')
         } else {
@@ -83,7 +55,6 @@ for (let i = 0; i < teamMemberLength; i++) {
         }
     })
 };
-
 ////////секция меню горизонтальный аккордеон
 const menu = document.querySelector('.menu'),
     menuBlock = document.querySelectorAll('.menu__block'),
@@ -93,16 +64,13 @@ menu.addEventListener('click', function (e) {
 
     for (let i = 0; i < menuBlockLength; i++) {
         menu[i].classList.remove('menu__block--active');
-
     }
 });
 
 for (let i = 0; i < menuBlockLength; i++) {
-
     menuBlock[i].addEventListener('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
-
         if (menuBlock[i].classList.contains('menu__block--active')) {
             menuBlock[i].classList.remove('menu__block--active')
         } else {
@@ -113,22 +81,24 @@ for (let i = 0; i < menuBlockLength; i++) {
         }
     })
 };
+/////////////////////// modal window reviews
+const open = document.querySelector("#revbtn");
+const rmx = document.querySelector("#x");
+const rm = document.querySelector("#revmodal");
+const bg = document.querySelector('body');
 
-
-// var menu = document.querySelectorAll('menu__block--active');
-
-// for (var i = 0; i < menu.length; i++) {
-
-//     menu[i].addEventListener('click', function(e) {
-//         e.preventDefault();
-//         if (!(this.classList.contains('menu'))) {
-//             for (var i = 0; i < menu.length; i ++) {
-//                 menu[i].classList.remove('menu');
-//             }
-//             this.classList.add('menu');
-//         }
-//     })
-// }
+open.addEventListener('click', function (e) {
+    e.preventDefault();
+    rm.style.display = 'block';
+    bg.style.overflow = 'hidden';
+    // bg.style.background = '#2d3233';
+});
+rmx.addEventListener('click', function (e) {
+    e.preventDefault();
+    rm.style.display = 'none';
+    bg.style.overflow = 'auto';
+    // bg.style.background = 'none';
+});
 
 ///////////////////////// валидация и запрос на сервер по форме
 

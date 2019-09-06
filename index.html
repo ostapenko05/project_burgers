@@ -787,7 +787,7 @@
                         <h2>ричард джеймс</h2>
                      </div>
                      <div class="team__hover-block">
-                        <img src="./img/Slice_1.png" class="team__pic" alt="">
+                        <img src="./img/Slice_12.png" class="team__pic" alt="">
                         <div class="team__text">
                            <h3>Оператор</h3>
                            <p>С радостью поможет подобрать
@@ -801,7 +801,7 @@
                         <h2>джейк финн</h2>
                      </div>
                      <div class="team__hover-block">
-                        <img src="./img/Slice_1.png" class="team__pic" alt="">
+                        <img src="./img/Slice_12.png" class="team__pic" alt="">
                         <div class="team__text">
                            <h3>Оператор</h3>
                            <p>С радостью поможет подобрать
@@ -815,7 +815,7 @@
                         <h2>николай иванов</h2>
                      </div>
                      <div class="team__hover-block">
-                        <img src="./img/Slice_1.png" class="team__pic" alt="">
+                        <img src="./img/Slice_12.png" class="team__pic" alt="">
                         <div class="team__text">
                            <h3>Оператор</h3>
                            <p>С радостью поможет подобрать
@@ -975,6 +975,23 @@
                </div>
             </li>
          </ul>
+         <div id="revmodal" class="reviews__modal">
+            <a id="x" class="reviews__modal-x">
+               <div class="reviews__modal-lines"></div>
+            </a>
+            <h2>Константин Спилберг</h2>
+            <p>Мысли все о них и о них, о них и о них. 
+               Нельзя устоять, невозможно забыть... 
+               Никогда не думал, что булочки могут 
+               быть такими мягкими, котлетка такой 
+               сочной, а сыр таким расплавленным. 
+               Мысли все о них и о них, о них и о них. 
+               Нельзя устоять, невозможно забыть... 
+               Никогда не думал, что булочки могут быть 
+               такими мягкими, котлетка такой сочной, а 
+               сыр таким расплавленным.</p>
+            
+         </div>
       </section>
       <!-- окончание страницы отзывы -->
       <!-- начало секции как мы работаем -->
@@ -986,7 +1003,7 @@
       </section>
       <!-- окончание секции как мы работаем -->
       <!-- начало секции форма -->
-      <section class="section form">
+      <section id="myform" class="section form">
          <div class="container container__form">
             <div class="title__form">закажите доставку</div>
             <div class="form__area">
@@ -995,42 +1012,51 @@
                      <div class="form__row">
                         <label class="form__block">
                            <div class="form__block-title">Имя</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input" name="name" required>
+                           <div class="error"></div>
                         </label>
                         <label class="form__block">
                            <div class="form__block-title">Телефон</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input" name="phone" required>
+                           <div class="error"></div>
                         </label>
                      </div>
                      <div class="form__row">
                         <label class="form__block">
                            <div class="form__block-title">Улица</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input" name="street" required>
+                           <div class="error"></div>
                         </label>
                      </div>
                      <div class="form__row form__row-location">
                         <label class="form__block form__block-loc">
                            <div class="form__block-title">Дом</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input" name="home" required>
+                           <div class="error"></div>
                         </label>
                         <label class="form__block form__block-loc">
                            <div class="form__block-title">Корпус</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input" name="sect" required>
+                           <div class="error"></div>
                         </label>
                         <label class="form__block form__block-loc">
                            <div class="form__block-title">Квартира</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input" name="appartment" required>
+                           <div class="error"></div>
                         </label>
                         <label class="form__block form__block-end">
                            <div class="form__block-title">Этаж</div>
-                           <input type="text" class="form__input">
+                           <input type="text" class="form__input" name="level" required>
+                           <div class="error"></div>
                         </label>
                      </div>
                   </div>
                   <div class="form__column">
                      <label class="form__block-area">
                         <div class="form__block-title">Комментарий</div>
-                        <textarea class="form__input"></textarea>
+                        <textarea class="form__input" name="comment" required>
+                           
+                        </textarea>
                      </label>
                      <div class="radio__section">
                         <label class="radio">
@@ -1056,11 +1082,15 @@
                         </div>
                      </div>
                      <div class="button__section">
-                        <button type="submit" class="btn">Заказать</button>
+                        <button id="send" type="submit" class="btn">Заказать</button>
                         <button type="reset" class="res">Очистить</button>
                      </div>
                   </div>
                </form>
+               <div class="form__row-block">
+                  <!-- <p>Сообщение отправленно</p>
+                  <button class="btn-send">Закрыть</button> -->
+               </div>
             </div>
          </div>
       </section>

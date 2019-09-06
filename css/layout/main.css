@@ -1346,6 +1346,90 @@
   margin-bottom: 1.88rem;
   font-size: 1.06rem; }
 
+.reviews__modal {
+  position: relative;
+  width: 90%;
+  height: 55%;
+  background: #ffffff;
+  top: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: .3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 1rem 1rem;
+  display: none; }
+  .reviews__modal p {
+    color: #2f3234;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px; }
+  .reviews__modal h2 {
+    width: 139px;
+    height: 10px;
+    color: #2f3234;
+    font-family: Gagalin;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28.11px;
+    margin-bottom: 10%; }
+
+.reviews__modal-x {
+  position: relative;
+  top: 5%;
+  left: 99%;
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer; }
+
+.reviews__modal-lines,
+.reviews__modal-lines::after,
+.reviews__modal-lines::before {
+  position: absolute;
+  height: .31rem;
+  width: 1.75rem;
+  background: #e45028;
+  border-radius: .12rem; }
+
+.reviews__modal-lines {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: transparent;
+  cursor: pointer; }
+
+.reviews__modal-lines::after {
+  content: '';
+  top: -.75rem;
+  cursor: pointer; }
+
+.reviews__modal-lines::before {
+  content: '';
+  top: .75rem;
+  cursor: pointer; }
+
+.reviews__modal-lines::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.reviews__modal-lines::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 .work {
   background: url(../../img/bg_work.png) center center no-repeat;
   background-size: cover;
@@ -1574,6 +1658,58 @@ textarea {
     justify-content: center; } }
 
 .btn {
+  width: 6.06rem;
+  height: 2.19rem;
+  background-color: #e45028;
+  border-radius: .31rem;
+  color: #ffffff;
+  font-family: ubuntu-regular;
+  font-size: .81rem;
+  font-weight: 500;
+  line-height: 1.88rem;
+  text-transform: uppercase;
+  margin-right: .63rem;
+  cursor: pointer; }
+
+.form__row-block {
+  width: 17rem;
+  height: 11rem;
+  background: #2f3234;
+  font-size: .8rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-family: ubuntu-regular;
+  position: relative;
+  top: -20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: .3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: .95;
+  display: none; }
+  .form__row-block p {
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: ubuntu-regular;
+    margin-bottom: 1rem; }
+
+.btn-send {
   width: 6.06rem;
   height: 2.19rem;
   background-color: #e45028;

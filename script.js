@@ -150,16 +150,16 @@ send.addEventListener('click', event => {
                     formRow.removeChild(element);
                 });
 
-            }
+            };
             send.disabled = false;
         });  
-    }
+    };
 });
 function validateForm(form) {
     let valid = true;
     if (!validateField(form.elements.name)) {
         valid = false;
-    }
+    };
     return valid;
 };
     // if (!validateField(form.elements.phone)) {

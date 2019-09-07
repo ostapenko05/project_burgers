@@ -82,22 +82,23 @@ for (let i = 0; i < menuBlockLength; i++) {
     })
 };
 /////////////////////// modal window reviews
-const open = document.querySelector("#revbtn");
+const open = document.querySelectorAll("#revbtn");
 const rmx = document.querySelector("#x");
 const rm = document.querySelector("#revmodal");
 const bg = document.querySelector('body');
 
-open.addEventListener('click', function (e) {
-    e.preventDefault();
-    rm.style.display = 'block';
-    bg.style.overflow = 'hidden';
-    // bg.style.background = '#2d3233';
+open.forEach(function (button) {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        rm.style.display = 'block';
+        bg.style.overflow = 'hidden';
+        console.log(this.innerHTML);
+    });
 });
 rmx.addEventListener('click', function (e) {
     e.preventDefault();
     rm.style.display = 'none';
     bg.style.overflow = 'auto';
-    // bg.style.background = 'none';
 });
 
 ///////////////////////// валидация и запрос на сервер по форме
@@ -152,7 +153,7 @@ send.addEventListener('click', event => {
 
             };
             send.disabled = false;
-        });  
+        });
     };
 });
 function validateForm(form) {
@@ -162,28 +163,28 @@ function validateForm(form) {
     };
     return valid;
 };
-    // if (!validateField(form.elements.phone)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.street)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.home)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.sect)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.appartment)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.level)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.comment)) {
-    //     valid = false;
-    // }
-    
+// if (!validateField(form.elements.phone)) {
+//     valid = false;
+// }
+// if (!validateField(form.elements.street)) {
+//     valid = false;
+// }
+// if (!validateField(form.elements.home)) {
+//     valid = false;
+// }
+// if (!validateField(form.elements.sect)) {
+//     valid = false;
+// }
+// if (!validateField(form.elements.appartment)) {
+//     valid = false;
+// }
+// if (!validateField(form.elements.level)) {
+//     valid = false;
+// }
+// if (!validateField(form.elements.comment)) {
+//     valid = false;
+// }
+
 // };
 function validateField(field) {
     if (!field.checkValidity()) {

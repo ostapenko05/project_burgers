@@ -1,5 +1,6 @@
 .section--reviews {
    height: 100vh;
+   position: relative;
 }
 
 .reviews {
@@ -109,20 +110,40 @@
 }
 
 // modal window
+.reviews__fon {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: #2d3233;
+   opacity: 0.9;
+   // z-index: 100;
+   display: none;
+}
 
 .reviews__modal {
-   position: relative;
-   width: 90%;
-   height: 55%;
+   position: fixed;
+   width: 45%;
+   height: 25%;
    background: #ffffff;
-   top: -50%;
+   top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    border-radius: .3rem;
    flex-direction: column;
    align-items: flex-start;
    padding: 1rem 1rem;
-   display: none;
+
+   @include tablets {
+      width: 60%;
+      height: 25%;
+   }
+
+   @include phone {
+      width: 90%;
+      height: 55%;
+   }
 
    & p {
       color: #2f3234;
@@ -145,9 +166,9 @@
 }
 
 .reviews__modal-x {
-   position: relative;
-   top: 5%;
-   left: 99%;
+   position: absolute;
+   top: 6%;
+   left: 90%;
    width: 1.3rem;
    height: 1.3rem;
    cursor: pointer;
@@ -189,6 +210,6 @@
 }
 
 .reviews__modal-lines::after {
-  top: 0;
-  transform: rotate(-45deg);
+   top: 0;
+   transform: rotate(-45deg);
 }

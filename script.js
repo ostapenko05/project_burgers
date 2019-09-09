@@ -119,17 +119,17 @@ const formRow = document.querySelector(".form__row-block");
 
 send.addEventListener("click", function(event) {
     event.preventDefault();
-    if (validateForm(myform)) {
-        let data = new FormData(myform);
+    if (validateForm(myform) ) {
+        let data = new FormData;
         data.append("name", myform.elements.name.value);
         data.append("phone", myform.elements.phone.value);
         data.append("street", myform.elements.street.value);
         data.append("home", myform.elements.home.value);
-        // data.append("sect", myform.elements.sect.value);
-        // data.append("appartment", myform.elements.appartment.value);
-        // data.append("level", myform.elements.level.value);
-        // data.append("comment", myform.elements.comment.value);
-        data.append("to", "ostapenko_05@mail.ru");
+        data.append("sect", myform.elements.sect.value);
+        data.append("appartment", myform.elements.appartment.value);
+        data.append("level", myform.elements.level.value);
+        data.append("comment", myform.elements.comment.value);
+        data.append("to", "my@gmail.com");
 
         const xhr = new XMLHttpRequest();
         xhr.responseType = "json";
@@ -179,18 +179,18 @@ function validateForm(form) {
     if (!validateField(form.elements.home)) {
         valid = false;
     };
-    // if (!validateField(form.elements.sect)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.appartment)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.level)) {
-    //     valid = false;
-    // }
-    // if (!validateField(form.elements.comment)) {
-    //     valid = false;
-    // }
+    if (!validateField(form.elements.sect)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.appartment)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.level)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.comment)) {
+        valid = false;
+    }
     return valid;
 };
 

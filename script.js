@@ -122,13 +122,13 @@ send.addEventListener('click', event => {
     if (validateForm(myform)) {
         const data = new FormData();
         data.append("name", myform.elements.name.value);
-        // data.append("phone", myform.elements.phone.value);
-        // data.append("street", myform.elements.street.value);
-        // data.append("home", myform.elements.home.value);
-        // data.append("sect", myform.elements.sect.value);
-        // data.append("appartment", myform.elements.appartment.value);
-        // data.append("level", myform.elements.level.value);
-        // data.append("comment", myform.elements.comment.value);
+        data.append("phone", myform.elements.phone.value);
+        data.append("street", myform.elements.street.value);
+        data.append("home", myform.elements.home.value);
+        data.append("sect", myform.elements.sect.value);
+        data.append("appartment", myform.elements.appartment.value);
+        data.append("level", myform.elements.level.value);
+        data.append("comment", myform.elements.comment.value);
         data.append("to", "my@gmail.com");
 
         const xhr = new XMLHttpRequest();
@@ -171,29 +171,29 @@ function validateForm(form) {
     };
     return valid;
 };
-// if (!validateField(form.elements.phone)) {
-//     valid = false;
-// }
-// if (!validateField(form.elements.street)) {
-//     valid = false;
-// }
-// if (!validateField(form.elements.home)) {
-//     valid = false;
-// }
-// if (!validateField(form.elements.sect)) {
-//     valid = false;
-// }
-// if (!validateField(form.elements.appartment)) {
-//     valid = false;
-// }
-// if (!validateField(form.elements.level)) {
-//     valid = false;
-// }
-// if (!validateField(form.elements.comment)) {
-//     valid = false;
-// }
+if (!validateField(form.elements.phone)) {
+    valid = false;
+}
+if (!validateField(form.elements.street)) {
+    valid = false;
+}
+if (!validateField(form.elements.home)) {
+    valid = false;
+}
+if (!validateField(form.elements.sect)) {
+    valid = false;
+}
+if (!validateField(form.elements.appartment)) {
+    valid = false;
+}
+if (!validateField(form.elements.level)) {
+    valid = false;
+}
+if (!validateField(form.elements.comment)) {
+    valid = false;
+}
 
-// };
+};
 function validateField(field) {
     if (!field.checkValidity()) {
         field.nextElementSibling.textContent = field.validstionMessage;

@@ -82,24 +82,32 @@ for (let i = 0; i < menuBlockLength; i++) {
     })
 };
 /////////////////////// modal window reviews
-const open = document.querySelectorAll("#revbtn");
-const rmx = document.querySelector("#x");
-const rm = document.querySelector("#revmodal");
-const bg = document.querySelector('body');
 
-open.forEach(function (button) {
-    button.addEventListener('click', function (e) {
-        e.preventDefault();
-        rm.style.display = 'block';
-        bg.style.overflow = 'hidden';
-        console.log(this.innerHTML);
-    });
+
+const reviews = document.querySelector('.reviews'),
+    overlay = document.querySelector('.reviews__fon'),
+    popupText = document.querySelector('.popup__text'),
+    bg = document.querySelector('body'),
+    rmx = document.querySelector("#x");
+
+
+
+reviews.addEventListener('click', e => {
+    let elem = e.target;
+    bg.style.overflow = 'hidden';
+
+    if (elem.tagname = '.reviews__btn') {
+        let modalText = elem.previousElementSibling.innerHTML;
+        popupText.innerHTML = modalText;
+        overlay.style.display = 'block';
+    };
 });
 rmx.addEventListener('click', function (e) {
-    e.preventDefault();
-    rm.style.display = 'none';
-    bg.style.overflow = 'auto';
-});
+        e.preventDefault();
+        overlay.style.display = 'none';
+        bg.style.overflow = 'auto';
+
+    });
 
 ///////////////////////// валидация и запрос на сервер по форме
 

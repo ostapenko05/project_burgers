@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1300,23 +1301,6 @@
       -ms-flex-align: center;
       align-items: center; } }
 
-.reviews__button-phone {
-  border-style: none;
-  text-transform: uppercase;
-  border-radius: .44rem;
-  background: #2f3234;
-  color: #fff;
-  padding: .94rem;
-  font-family: ubuntu-regular;
-  font-size: .6rem;
-  display: none;
-  cursor: pointer; }
-  @media screen and (max-width: 480px) {
-    .reviews__button-phone {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
-
 .reviews__button {
   border-style: none;
   text-transform: uppercase;
@@ -1326,26 +1310,33 @@
   padding: .94rem;
   font-family: ubuntu-regular;
   cursor: pointer; }
-  @media screen and (max-width: 480px) {
-    .reviews__button {
-      display: none; } }
 
-.reviews__text {
+.reviews__button::after {
+  content: 'подробнее'; }
+  @media screen and (max-width: 480px) {
+    .reviews__button::after {
+      content: 'читать отзыв'; } }
+
+.reviews__text p {
   font-family: ubuntu-regular;
   line-height: 1.8rem;
   margin-bottom: 1.25rem;
   font-size: .88rem; }
   @media screen and (max-width: 768px) {
-    .reviews__text {
+    .reviews__text p {
       margin-bottom: .4rem; } }
   @media screen and (max-width: 480px) {
-    .reviews__text {
+    .reviews__text p {
       display: none; } }
 
-.reviews__title {
-  font-family: gagalin-regular;
-  margin-bottom: 1.88rem;
-  font-size: 1.06rem; }
+.reviews__text h2 {
+  font-family: ubuntu-regular;
+  line-height: 1.8rem;
+  margin-bottom: 1.25rem;
+  font-size: .88rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__text h2 {
+      margin-bottom: .4rem; } }
 
 .reviews__fon {
   position: fixed;

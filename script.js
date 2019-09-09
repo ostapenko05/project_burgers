@@ -127,8 +127,8 @@ send.addEventListener("click", function(event) {
         data.append("home", myform.elements.home.value);
         data.append("sect", myform.elements.sect.value);
         data.append("appartment", myform.elements.appartment.value);
-        data.append("level", myform.elements.level.value);
         // data.append("comment", myform.elements.comment.value);
+        data.append("level", myform.elements.level.value);
         data.append("to", "my@gmail.com");
 
         const xhr = new XMLHttpRequest();
@@ -188,12 +188,11 @@ function validateForm(form) {
     if (!validateField(form.elements.level)) {
         valid = false;
     }
-    // if (!validateField(form.elements.comment)) {
+     // if (!validateField(form.elements.comment)) {
     //     valid = false;
     // }
     return valid;
 };
-
 
 function validateField(field) {
     if (!field.checkValidity()) {

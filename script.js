@@ -103,37 +103,38 @@ reviews.addEventListener('click', e => {
     };
 });
 rmx.addEventListener('click', function (e) {
-        e.preventDefault();
-        overlay.style.display = 'none';
-        bg.style.overflow = 'auto';
+    e.preventDefault();
+    overlay.style.display = 'none';
+    bg.style.overflow = 'auto';
 
-    });
+});
 
 ///////////////////////// валидация и запрос на сервер по форме
 
-const myform = document.querySelector('#myform');
-const send = document.querySelector('#send');
+const myform = document.querySelector("#myform");
+const send = document.querySelector("#send");
 const formRow = document.querySelector(".form__row-block");
 
 
 
-send.addEventListener('click', event => {
+send.addEventListener("click", function(event) {
     event.preventDefault();
     if (validateForm(myform)) {
-        const data = new FormData();
+        let data = new FormData(myform);
         data.append("name", myform.elements.name.value);
         data.append("phone", myform.elements.phone.value);
         data.append("street", myform.elements.street.value);
         data.append("home", myform.elements.home.value);
-        data.append("sect", myform.elements.sect.value);
-        data.append("appartment", myform.elements.appartment.value);
-        data.append("level", myform.elements.level.value);
-        data.append("comment", myform.elements.comment.value);
-        data.append("to", "my@gmail.com");
+        // data.append("sect", myform.elements.sect.value);
+        // data.append("appartment", myform.elements.appartment.value);
+        // data.append("level", myform.elements.level.value);
+        // data.append("comment", myform.elements.comment.value);
+        data.append("to", "ostapenko_05@mail.ru");
 
         const xhr = new XMLHttpRequest();
-        xhr.responseType = 'json';
-        xhr.open('POST', "https://webdev-api.loftschool.com/sendmail/fail");
+        xhr.responseType = "json";
+        xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
+        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
         xhr.send(data);
         xhr.addEventListener('load', () => {
             if (xhr.response.status) {
@@ -152,51 +153,51 @@ send.addEventListener('click', event => {
 
                 const element4 = document.createElement("button");
                 element2.appendChild(element4);
-                element4.classList.add("btn-send");
+                element4.classList.add("btn");
                 element4.textContent = "Закрыть";
 
                 element4.addEventListener('click', function () {
                     formRow.removeChild(element);
                 });
-
-            };
-            send.disabled = false;
+            }
+        send.disabled = false;
         });
-    };
+    }
 });
+
 function validateForm(form) {
     let valid = true;
     if (!validateField(form.elements.name)) {
         valid = false;
     };
+    if (!validateField(form.elements.phone)) {
+        valid = false;
+    };
+    if (!validateField(form.elements.street)) {
+        valid = false;
+    };
+    if (!validateField(form.elements.home)) {
+        valid = false;
+    };
+    // if (!validateField(form.elements.sect)) {
+    //     valid = false;
+    // }
+    // if (!validateField(form.elements.appartment)) {
+    //     valid = false;
+    // }
+    // if (!validateField(form.elements.level)) {
+    //     valid = false;
+    // }
+    // if (!validateField(form.elements.comment)) {
+    //     valid = false;
+    // }
     return valid;
 };
-if (!validateField(form.elements.phone)) {
-    valid = false;
-}
-if (!validateField(form.elements.street)) {
-    valid = false;
-}
-if (!validateField(form.elements.home)) {
-    valid = false;
-}
-if (!validateField(form.elements.sect)) {
-    valid = false;
-}
-if (!validateField(form.elements.appartment)) {
-    valid = false;
-}
-if (!validateField(form.elements.level)) {
-    valid = false;
-}
-if (!validateField(form.elements.comment)) {
-    valid = false;
-}
 
-};
+
 function validateField(field) {
     if (!field.checkValidity()) {
-        field.nextElementSibling.textContent = field.validstionMessage;
+        field.nextElementSibling.textContent = field.validationMessage;
         return false;
     } else {
         field.nextElementSibling.textContent = "";

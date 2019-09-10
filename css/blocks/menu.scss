@@ -63,6 +63,9 @@
 .menu__content {
     height: 100%;
     background: rgba(#2f3234, .8);
+    width: 0;
+    transition: width .5s;
+    overflow: hidden;
 }
 
 .menu__block--active {

@@ -1213,7 +1213,12 @@
 
 .menu__content {
   height: 100%;
-  background: rgba(47, 50, 52, 0.8); }
+  background: rgba(47, 50, 52, 0.8);
+  width: 0;
+  -webkit-transition: width .5s;
+  -o-transition: width .5s;
+  transition: width .5s;
+  overflow: hidden; }
 
 .menu__block--active .menu__content {
   width: 34.38rem; }

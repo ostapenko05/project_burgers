@@ -61,9 +61,8 @@ const menu = document.querySelector('.menu'),
     menuBlockLength = menuBlock.length;
 
 menu.addEventListener('click', function (e) {
-
     for (let i = 0; i < menuBlockLength; i++) {
-        menu[i].classList.remove('menu__block--active');
+        menuBlock[i].classList.remove('menu__block--active');
     }
 });
 
@@ -281,3 +280,31 @@ justNumber.addEventListener ('keydown', function (e) {
    }
 })
 
+
+const formAppart = document.querySelector('#formpappart');
+
+formAppart.addEventListener ('keydown', function (e) {
+   let isDigit = false;
+   let isDash = false;
+   let isControl = false;
+   let isBackspace = false;
+
+   if (e.key >= 0 || e.key <= 9) {
+      isDigit = true;
+   }
+   if (e.key == '-') {
+      isDash = true;
+   }
+
+   if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
+      isControl = true;
+   }
+
+   if (e.key == 'Backspace') {
+      isBackspace = true;
+   }
+
+   if (!isDigit && !isDash && !isControl && !isBackspace) {
+      e.preventDefault();
+   }
+})

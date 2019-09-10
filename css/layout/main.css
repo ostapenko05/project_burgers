@@ -1800,6 +1800,16 @@ textarea {
   border-top-color: transparent;
   border-left-color: transparent; }
 
+.error {
+  margin-top: .2rem;
+  background: transparent;
+  color: #e45028;
+  text-align: center;
+  font-family: ubuntu-regular;
+  font-size: .6rem;
+  font-weight: 300;
+  line-height: 1rem; }
+
 .contacts {
   background: url(../../img/bg_map.png) center center no-repeat;
   background-size: cover;

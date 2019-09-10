@@ -260,30 +260,9 @@ phone.addEventListener ('keydown', function (e) {
    }
 })
 
-const justNumber = document.querySelectorAll('#formjustNumber');
+const formjustNumber = document.querySelector('#formjustNumber');
 
-
-justNumber.addEventListener ('keydown', function (e) {
-   let isNumber = false;
-   let isBackspace = false;
-
-   if (e.key >= 0 || e.key <= 9) {
-      isNumber = true;
-   }
-
-   if (e.key == 'Backspace') {
-      isBackspace = true;
-   }
-   
-   if (!isNumber && !isBackspace) {
-      e.preventDefault();
-   }
-})
-
-
-const formAppart = document.querySelector('#formpappart');
-
-formAppart.addEventListener ('keydown', function (e) {
+formjustNumber.addEventListener ('keydown', function (e) {
    let isDigit = false;
    let isDash = false;
    let isControl = false;
@@ -293,7 +272,35 @@ formAppart.addEventListener ('keydown', function (e) {
       isDigit = true;
    }
    if (e.key == '-') {
-      isDash = true;
+      isDash = false;
+   }
+
+   if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
+      isControl = true;
+   }
+
+   if (e.key == 'Backspace') {
+      isBackspace = true;
+   }
+
+   if (!isDigit && !isDash && !isControl && !isBackspace) {
+      e.preventDefault();
+   }
+})
+
+const formNumber = document.querySelector('#formNumber');
+
+formNumber.addEventListener ('keydown', function (e) {
+   let isDigit = false;
+   let isDash = false;
+   let isControl = false;
+   let isBackspace = false;
+
+   if (e.key >= 0 || e.key <= 9) {
+      isDigit = true;
+   }
+   if (e.key == '-') {
+      isDash = false;
    }
 
    if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {

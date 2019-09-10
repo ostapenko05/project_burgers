@@ -224,7 +224,7 @@ textarea {
     cursor: pointer;
 }
 
-.form__row-block {
+.message__modal {
     width: 17rem;
     height: 11rem;
     background: #2f3234;
@@ -242,7 +242,6 @@ textarea {
     justify-content: center;
     align-items: center;
     opacity: .95;
-    display: none;
     & p {
         color: #fff;
         font-size: .8rem;
@@ -253,20 +252,20 @@ textarea {
     }
 }
 
-.btn-send {
-    width: 6.06rem;
-    height: 2.19rem;
-    background-color: #e45028;
-    border-radius: .31rem;
-    color: #ffffff;
-    font-family: ubuntu-regular;
-    font-size: .81rem;
-    font-weight: 500;
-    line-height: 1.88rem;
-    text-transform: uppercase;
-    margin-right: .63rem;
-    cursor: pointer;
-}
+// .btn-send {
+//     width: 6.06rem;
+//     height: 2.19rem;
+//     background-color: #e45028;
+//     border-radius: .31rem;
+//     color: #ffffff;
+//     font-family: ubuntu-regular;
+//     font-size: .81rem;
+//     font-weight: 500;
+//     line-height: 1.88rem;
+//     text-transform: uppercase;
+//     margin-right: .63rem;
+//     cursor: pointer;
+// }
 
 .res {
     color: #ffffff;

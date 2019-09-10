@@ -2,7 +2,7 @@
 const hoverMenu = document.querySelector('#menu__section-close');
 const hamburgerMenu = document.querySelector('#menu__hamb-act');
 const cross = document.querySelector('#menu__cross');
-const scroll = document.querySelector('bg');
+const scroll = document.querySelector('body');
 hamburgerMenu.addEventListener('click', function (e) {
     e.preventDefault();
     hoverMenu.style.display = 'block';
@@ -87,7 +87,7 @@ for (let i = 0; i < menuBlockLength; i++) {
 const reviews = document.querySelector('.reviews'),
     overlay = document.querySelector('.reviews__fon'),
     popupText = document.querySelector('.popup__text'),
-    bg = document.querySelector('bg'),
+    bg = document.querySelector('body'),
     rmx = document.querySelector("#x");
 
 

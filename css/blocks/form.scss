@@ -252,20 +252,21 @@ textarea {
     }
 }
 
-// .btn-send {
-//     width: 6.06rem;
-//     height: 2.19rem;
-//     background-color: #e45028;
-//     border-radius: .31rem;
-//     color: #ffffff;
-//     font-family: ubuntu-regular;
-//     font-size: .81rem;
-//     font-weight: 500;
-//     line-height: 1.88rem;
-//     text-transform: uppercase;
-//     margin-right: .63rem;
-//     cursor: pointer;
-// }
+.message__send {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message__text {
+    color: #fff;
+    font-family: ubuntu-regular;
+    font-size: .88rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
 
 .res {
     color: #ffffff;

@@ -306,8 +306,3 @@ formNumber.addEventListener ('keydown', function (e) {
    }
 })
 
-// $(this).animate({
-//     translate3d: "0, " + pos + "%, 0"
-//  }, settings.animationTime, settings.easing, function() {
-//     if (typeof settings.afterMove == 'function') settings.afterMove(index, next_el);
-//  });

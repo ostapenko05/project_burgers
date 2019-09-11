@@ -114,8 +114,6 @@ const myform = document.querySelector("#myform");
 const send = document.querySelector("#send");
 const formRow = document.querySelector(".form__row-block");
 
-
-
 send.addEventListener("click", function(event) {
     event.preventDefault();
     if (validateForm(myform) ) {
@@ -214,7 +212,7 @@ function validateForm(form) {
 
 function validateField(field) {
     if (!field.checkValidity()) {
-        field.nextElementSibling.textContent = 'Заполните это поле'; //field.validationMessage;
+        field.nextElementSibling.textContent = field.validationMessage;
         return false;
     } else {
         field.nextElementSibling.textContent = "";
@@ -307,3 +305,9 @@ formNumber.addEventListener ('keydown', function (e) {
       e.preventDefault();
    }
 })
+
+// $(this).animate({
+//     translate3d: "0, " + pos + "%, 0"
+//  }, settings.animationTime, settings.easing, function() {
+//     if (typeof settings.afterMove == 'function') settings.afterMove(index, next_el);
+//  });

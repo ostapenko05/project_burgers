@@ -126,17 +126,16 @@ send.addEventListener("click", function(event) {
         data.append("home", myform.elements.home.value);
         data.append("sect", myform.elements.sect.value);
         data.append("appartment", myform.elements.appartment.value);
-        // data.append("comment", myform.elements.comment.value);
-        // data.append("level", myform.elements.level.value);
+        data.append("comment", myform.elements.comment.value);
         data.append("to", "my@gmail.com");
 
         const xhr = new XMLHttpRequest();
         xhr.responseType = "json";
-        xhr.open("POST", "https://webdev-api.loftschool.com/sendmail/fail");
+        xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
         xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
         xhr.send(data);
         xhr.addEventListener('load', () => {
-            if (xhr.response.status == 0) {
+            if (xhr.response.status == 1) {
                 const element = document.createElement("div");
                 formRow.appendChild(element);
                 element.classList.add("message__modal");
@@ -155,10 +154,7 @@ send.addEventListener("click", function(event) {
                 element4.classList.add("btn");
                 element4.textContent = "Закрыть";
 
-
-
                 element4.addEventListener('click', function () {
-                    // bg.style.overflow = 'auto';
                     formRow.removeChild(element);
                 });
             }
@@ -182,7 +178,6 @@ send.addEventListener("click", function(event) {
                 element4.textContent = "Закрыть";
 
                 element4.addEventListener('click', function () {
-                    // bg.style.overflow = 'auto';
                     formRow.removeChild(element);
                 });
             }
@@ -211,18 +206,15 @@ function validateForm(form) {
     if (!validateField(form.elements.appartment)) {
         valid = false;
     }
-    // if (!validateField(form.elements.level)) {
-    //     valid = false;
-    // }
-     // if (!validateField(form.elements.comment)) {
-    //     valid = false;
-    // }
+    if (!validateField(form.elements.comment)) {
+        valid = false;
+    }
     return valid;
 };
 
 function validateField(field) {
     if (!field.checkValidity()) {
-        field.nextElementSibling.textContent = field.validationMessage;
+        field.nextElementSibling.textContent = 'Заполните это поле'; //field.validationMessage;
         return false;
     } else {
         field.nextElementSibling.textContent = "";

@@ -327,6 +327,7 @@ textarea {
 }
 
 .error {
+    height: 1rem;
     margin-top: .2rem;
     background: transparent;
     color: #e45028;
@@ -336,3 +337,18 @@ textarea {
     font-weight: 300;
     line-height: 1rem;
 }
+
+// .form__input-textarea {
+//     min-width: 100%;
+//     min-height: 5rem;
+//     background: #fff;
+//     border-radius: 0.19rem;
+//     border: none;
+//     padding: .4rem;
+//     box-sizing: border-box;
+//     font-family: ubuntu-regular;
+
+//     @include phone {
+//         min-height: 4rem;
+//     }
+// }

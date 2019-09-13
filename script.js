@@ -3,6 +3,9 @@ const hoverMenu = document.querySelector('#menu__section-close');
 const hamburgerMenu = document.querySelector('#menu__hamb-act');
 const cross = document.querySelector('#menu__cross');
 const scroll = document.querySelector('body');
+const navHover = document.querySelectorAll('.nav__link-hover');
+
+
 hamburgerMenu.addEventListener('click', function (e) {
     e.preventDefault();
     hoverMenu.style.display = 'block';
@@ -14,24 +17,7 @@ cross.addEventListener('click', function (e) {
     scroll.style.overflow = 'auto';
 });
 
-////// слайдер в секции бургер
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
-const items = document.querySelector("#items");
 
-right.addEventListener("click", function () {
-    loop("right");
-});
-left.addEventListener("click", function () {
-    loop("left");
-});
-function loop(direction) {
-    if (direction === "right") {
-        items.appendChild(items.firstElementChild);
-    } else {
-        items.insertBefore(items.lastElementChild, items.firstElementChild);
-    }
-}
 ///////////секция команды вертикальный аккордеон
 const team = document.querySelector('.team'),
     teamMember = document.querySelectorAll('.team__member'),
@@ -114,9 +100,9 @@ const myform = document.querySelector("#myform");
 const send = document.querySelector("#send");
 const formRow = document.querySelector(".form__row-block");
 
-send.addEventListener("click", function(event) {
+send.addEventListener("click", function (event) {
     event.preventDefault();
-    if (validateForm(myform) ) {
+    if (validateForm(myform)) {
         let data = new FormData;
         data.append("name", myform.elements.name.value);
         data.append("phone", myform.elements.phone.value);
@@ -179,7 +165,7 @@ send.addEventListener("click", function(event) {
                     formRow.removeChild(element);
                 });
             }
-        send.disabled = false;
+            send.disabled = false;
         });
     }
 });
@@ -224,85 +210,257 @@ function validateField(field) {
 
 const phone = document.querySelector('#formphone');
 
-phone.addEventListener ('keydown', function (e) {
-   let isDigit = false;
-   let isDash = false;
-   let isControl = false;
-   let isBackspace = false;
+phone.addEventListener('keydown', function (e) {
+    let isDigit = false;
+    let isDash = false;
+    let isControl = false;
+    let isBackspace = false;
 
-   if (e.key >= 0 || e.key <= 9) {
-      isDigit = true;
-   }
-   if (e.key == '-') {
-      isDash = true;
-   }
+    if (e.key >= 0 || e.key <= 9) {
+        isDigit = true;
+    }
+    if (e.key == '-') {
+        isDash = true;
+    }
 
-   if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
-      isControl = true;
-   }
+    if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
+        isControl = true;
+    }
 
-   if (e.key == 'Backspace') {
-      isBackspace = true;
-   }
+    if (e.key == 'Backspace') {
+        isBackspace = true;
+    }
 
-   if (!isDigit && !isDash && !isControl && !isBackspace) {
-      e.preventDefault();
-   }
+    if (!isDigit && !isDash && !isControl && !isBackspace) {
+        e.preventDefault();
+    }
 })
 
 const formjustNumber = document.querySelector('#formjustNumber');
 
-formjustNumber.addEventListener ('keydown', function (e) {
-   let isDigit = false;
-   let isDash = false;
-   let isControl = false;
-   let isBackspace = false;
+formjustNumber.addEventListener('keydown', function (e) {
+    let isDigit = false;
+    let isDash = false;
+    let isControl = false;
+    let isBackspace = false;
 
-   if (e.key >= 0 || e.key <= 9) {
-      isDigit = true;
-   }
-   if (e.key == '-') {
-      isDash = false;
-   }
+    if (e.key >= 0 || e.key <= 9) {
+        isDigit = true;
+    }
+    if (e.key == '-') {
+        isDash = false;
+    }
 
-   if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
-      isControl = true;
-   }
+    if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
+        isControl = true;
+    }
 
-   if (e.key == 'Backspace') {
-      isBackspace = true;
-   }
+    if (e.key == 'Backspace') {
+        isBackspace = true;
+    }
 
-   if (!isDigit && !isDash && !isControl && !isBackspace) {
-      e.preventDefault();
-   }
+    if (!isDigit && !isDash && !isControl && !isBackspace) {
+        e.preventDefault();
+    }
 })
 
 const formNumber = document.querySelector('#formNumber');
 
-formNumber.addEventListener ('keydown', function (e) {
-   let isDigit = false;
-   let isDash = false;
-   let isControl = false;
-   let isBackspace = false;
+formNumber.addEventListener('keydown', function (e) {
+    let isDigit = false;
+    let isDash = false;
+    let isControl = false;
+    let isBackspace = false;
 
-   if (e.key >= 0 || e.key <= 9) {
-      isDigit = true;
-   }
-   if (e.key == '-') {
-      isDash = false;
-   }
+    if (e.key >= 0 || e.key <= 9) {
+        isDigit = true;
+    }
+    if (e.key == '-') {
+        isDash = false;
+    }
 
-   if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
-      isControl = true;
-   }
+    if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
+        isControl = true;
+    }
 
-   if (e.key == 'Backspace') {
-      isBackspace = true;
-   }
+    if (e.key == 'Backspace') {
+        isBackspace = true;
+    }
 
-   if (!isDigit && !isDash && !isControl && !isBackspace) {
-      e.preventDefault();
-   }
+    if (!isDigit && !isDash && !isControl && !isBackspace) {
+        e.preventDefault();
+    }
 })
 
+////// слайдер в секции бургер
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const items = document.querySelector("#items");
+
+right.addEventListener("click", function () {
+    loop("right");
+});
+left.addEventListener("click", function () {
+    loop("left");
+});
+function loop(direction) {
+    if (direction === "right") {
+        items.appendChild(items.firstElementChild);
+    } else {
+        items.insertBefore(items.lastElementChild, items.firstElementChild);
+    }
+}
+
+////слайдер на jqwery
+
+
+// $(function () {
+
+//     var coloringDots = function (index) {
+//         $('.slider')
+//             .find('.slider__dot-item')
+//             .eq(index)
+//             .addClass('active')
+//             .siblings()
+//             .removeClass('active');
+//     }
+
+//     var generateDots = function () {
+//         $('.slider').each(function () {
+//             var dot = $('<li>', {
+//                 attr: {
+//                     class: 'slider__dot-item'
+//                 },
+//                 html: '<div class="slider__dot-circle"></div>'
+//             });
+
+//             $('.slider__dots').append(dot);
+//         })
+//     };
+
+//     generateDots();
+
+//     var moveSlide = function (container, slideNum) {
+//         var items = container.find('.section__slider'),
+//             activeSlide = items.filter('.active'),
+//             reqItem = eq(slideNum),
+//             reqIndex = reqItem.index(),
+//             list = container.find('.items'),
+//             duration = 1000;
+
+//         if (reqItems.length) {
+//             list.animate({
+//                 'left': -regIndex * 100 + '%'
+//             }, duration, function () {
+//                 activeSlide.removeClass('active');
+//                 reqItem.addClass('active');
+//                 coloringDots(slideNum);
+//             });
+//         }
+//     }
+//     $('.slider__btn').on('click', function (e) {
+//         e.preventDefault();
+//         var $this = $(this),
+//             container = $this.closest('.slider'),
+//             items = $('.section__slider', container),
+//             activeItem = items.filter('.active'),
+//             existedItem, edgeItem, reqItem;
+
+//         if ($this.hasclass('arrow-scroll-right')) {
+//             existedItem = activeItem.next();
+//             edgeItem = items.first();
+//         }
+
+//         if ($this.hasclass('arrow-scroll-left')) {
+//             existedItem = activeItem.prev();
+//             edgeItem = items.last();
+//         }
+//         reqItem = existedItem.length ? existedItem.index() : edgeItem.index();
+//         moveSlide(container, reqItem);
+//     })
+
+//     $('body').on('click' '.slider__dot-item', function () {
+//         var $this = $(this),
+//             container = $this.closest('.slider'),
+//             index = $this.index();
+
+//         moveSlide(container, index);
+//         coloringDots(index);
+//     })
+// });
+
+//dots 
+
+//создание точек
+$(function(){
+    var generateDots = function () {
+ 
+       $('.section').each(function () {
+          let dot = $('<li>', {
+             attr : {
+                class: 'fixed-menu__item'
+             },
+             html : '<button type="button" class="fixed-menu__dot"></button>'
+          });
+ 
+          $('.fixed-menu').append(dot);
+       })
+    }
+ 
+    generateDots();
+    $('.fixed-menu__item').eq(0).addClass('fixed-menu__item--active');
+
+})
+
+$(window).on('load', function() {
+
+//функционал точек
+
+    $('.fixed-menu__item').on('click', function() {
+
+    $(this).addClass('fixed-menu__item--active');
+    $(this).siblings().removeClass('fixed-menu__item--active');
+ 
+       $('html, body').animate({
+          'scrollTop': $('.section').height() * $(this).index()
+       }, 1000)
+ 
+    });
+
+//присвоение активного класса    
+
+/// button arrowScroll
+
+$('.arrow-scroll__btn').on('click', e => {
+    $('html, body').animate ({
+        'scrollTop': $('.section--block-two').offset().top
+    }, 1000)
+});
+//// стили по меню и кнопкам
+$('.nav__section-button').on('click', e => {
+    $('html, body').animate ({
+        'scrollTop': $('.form').offset().top
+    }, 1000)
+});
+
+$('.btn-price').on('click', e => {
+    $('html, body').animate ({
+        'scrollTop': $('.form').offset().top
+    }, 1000)
+});
+
+$('.nav__link-hover').on('click', function() {
+    $('body').css({
+        'overflow':'auto'
+    });
+    $('.menu__section-hover').css({
+        'display':'none'
+    });
+});
+
+
+
+
+
+
+});

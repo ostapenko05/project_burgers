@@ -31,6 +31,7 @@
 .fixed-menu__dot {
   width: 1rem;
   height: 1rem;
+  display: block;
   border-radius: 50%;
   border: 1px solid transparent;
   position: relative;
@@ -56,3 +57,4 @@
     transform: translate(-50%, -50%);
   }
 }
+

@@ -392,71 +392,160 @@ function loop(direction) {
 //dots 
 
 //создание точек
-$(function(){
-    var generateDots = function () {
- 
-       $('.section').each(function () {
-          let dot = $('<li>', {
-             attr : {
-                class: 'fixed-menu__item'
-             },
-             html : '<button type="button" class="fixed-menu__dot"></button>'
-          });
- 
-          $('.fixed-menu').append(dot);
-       })
+// $(function () {
+//     var generateDots = function () {
+
+//         $('.section').each(function () {
+//             let dot = $('<li>', {
+//                 attr: {
+//                     class: 'fixed-menu__item'
+//                 },
+//                 html: '<button class="fixed-menu__dot"></button>'
+//             });
+
+//             $('.fixed-menu').append(dot);
+//         })
+//     }
+
+//     generateDots();
+//     $('.fixed-menu__item').eq(0).addClass('fixed-menu__item--active');
+
+// })
+
+$(window).on('load', function () {
+
+    //функционал точек
+
+    // $('.fixed-menu__item').on('click', function () {
+
+    //     $(this).addClass('fixed-menu__item--active');
+    //     $(this).siblings().removeClass('fixed-menu__item--active');
+
+    //     $('html, body').animate({
+    //         'scrollTop': $('.section').height() * $(this).index()
+    //     }, 1000)
+
+    // });
+
+    /// button arrowScroll
+
+    $('.arrow-scroll__btn').on('click', e => {
+        $('html, body').animate({
+            'scrollTop': $('.section--block-two').offset().top
+        }, 1000)
+    });
+    //// стили по меню и кнопкам
+    $('.nav__section-button').on('click', e => {
+        $('html, body').animate({
+            'scrollTop': $('.form').offset().top
+        }, 1000)
+    });
+
+    $('.btn-price').on('click', e => {
+        $('html, body').animate({
+            'scrollTop': $('.form').offset().top
+        }, 1000)
+    });
+
+    $('.nav__link-hover').on('click', function () {
+        $('body').css({
+            'overflow': 'auto'
+        });
+        $('.menu__section-hover').css({
+            'display': 'none'
+        });
+    });
+
+    //// one page scroll
+
+    const sections = $('.section');
+    const display = $('.maincontent');
+    const fixed = $('.fixed-menu__item');
+    let inscroll = false;
+
+    const performTransition = sectionEq => {
+        if (inscroll === false) {
+            inscroll = true;
+            const position = `${sectionEq * -100}%`;
+
+            sections
+                .eq(sectionEq)
+                .addClass("active")
+                .siblings()
+                .removeClass("active");
+
+            fixed
+            .eq(sectionEq)
+            .addClass("fixed-menu__item--active")
+            .siblings()
+            .removeClass("fixed-menu__item--active");
+
+            display.css({
+                transform: `translateY(${position})`
+            });
+
+            setTimeout(() => {
+
+                inscroll = false;
+
+            }, 1000 + 300);
+        }
+    };
+
+    const scrollViewport = direction => {
+        const activeSection = sections.filter('.active');
+        const nextSection = activeSection.next();
+        const prevSection = activeSection.prev();
+
+        if (direction === 'next' && nextSection.length) {
+            performTransition(nextSection.index());
+        }
+
+        if (direction === 'prev' && prevSection.length) {
+            performTransition(prevSection.index());
+        }
     }
- 
-    generateDots();
-    $('.fixed-menu__item').eq(0).addClass('fixed-menu__item--active');
 
-})
 
-$(window).on('load', function() {
+    $(document).on("wheel", e => {
+        const deltaY = e.originalEvent.deltaY;
 
-//функционал точек
+        if (deltaY > 0) {
+            scrollViewport("next");
+        }
 
-    $('.fixed-menu__item').on('click', function() {
-
-    $(this).addClass('fixed-menu__item--active');
-    $(this).siblings().removeClass('fixed-menu__item--active');
- 
-       $('html, body').animate({
-          'scrollTop': $('.section').height() * $(this).index()
-       }, 1000)
- 
+        if (deltaY < 0) {
+            scrollViewport("prev");
+        }
     });
 
-//присвоение активного класса    
+    $(document).on("keydown", e => {
+        const tagName = e.target.tagName.toLowerCase();
+        const userTypingInInput = tagName === "input" || tagName === "textarea";
 
-/// button arrowScroll
-
-$('.arrow-scroll__btn').on('click', e => {
-    $('html, body').animate ({
-        'scrollTop': $('.section--block-two').offset().top
-    }, 1000)
-});
-//// стили по меню и кнопкам
-$('.nav__section-button').on('click', e => {
-    $('html, body').animate ({
-        'scrollTop': $('.form').offset().top
-    }, 1000)
-});
-
-$('.btn-price').on('click', e => {
-    $('html, body').animate ({
-        'scrollTop': $('.form').offset().top
-    }, 1000)
-});
-
-$('.nav__link-hover').on('click', function() {
-    $('body').css({
-        'overflow':'auto'
+        if (userTypingInInput === false) {
+            switch (e.keyCode) {
+                case 38:
+                    scrollViewport("prev");
+                    break;
+                case 40:
+                    scrollViewport("next");
+                    break;
+            }
+        }
     });
-    $('.menu__section-hover').css({
-        'display':'none'
+
+    $('[data-scroll-to]').on("click", e => {
+        e.preventDefault();
+
+        const target = parseInt($(e.currentTarget).attr("data-scroll-to"));
+        
+        performTransition(target);
     });
-});
+
+
+
+
 
 
 

@@ -4,8 +4,6 @@ const hamburgerMenu = document.querySelector('#menu__hamb-act');
 const cross = document.querySelector('#menu__cross');
 const scroll = document.querySelector('body');
 const navHover = document.querySelectorAll('.nav__link-hover');
-
-
 hamburgerMenu.addEventListener('click', function (e) {
     e.preventDefault();
     hoverMenu.style.display = 'block';
@@ -16,8 +14,6 @@ cross.addEventListener('click', function (e) {
     hoverMenu.style.display = 'none';
     scroll.style.overflow = 'auto';
 });
-
-
 ///////////секция команды вертикальный аккордеон
 const team = document.querySelector('.team'),
     teamMember = document.querySelectorAll('.team__member'),
@@ -51,7 +47,6 @@ menu.addEventListener('click', function (e) {
         menuBlock[i].classList.remove('menu__block--active');
     }
 });
-
 for (let i = 0; i < menuBlockLength; i++) {
     menuBlock[i].addEventListener('click', function (e) {
         e.stopPropagation();
@@ -67,20 +62,14 @@ for (let i = 0; i < menuBlockLength; i++) {
     })
 };
 /////////////////////// modal window reviews
-
-
 const reviews = document.querySelector('.reviews'),
     overlay = document.querySelector('.reviews__fon'),
     popupText = document.querySelector('.popup__text'),
     bg = document.querySelector('body'),
     rmx = document.querySelector("#x");
-
-
-
 reviews.addEventListener('click', e => {
     let elem = e.target;
     bg.style.overflow = 'hidden';
-
     if (elem.tagname = '.reviews__btn') {
         let modalText = elem.previousElementSibling.innerHTML;
         popupText.innerHTML = modalText;
@@ -91,15 +80,11 @@ rmx.addEventListener('click', function (e) {
     e.preventDefault();
     overlay.style.display = 'none';
     bg.style.overflow = 'auto';
-
 });
-
 ///////////////////////// валидация и запрос на сервер по форме
-
 const myform = document.querySelector("#myform");
 const send = document.querySelector("#send");
 const formRow = document.querySelector(".form__row-block");
-
 send.addEventListener("click", function (event) {
     event.preventDefault();
     if (validateForm(myform)) {
@@ -112,7 +97,6 @@ send.addEventListener("click", function (event) {
         data.append("appartment", myform.elements.appartment.value);
         data.append("comment", myform.elements.comment.value);
         data.append("to", "my@gmail.com");
-
         const xhr = new XMLHttpRequest();
         xhr.responseType = "json";
         xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
@@ -123,21 +107,17 @@ send.addEventListener("click", function (event) {
                 const element = document.createElement("div");
                 formRow.appendChild(element);
                 element.classList.add("message__modal");
-
                 const element2 = document.createElement("div");
                 element.appendChild(element2);
                 element2.classList.add("message__send");
-
                 const element3 = document.createElement("div");
                 element2.appendChild(element3);
                 element3.classList.add("message__text");
                 element3.textContent = "Сообщение отправленно";
-
                 const element4 = document.createElement("button");
                 element2.appendChild(element4);
                 element4.classList.add("btn");
                 element4.textContent = "Закрыть";
-
                 element4.addEventListener('click', function () {
                     formRow.removeChild(element);
                 });
@@ -146,21 +126,17 @@ send.addEventListener("click", function (event) {
                 const element = document.createElement("div");
                 formRow.appendChild(element);
                 element.classList.add("message__modal");
-
                 const element2 = document.createElement("div");
                 element.appendChild(element2);
                 element2.classList.add("message__send");
-
                 const element3 = document.createElement("div");
                 element2.appendChild(element3);
                 element3.classList.add("message__text");
                 element3.textContent = "Сообщение не отправленно";
-
                 const element4 = document.createElement("button");
                 element2.appendChild(element4);
                 element4.classList.add("btn");
                 element4.textContent = "Закрыть";
-
                 element4.addEventListener('click', function () {
                     formRow.removeChild(element);
                 });
@@ -169,7 +145,6 @@ send.addEventListener("click", function (event) {
         });
     }
 });
-
 function validateForm(form) {
     let valid = true;
     if (!validateField(form.elements.name)) {
@@ -195,7 +170,6 @@ function validateForm(form) {
     }
     return valid;
 };
-
 function validateField(field) {
     if (!field.checkValidity()) {
         field.nextElementSibling.textContent = field.validationMessage;
@@ -205,98 +179,77 @@ function validateField(field) {
         return true;
     }
 };
-
 /////////// стили инпутов
-
 const phone = document.querySelector('#formphone');
-
 phone.addEventListener('keydown', function (e) {
     let isDigit = false;
     let isDash = false;
     let isControl = false;
     let isBackspace = false;
-
     if (e.key >= 0 || e.key <= 9) {
         isDigit = true;
     }
     if (e.key == '-') {
         isDash = true;
     }
-
     if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
         isControl = true;
     }
-
     if (e.key == 'Backspace') {
         isBackspace = true;
     }
-
     if (!isDigit && !isDash && !isControl && !isBackspace) {
         e.preventDefault();
     }
 })
-
 const formjustNumber = document.querySelector('#formjustNumber');
-
 formjustNumber.addEventListener('keydown', function (e) {
     let isDigit = false;
     let isDash = false;
     let isControl = false;
     let isBackspace = false;
-
     if (e.key >= 0 || e.key <= 9) {
         isDigit = true;
     }
     if (e.key == '-') {
         isDash = false;
     }
-
     if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
         isControl = true;
     }
-
     if (e.key == 'Backspace') {
         isBackspace = true;
     }
-
     if (!isDigit && !isDash && !isControl && !isBackspace) {
         e.preventDefault();
     }
 })
-
 const formNumber = document.querySelector('#formNumber');
-
 formNumber.addEventListener('keydown', function (e) {
     let isDigit = false;
     let isDash = false;
     let isControl = false;
     let isBackspace = false;
-
     if (e.key >= 0 || e.key <= 9) {
         isDigit = true;
     }
     if (e.key == '-') {
         isDash = false;
     }
-
     if (e.key == 'ArrowLeft' || e.key == 'ArrowRight') {
         isControl = true;
     }
-
     if (e.key == 'Backspace') {
         isBackspace = true;
     }
-
     if (!isDigit && !isDash && !isControl && !isBackspace) {
         e.preventDefault();
     }
 })
-
 ////// слайдер в секции бургер
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const items = document.querySelector("#items");
-
 right.addEventListener("click", function () {
     loop("right");
 });
@@ -310,139 +263,19 @@ function loop(direction) {
         items.insertBefore(items.lastElementChild, items.firstElementChild);
     }
 }
-
-////слайдер на jqwery
-
-
-// $(function () {
-
-//     var coloringDots = function (index) {
-//         $('.slider')
-//             .find('.slider__dot-item')
-//             .eq(index)
-//             .addClass('active')
-//             .siblings()
-//             .removeClass('active');
-//     }
-
-//     var generateDots = function () {
-//         $('.slider').each(function () {
-//             var dot = $('<li>', {
-//                 attr: {
-//                     class: 'slider__dot-item'
-//                 },
-//                 html: '<div class="slider__dot-circle"></div>'
-//             });
-
-//             $('.slider__dots').append(dot);
-//         })
-//     };
-
-//     generateDots();
-
-//     var moveSlide = function (container, slideNum) {
-//         var items = container.find('.section__slider'),
-//             activeSlide = items.filter('.active'),
-//             reqItem = eq(slideNum),
-//             reqIndex = reqItem.index(),
-//             list = container.find('.items'),
-//             duration = 1000;
-
-//         if (reqItems.length) {
-//             list.animate({
-//                 'left': -regIndex * 100 + '%'
-//             }, duration, function () {
-//                 activeSlide.removeClass('active');
-//                 reqItem.addClass('active');
-//                 coloringDots(slideNum);
-//             });
-//         }
-//     }
-//     $('.slider__btn').on('click', function (e) {
-//         e.preventDefault();
-//         var $this = $(this),
-//             container = $this.closest('.slider'),
-//             items = $('.section__slider', container),
-//             activeItem = items.filter('.active'),
-//             existedItem, edgeItem, reqItem;
-
-//         if ($this.hasclass('arrow-scroll-right')) {
-//             existedItem = activeItem.next();
-//             edgeItem = items.first();
-//         }
-
-//         if ($this.hasclass('arrow-scroll-left')) {
-//             existedItem = activeItem.prev();
-//             edgeItem = items.last();
-//         }
-//         reqItem = existedItem.length ? existedItem.index() : edgeItem.index();
-//         moveSlide(container, reqItem);
-//     })
-
-//     $('body').on('click' '.slider__dot-item', function () {
-//         var $this = $(this),
-//             container = $this.closest('.slider'),
-//             index = $this.index();
-
-//         moveSlide(container, index);
-//         coloringDots(index);
-//     })
-// });
-
-//dots 
-
-//создание точек
-// $(function () {
-//     var generateDots = function () {
-
-//         $('.section').each(function () {
-//             let dot = $('<li>', {
-//                 attr: {
-//                     class: 'fixed-menu__item'
-//                 },
-//                 html: '<button class="fixed-menu__dot"></button>'
-//             });
-
-//             $('.fixed-menu').append(dot);
-//         })
-//     }
-
-//     generateDots();
-//     $('.fixed-menu__item').eq(0).addClass('fixed-menu__item--active');
-
-// })
-
+/////jquery code
 $(window).on('load', function () {
-
-    //функционал точек
-
-    // $('.fixed-menu__item').on('click', function () {
-
-    //     $(this).addClass('fixed-menu__item--active');
-    //     $(this).siblings().removeClass('fixed-menu__item--active');
-
-    //     $('html, body').animate({
-    //         'scrollTop': $('.section').height() * $(this).index()
-    //     }, 1000)
-
-    // });
-
-    /// button arrowScroll
-
-
     //// стили по меню и кнопкам
     $('.nav__section-button').on('click', e => {
         $('html, body').animate({
             'scrollTop': $('.form').offset().top
         }, 1000)
     });
-
     $('.btn-price').on('click', e => {
         $('html, body').animate({
             'scrollTop': $('.form').offset().top
         }, 1000)
     });
-
     $('.nav__link-hover').on('click', function () {
         $('body').css({
             'overflow': 'auto'
@@ -451,13 +284,11 @@ $(window).on('load', function () {
             'display': 'none'
         });
     });
-
     $('.arrow-scroll__btn').on('click', e => {
         $('html, body').animate({
             'scrollTop': $('.section--block-two').offset().top
         }, 1000)
     });
-
     //// one page scroll
     const sections = $('.section');
     const display = $('.maincontent');
@@ -475,64 +306,48 @@ $(window).on('load', function () {
             inscroll = false;
         }, transitionDuration + touchScrollInertion); ///это метод задержки
     }
-
     const performTransition = sectionEq => {
         if (inscroll) return;
         inscroll = true;
         const position = countPosition(sectionEq);
-
         sections
             .eq(sectionEq)
             .addClass("active")
             .siblings()
             .removeClass("active");
-
         fixed
             .eq(sectionEq)
             .addClass("fixed-menu__item--active")
             .siblings()
             .removeClass("fixed-menu__item--active");
-
         display.css({
             transform: `translateY(${position})`
         });
-
         unBlockScroll();
-
     };
-
-
     const scrollViewport = direction => {
         const activeSection = sections.filter('.active');
         const nextSection = activeSection.next();
         const prevSection = activeSection.prev();
-
         if (direction === 'next' && nextSection.length) {
             performTransition(nextSection.index());
         }
-
         if (direction === 'prev' && prevSection.length) {
             performTransition(prevSection.index());
         }
     }
-
-
     $(document).on("wheel", e => {
         const deltaY = e.originalEvent.deltaY;
-
         if (deltaY > 0) {
             scrollViewport("next");
         }
-
         if (deltaY < 0) {
             scrollViewport("prev");
         }
     });
-
     $(document).on("keydown", e => {
         const tagName = e.target.tagName.toLowerCase();
         const userTypingInInput = tagName === "input" || tagName === "textarea";
-
         if (userTypingInInput) return;
         switch (e.keyCode) {
             case 38:
@@ -543,18 +358,12 @@ $(window).on('load', function () {
                 break;
         }
     });
-
-
     $('[data-scroll-to]').on("click", e => {
         e.preventDefault();
-
         const target = parseInt($(e.currentTarget).attr("data-scroll-to"));
-
         performTransition(target);
     });
-
     /// touchstart, touchmove, touchend.
-
     if (isMobile) {
         window.addEventListener(
             "touchmove",
@@ -563,22 +372,14 @@ $(window).on('load', function () {
             },
             { passive: false }
         );
-
         $("body")
         swipe: (event, direction) => {
             let scrollDirecrion;
-            if (direction === "up") scrollDirecrion = "next";
-            if (direction === "down") scrollDirecrion = "prev";
+            if (direction === "down") scrollDirecrion = "next";
+            if (direction === "up") scrollDirecrion = "prev";
             scrollViewport(scrollDirecrion);
         };
-
     };
-
-
-
-
-
-
 
 
 

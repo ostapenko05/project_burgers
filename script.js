@@ -463,6 +463,9 @@ $(window).on('load', function () {
     const fixed = $('.fixed-menu__item');
     let inscroll = false;
 
+    const mobileDetect = new MobileDetect(window.navigator.userAgent);
+    const isMobile = mobileDetect.mobile();
+
     const performTransition = sectionEq => {
         if (inscroll === false) {
             inscroll = true;
@@ -475,10 +478,10 @@ $(window).on('load', function () {
                 .removeClass("active");
 
             fixed
-            .eq(sectionEq)
-            .addClass("fixed-menu__item--active")
-            .siblings()
-            .removeClass("fixed-menu__item--active");
+                .eq(sectionEq)
+                .addClass("fixed-menu__item--active")
+                .siblings()
+                .removeClass("fixed-menu__item--active");
 
             display.css({
                 transform: `translateY(${position})`
@@ -543,21 +546,30 @@ $(window).on('load', function () {
         e.preventDefault();
 
         const target = parseInt($(e.currentTarget).attr("data-scroll-to"));
-        
+
         performTransition(target);
     });
 
     /// touchstart, touchmove, touchend.
-    $(window).swipe( {
-        swipe:function(event, direction) {
-            let scrollDirection;
 
-            if (direction === 'up') scrollDirection = 'next';
-            if (direction === 'down') scrollDirection = 'prev';
-
-            scrollViewport(scrollDirection)
-        }
-    });
+    if (isMobile) {
+        window.addEventListener(
+          "touchmove",
+          e => {
+            e.preventDefault();
+          },
+          { passive: false }
+        );
+      
+        $("body").swipe({
+          swipe: (event, direction) => {
+            let scrollDirecrion;
+            if (direction === "up") scrollDirecrion = "next";
+            if (direction === "down") scrollDirecrion = "prev";
+            scrollViewport(scrollDirecrion);
+          }
+        });
+      }
 
 
 

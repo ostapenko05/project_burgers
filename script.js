@@ -429,11 +429,7 @@ $(window).on('load', function () {
 
     /// button arrowScroll
 
-    $('.arrow-scroll__btn').on('click', e => {
-        $('html, body').animate({
-            'scrollTop': $('.section--block-two').offset().top
-        }, 1000)
-    });
+
     //// стили по меню и кнопкам
     $('.nav__section-button').on('click', e => {
         $('html, body').animate({
@@ -456,44 +452,55 @@ $(window).on('load', function () {
         });
     });
 
-    //// one page scroll
+    $('.arrow-scroll__btn').on('click', e => {
+        $('html, body').animate({
+            'scrollTop': $('.section--block-two').offset().top
+        }, 1000)
+    });
 
+    //// one page scroll
     const sections = $('.section');
     const display = $('.maincontent');
     const fixed = $('.fixed-menu__item');
     let inscroll = false;
-
     const mobileDetect = new MobileDetect(window.navigator.userAgent);
     const isMobile = mobileDetect.mobile();
+    const countPosition = sectionEq => {
+        return `${sectionEq * -100}%`;
+    }
+    const unBlockScroll = () => {
+        const transitionDuration = 1000;
+        const touchScrollInertion = 300;
+        setTimeout(() => {
+            inscroll = false;
+        }, transitionDuration + touchScrollInertion); ///это метод задержки
+    }
 
     const performTransition = sectionEq => {
-        if (inscroll === false) {
-            inscroll = true;
-            const position = `${sectionEq * -100}%`;
+        if (inscroll) return;
+        inscroll = true;
+        const position = countPosition(sectionEq);
 
-            sections
-                .eq(sectionEq)
-                .addClass("active")
-                .siblings()
-                .removeClass("active");
+        sections
+            .eq(sectionEq)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
 
-            fixed
-                .eq(sectionEq)
-                .addClass("fixed-menu__item--active")
-                .siblings()
-                .removeClass("fixed-menu__item--active");
+        fixed
+            .eq(sectionEq)
+            .addClass("fixed-menu__item--active")
+            .siblings()
+            .removeClass("fixed-menu__item--active");
 
-            display.css({
-                transform: `translateY(${position})`
-            });
+        display.css({
+            transform: `translateY(${position})`
+        });
 
-            setTimeout(() => {
+        unBlockScroll();
 
-                inscroll = false;
-
-            }, 1000 + 300);
-        }
     };
+
 
     const scrollViewport = direction => {
         const activeSection = sections.filter('.active');
@@ -526,21 +533,17 @@ $(window).on('load', function () {
         const tagName = e.target.tagName.toLowerCase();
         const userTypingInInput = tagName === "input" || tagName === "textarea";
 
-        if (userTypingInInput === false) {
-            switch (e.keyCode) {
-                case 38:
-                    scrollViewport("prev");
-                    break;
-                case 40:
-                    scrollViewport("next");
-                    break;
-            }
+        if (userTypingInInput) return;
+        switch (e.keyCode) {
+            case 38:
+                scrollViewport("prev");
+                break;
+            case 40:
+                scrollViewport("next");
+                break;
         }
     });
 
-    // $(wrapper).on("touchmove", e => {
-    // e.preventDefault();
-    // });
 
     $('[data-scroll-to]').on("click", e => {
         e.preventDefault();
@@ -554,22 +557,25 @@ $(window).on('load', function () {
 
     if (isMobile) {
         window.addEventListener(
-          "touchmove",
-          e => {
-            e.preventDefault();
-          },
-          { passive: false }
+            "touchmove",
+            e => {
+                e.preventDefault();
+            },
+            { passive: false }
         );
-      
-        $("body").swipe({
-          swipe: (event, direction) => {
+
+        $("body")
+        swipe: (event, direction) => {
             let scrollDirecrion;
             if (direction === "up") scrollDirecrion = "next";
             if (direction === "down") scrollDirecrion = "prev";
             scrollViewport(scrollDirecrion);
-          }
-        });
-      }
+        };
+
+    };
+
+
+
 
 
 

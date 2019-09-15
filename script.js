@@ -384,7 +384,7 @@ $(window).on('load', function () {
         $("body").swipe( {
           //Generic swipe handler for all directions
           swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            $(this).text("scrollDirecrion" + direction );  
+            $(this).text("scrollDirecrion" + direction + distance + duration + fingerCount + fingerData);  
           }
         });
       

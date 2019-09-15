@@ -372,15 +372,25 @@ $(window).on('load', function () {
             },
             { passive: false }
         );
-        $("body")
-        swipe: (event, direction) => {
-            let scrollDirecrion;
-            if (direction === "down") scrollDirecrion = "next";
-            if (direction === "up") scrollDirecrion = "prev";
-            scrollViewport(scrollDirecrion);
-        };
+        // $("body")
+        // swipe: (event, direction) => {
+        //     let scrollDirecrion;
+        //     if (direction === "down") scrollDirecrion = "next";
+        //     if (direction === "up") scrollDirecrion = "prev";
+        //     scrollViewport(scrollDirecrion);
+        // };
     };
-
+    $(function() {
+        $("body").swipe( {
+          //Generic swipe handler for all directions
+          swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+            $(this).text("scrollDirecrion" + direction );  
+          }
+        });
+      
+        //Set some options later
+        $("body").swipe( {fingers:2} );
+      });
 
 
 

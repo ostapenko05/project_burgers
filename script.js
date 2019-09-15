@@ -535,6 +535,10 @@ $(window).on('load', function () {
         }
     });
 
+    $(wrapper).on("touchmove", e => {
+    e.preventDefault();
+    });
+
     $('[data-scroll-to]').on("click", e => {
         e.preventDefault();
 
@@ -543,8 +547,17 @@ $(window).on('load', function () {
         performTransition(target);
     });
 
+    /// touchstart, touchmove, touchend.
+    $(window).swipe( {
+        swipe:function(event, direction) {
+            let scrollDirection;
 
+            if (direction === 'up') scrollDirection = 'next';
+            if (direction === 'down') scrollDirection = 'prev';
 
+            scrollViewport(scrollDirection)
+        }
+    });
 
 
 

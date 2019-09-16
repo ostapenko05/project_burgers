@@ -379,8 +379,7 @@ $(window).on('load', function () {
         //     if (direction === "up") scrollDirecrion = "prev";
         //     scrollViewport(scrollDirecrion);
         // };
-    };
-    $(function() {
+        $(function() {
         $("body").swipe( {
           //Generic swipe handler for all directions
           swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -389,9 +388,11 @@ $(window).on('load', function () {
         });
       
         //Set some options later
-        $("body").swipe( {fingers:2} );
+        // $("body").swipe( {fingers:2} );
       });
 
+    };
+    
 
 
 });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru_RU">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
    <link rel="stylesheet" href="css/layout/main.css">
    <title>MrBurger</title>
 </head>
+
 <body>
    <div class="wrapper">
       <div class="maincontent">
@@ -965,19 +967,20 @@
          <section class="section work">
             <div class="container container__work">
                <div class="title__work">как мы работаем</div>
-               <video width="400" height="300">
+               <video class="work__video">
                   <source src="./video/Sea - 15333.mp4" type="video/mp4">
                   <!-- <source src="cats.webm" type="video/webm">
                   <source src="cats.ogv" type="video/ogg"> -->
-
-                     <div id="controls" class="hidden">
-                        <a id="playBtn">Play</a>
-                        <span id="timer">00:00</span>
-                        <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
-                    </div>
-
-              </video>
-              <svg class="section__work-play">
+               </video>
+               <div id="controls" class="hidden">
+                  <a id="playBtn">Play</a>
+                  <span id="timer">00:00</span>
+                  <input type="range" step="0.1" min="0" max="1" value="0" id="volume" />
+                  <svg class="section__work-volume">
+                     <use xlink:href="./css/layout/sprite.svg#volume"></use>
+                  </svg>
+               </div>
+               <svg class="section__work-play">
                   <use xlink:href="./css/layout/sprite.svg#play"></use>
                </svg>
             </div>
@@ -1155,4 +1158,5 @@
    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
    <script src="./script.js"></script>
 </body>
+
 </html>

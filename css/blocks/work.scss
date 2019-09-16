@@ -3,4 +3,35 @@
     background-size: cover;
     position: relative;
     height: 100vh;
- }
+}
+
+.container__work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__work {
+    color: #f9b43b;
+    font-family: gagalin-regular;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+    margin: 0 0 3.13rem 0;
+}
+
+.hidden{
+    // display:none;
+    position: absolute;
+}
+#playBtn {
+    border: solid 1px #333;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.section__work-play {
+    fill: #f9b43b;
+    width: 18.75rem;
+    height: 18.75rem;
+}

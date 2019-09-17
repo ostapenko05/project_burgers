@@ -179,6 +179,49 @@ function validateField(field) {
         return true;
     }
 };
+
+ /// карты яндекс
+ function init () {
+    let myMap = new ymaps.Map('.map', {
+            center: [59.937758, 30.317956],
+            zoom: 2
+        });
+
+        myPlacemark1 = new ymaps.Placemark([60.019660, 30.254785], {
+            balloonContent: 'Маленькая иконка'
+        }, {
+            iconLayout: 'default#image',
+            iconImageClipRect: [[0,0], [26, 47]],
+            iconImageHref: 'img/map-marker.png',
+            iconImageSize: [15, 27],
+            iconImageOffset: [-15, -27],
+        }),
+
+        myPlacemark2 = new ymaps.Placemark([59.962901, 30.412713], {
+            balloonContent: 'Средняя иконка'
+        }, {
+            iconLayout: 'default#image',
+            iconImageClipRect: [[34,0], [62, 46]],
+            iconImageHref: 'img/map-marker.png',
+            iconImageSize: [26, 46],
+            iconImageOffset: [-26, -46]
+        }),
+
+        myPlacemark3 = new ymaps.Placemark([59.878443, 30.350915], {
+            balloonContent: 'Большая иконка'
+        }, {
+            iconLayout: 'default#image',
+            iconImageClipRect: [[69,0], [97, 46]],
+            iconImageHref: 'img/map-marker.png',
+            iconImageSize: [35, 63],
+            iconImageOffset: [-35, -63]
+        });
+
+    myMap.geoObjects.add(myPlacemark1)
+        .add(myPlacemark2)
+        .add(myPlacemark3);
+    }
+
 /////////// стили инпутов
 const phone = document.querySelector('#formphone');
 phone.addEventListener('keydown', function (e) {
@@ -366,7 +409,7 @@ $(window).on('load', function () {
     /// touchstart, touchmove, touchend.
     if (isMobile) {
         window.addEventListener(
-            // "touchmove",
+            "touchmove",
             e => {
                 e.preventDefault();
             },
@@ -379,92 +422,95 @@ $(window).on('load', function () {
         //     if (direction === "up") scrollDirecrion = "prev";
         //     scrollViewport(scrollDirecrion);
         // };
-        $(function() {
-        $("body").swipe( {
-          //Generic swipe handler for all directions
-          swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            $(this).text("scrollDirecrion" + direction + distance + duration + fingerCount + fingerData);  
-          }
+        $(function () {
+            $("body").swipe({
+                //Generic swipe handler for all directions
+                swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                    $(this).text("scrollDirecrion" + direction + distance + duration + fingerCount + fingerData);
+                }
+            });
+
+            //Set some options later
+            // $("body").swipe( {fingers:2} );
         });
-      
-        //Set some options later
-        // $("body").swipe( {fingers:2} );
-      });
 
     };
-    
+
     ////// видеоплеер
     var videoEl = document.getElementsByTagName('video')[0],
-            playBtn = document.getElementById('playBtn'),
-            vidControls = document.getElementById('controls'),
-            volumeControl = document.getElementById('volume'),
-            timePicker = document.getElementById('timer');
-         
-        // если браузер может воспроизводить видео удаляем класс
-        videoEl.addEventListener('canplaythrough', function () {
-            vidControls.classList.remove('hidden');
-            videoEl.volume = volumeControl.value;
-        }, false);
-        // запускам или останавливаем воспроизведение
-        playBtn.addEventListener('click', function () {
-            if (videoEl.paused) {
-                videoEl.play();
-            } else {
-                videoEl.pause();
-            }
-        }, false);
-         
-        videoEl.addEventListener('play', function () {
-         
-            playBtn.innerText = "Pause";
-        }, false);
-         
-        videoEl.addEventListener('pause', function () {
-         
-            playBtn.innerText = "Play";
-        }, false);
-         
-        volumeControl.addEventListener('input', function () {
-         
-            videoEl.volume = volumeControl.value;
-        }, false);
-         
-        videoEl.addEventListener('ended', function () {
-            videoEl.currentTime = 0;
-        }, false);
-         
-        videoEl.addEventListener('timeupdate', function () {
-            timePicker.innerHTML = secondsToTime(videoEl.currentTime);
-        }, false);
-         
-        // рассчет отображаемого времени
-        function secondsToTime(time){
-             
-            var h = Math.floor(time / (60 * 60)),
-                dm = time % (60 * 60),
-                m = Math.floor(dm / 60),
-                ds = dm % 60,
-                s = Math.ceil(ds);
-            if (s === 60) {
-                s = 0;
-                m = m + 1;
-            }
-            if (s < 10) {
-                s = '0' + s;
-            }
-            if (m === 60) {
-                m = 0;
-                h = h + 1;
-            }
-            if (m < 10) {
-                m = '0' + m;
-            }
-            if (h === 0) {
-                fulltime = m + ':' + s;
-            } else {
-                fulltime = h + ':' + m + ':' + s;
-            }
-            return fulltime;
+        playBtn = document.getElementById('playBtn'),
+        vidControls = document.getElementById('controls'),
+        volumeControl = document.getElementById('volume'),
+        timePicker = document.getElementById('timer');
+
+    // если браузер может воспроизводить видео удаляем класс
+    videoEl.addEventListener('canplaythrough', function () {
+        vidControls.classList.remove('hidden');
+        videoEl.volume = volumeControl.value;
+    }, false);
+    // запускам или останавливаем воспроизведение
+    playBtn.addEventListener('click', function () {
+        if (videoEl.paused) {
+            videoEl.play();
+        } else {
+            videoEl.pause();
         }
+    }, false);
+
+    videoEl.addEventListener('play', function () {
+
+        playBtn.innerText = "Pause";
+    }, false);
+
+    videoEl.addEventListener('pause', function () {
+
+        playBtn.innerText = "Play";
+    }, false);
+
+    volumeControl.addEventListener('input', function () {
+
+        videoEl.volume = volumeControl.value;
+    }, false);
+
+    videoEl.addEventListener('ended', function () {
+        videoEl.currentTime = 0;
+    }, false);
+
+    videoEl.addEventListener('timeupdate', function () {
+        timePicker.innerHTML = secondsToTime(videoEl.currentTime);
+    }, false);
+
+    // рассчет отображаемого времени
+    function secondsToTime(time) {
+
+        var h = Math.floor(time / (60 * 60)),
+            dm = time % (60 * 60),
+            m = Math.floor(dm / 60),
+            ds = dm % 60,
+            s = Math.ceil(ds);
+        if (s === 60) {
+            s = 0;
+            m = m + 1;
+        }
+        if (s < 10) {
+            s = '0' + s;
+        }
+        if (m === 60) {
+            m = 0;
+            h = h + 1;
+        }
+        if (m < 10) {
+            m = '0' + m;
+        }
+        if (h === 0) {
+            fulltime = m + ':' + s;
+        } else {
+            fulltime = h + ':' + m + ':' + s;
+        }
+        return fulltime;
+    }
+
+   
 
 });
+

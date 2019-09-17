@@ -359,6 +359,9 @@ $(window).on('load', function () {
                 break;
         }
     });
+
+    $('.wrapper').on('touchmove', e => e.preventDefault())
+
     $('[data-scroll-to]').on("click", e => {
         e.preventDefault();
         const target = parseInt($(e.currentTarget).attr("data-scroll-to"));
@@ -366,33 +369,23 @@ $(window).on('load', function () {
     });
     /// touchstart, touchmove, touchend.
     if (isMobile) {
-        window.addEventListener(
-            "touchmove",
-            e => {
-                e.preventDefault();
-            },
-            { passive: false }
-        );
-        // $("body")
-        // swipe: (event, direction) => {
-        //     let scrollDirecrion;
-        //     if (direction === "down") scrollDirecrion = "next";
-        //     if (direction === "up") scrollDirecrion = "prev";
-        //     scrollViewport(scrollDirecrion);
-        // };
-        $(function () {
-            $("body").swipe({
-                //Generic swipe handler for all directions
-                swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-                    $(this).text("scrollDirecrion" + direction + distance + duration + fingerCount + fingerData);
-                }
-            });
 
-            //Set some options later
-            $("body").swipe( {fingers:2} );
-        });
-
-    };
+        window.addEventListener('touchmove', e => {
+        e.preventDefault();
+        }, {passive: false})
+        
+        $('body').swipe({
+        swipe: function (event, direction) {
+        let scrollDirection;
+        
+        if (direction === 'up') scrollDirection = 'next'
+        if (direction === 'down') scrollDirection = 'prev'
+        
+        scrollViewport(scrollDirection);
+        }
+        })
+        }
+});   
 
     ////// видеоплеер
     // $(document).ready(function(){
@@ -511,5 +504,5 @@ $(window).on('load', function () {
     // });
    
 
-});
+
 

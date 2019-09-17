@@ -181,46 +181,46 @@ function validateField(field) {
 };
 
  /// карты яндекс
- function init () {
-    let myMap = new ymaps.Map('.map', {
-            center: [59.937758, 30.317956],
-            zoom: 2
-        });
+//  function init () {
+//     let myMap = new ymaps.Map('.map', {
+//             center: [59.937758, 30.317956],
+//             zoom: 2
+//         });
 
-        myPlacemark1 = new ymaps.Placemark([60.019660, 30.254785], {
-            balloonContent: 'Маленькая иконка'
-        }, {
-            iconLayout: 'default#image',
-            iconImageClipRect: [[0,0], [26, 47]],
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [15, 27],
-            iconImageOffset: [-15, -27],
-        }),
+//         myPlacemark1 = new ymaps.Placemark([60.019660, 30.254785], {
+//             balloonContent: 'Маленькая иконка'
+//         }, {
+//             iconLayout: 'default#image',
+//             iconImageClipRect: [[0,0], [26, 47]],
+//             iconImageHref: 'img/map-marker.png',
+//             iconImageSize: [15, 27],
+//             iconImageOffset: [-15, -27],
+//         }),
 
-        myPlacemark2 = new ymaps.Placemark([59.962901, 30.412713], {
-            balloonContent: 'Средняя иконка'
-        }, {
-            iconLayout: 'default#image',
-            iconImageClipRect: [[34,0], [62, 46]],
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [26, 46],
-            iconImageOffset: [-26, -46]
-        }),
+//         myPlacemark2 = new ymaps.Placemark([59.962901, 30.412713], {
+//             balloonContent: 'Средняя иконка'
+//         }, {
+//             iconLayout: 'default#image',
+//             iconImageClipRect: [[34,0], [62, 46]],
+//             iconImageHref: 'img/map-marker.png',
+//             iconImageSize: [26, 46],
+//             iconImageOffset: [-26, -46]
+//         }),
 
-        myPlacemark3 = new ymaps.Placemark([59.878443, 30.350915], {
-            balloonContent: 'Большая иконка'
-        }, {
-            iconLayout: 'default#image',
-            iconImageClipRect: [[69,0], [97, 46]],
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [35, 63],
-            iconImageOffset: [-35, -63]
-        });
+//         myPlacemark3 = new ymaps.Placemark([59.878443, 30.350915], {
+//             balloonContent: 'Большая иконка'
+//         }, {
+//             iconLayout: 'default#image',
+//             iconImageClipRect: [[69,0], [97, 46]],
+//             iconImageHref: 'img/map-marker.png',
+//             iconImageSize: [35, 63],
+//             iconImageOffset: [-35, -63]
+//         });
 
-    myMap.geoObjects.add(myPlacemark1)
-        .add(myPlacemark2)
-        .add(myPlacemark3);
-    }
+//     myMap.geoObjects.add(myPlacemark1)
+//         .add(myPlacemark2)
+//         .add(myPlacemark3);
+//     }
 
 /////////// стили инпутов
 const phone = document.querySelector('#formphone');
@@ -431,7 +431,7 @@ $(window).on('load', function () {
             });
 
             //Set some options later
-            // $("body").swipe( {fingers:2} );
+            $("body").swipe( {fingers:2} );
         });
 
     };

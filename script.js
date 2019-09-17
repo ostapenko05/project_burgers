@@ -267,16 +267,16 @@ function loop(direction) {
 /////jquery code
 $(window).on('load', function () {
     //// стили по меню и кнопкам
-    $('.nav__section-button').on('click', e => {
-        $('html, body').animate({
-            'scrollTop': $('.form').offset().top
-        }, 1000)
-    });
-    $('.btn-price').on('click', e => {
-        $('html, body').animate({
-            'scrollTop': $('.form').offset().top
-        }, 1000)
-    });
+    // $('.nav__section-button').on('click', e => {
+    //     $('html, body').animate({
+    //         'scrollTop': $('.form').offset().top
+    //     }, 1000)
+    // });
+    // $('.btn-price').on('click', e => {
+    //     $('html, body').animate({
+    //         'scrollTop': $('.form').offset().top
+    //     }, 1000)
+    // });
     $('.nav__link-hover').on('click', function () {
         $('body').css({
             'overflow': 'auto'

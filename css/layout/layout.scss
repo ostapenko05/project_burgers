@@ -19,6 +19,13 @@ body {
   touch-action: none;
 }
 
+.section {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;

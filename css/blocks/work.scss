@@ -2,7 +2,7 @@
     background: url(../../img/bg_work.png) center center no-repeat;
     background-size: cover;
     position: relative;
-    height: 100vh;
+    // height: 100vh;
 }
 
 .container__work {
@@ -22,31 +22,52 @@
     text-align: center;
 }
 
-.work__video{
-    width: 87%;
-
-    @include phone {
-
-    }
+.controls span {
+    display:inline-block;
+}
+        
+.playpause {
+    background:#eee;
+    color:#333;
+    padding:0 5px;
+    font-size:12pt;
+    text-transform:uppercase;
+    width:50px;
 }
 
+.progress {
+    width:290px;
+}
+            
+.total {
+    width:100%;                
+    background:#999;
+}
+            
+.buffered {
+    background:#ccc;
+}
+            
+.current {
+    background:#eee;
+    line-height:0;
+    height:10px;
+}
+            
+.time {
+    color:#999;
+    font-size:12pt;
+}
 
-.hidden{
-    width: 87%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #333;
-    color: #fff;
-    // display:none;
-    // position: absolute;
+.dynamic {
+    fill:#333;
+    padding:0 5px;
 }
-#playBtn {
-    border: solid 1px #333;
-    padding: 5px;
-    cursor: pointer;
+            
+.dynamic.off {
+    fill:#ccc;
 }
+
 
 .section__work-play {
     fill: #f9b43b;

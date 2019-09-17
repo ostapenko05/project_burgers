@@ -180,49 +180,7 @@ function validateField(field) {
     }
 };
 
- /// карты яндекс
-//  function init () {
-//     let myMap = new ymaps.Map('.map', {
-//             center: [59.937758, 30.317956],
-//             zoom: 2
-//         });
-
-//         myPlacemark1 = new ymaps.Placemark([60.019660, 30.254785], {
-//             balloonContent: 'Маленькая иконка'
-//         }, {
-//             iconLayout: 'default#image',
-//             iconImageClipRect: [[0,0], [26, 47]],
-//             iconImageHref: 'img/map-marker.png',
-//             iconImageSize: [15, 27],
-//             iconImageOffset: [-15, -27],
-//         }),
-
-//         myPlacemark2 = new ymaps.Placemark([59.962901, 30.412713], {
-//             balloonContent: 'Средняя иконка'
-//         }, {
-//             iconLayout: 'default#image',
-//             iconImageClipRect: [[34,0], [62, 46]],
-//             iconImageHref: 'img/map-marker.png',
-//             iconImageSize: [26, 46],
-//             iconImageOffset: [-26, -46]
-//         }),
-
-//         myPlacemark3 = new ymaps.Placemark([59.878443, 30.350915], {
-//             balloonContent: 'Большая иконка'
-//         }, {
-//             iconLayout: 'default#image',
-//             iconImageClipRect: [[69,0], [97, 46]],
-//             iconImageHref: 'img/map-marker.png',
-//             iconImageSize: [35, 63],
-//             iconImageOffset: [-35, -63]
-//         });
-
-//     myMap.geoObjects.add(myPlacemark1)
-//         .add(myPlacemark2)
-//         .add(myPlacemark3);
-//     }
-
-/////////// стили инпутов
+ /////////// стили инпутов
 const phone = document.querySelector('#formphone');
 phone.addEventListener('keydown', function (e) {
     let isDigit = false;
@@ -437,79 +395,120 @@ $(window).on('load', function () {
     };
 
     ////// видеоплеер
-    var videoEl = document.getElementsByTagName('video')[0],
-        playBtn = document.getElementById('playBtn'),
-        vidControls = document.getElementById('controls'),
-        volumeControl = document.getElementById('volume'),
-        timePicker = document.getElementById('timer');
-
-    // если браузер может воспроизводить видео удаляем класс
-    videoEl.addEventListener('canplaythrough', function () {
-        vidControls.classList.remove('hidden');
-        videoEl.volume = volumeControl.value;
-    }, false);
-    // запускам или останавливаем воспроизведение
-    playBtn.addEventListener('click', function () {
-        if (videoEl.paused) {
-            videoEl.play();
-        } else {
-            videoEl.pause();
-        }
-    }, false);
-
-    videoEl.addEventListener('play', function () {
-
-        playBtn.innerText = "Pause";
-    }, false);
-
-    videoEl.addEventListener('pause', function () {
-
-        playBtn.innerText = "Play";
-    }, false);
-
-    volumeControl.addEventListener('input', function () {
-
-        videoEl.volume = volumeControl.value;
-    }, false);
-
-    videoEl.addEventListener('ended', function () {
-        videoEl.currentTime = 0;
-    }, false);
-
-    videoEl.addEventListener('timeupdate', function () {
-        timePicker.innerHTML = secondsToTime(videoEl.currentTime);
-    }, false);
-
-    // рассчет отображаемого времени
-    function secondsToTime(time) {
-
-        var h = Math.floor(time / (60 * 60)),
-            dm = time % (60 * 60),
-            m = Math.floor(dm / 60),
-            ds = dm % 60,
-            s = Math.ceil(ds);
-        if (s === 60) {
-            s = 0;
-            m = m + 1;
-        }
-        if (s < 10) {
-            s = '0' + s;
-        }
-        if (m === 60) {
-            m = 0;
-            h = h + 1;
-        }
-        if (m < 10) {
-            m = '0' + m;
-        }
-        if (h === 0) {
-            fulltime = m + ':' + s;
-        } else {
-            fulltime = h + ':' + m + ':' + s;
-        }
-        return fulltime;
-    }
-
+    // $(document).ready(function(){
+    //     var controls = {
+    //         video: $("#myvideo"),
+    //         playpause: $("#playpause")                 
+    //     };
+                    
+    //     var video = controls.video[0];
+                   
+    //     controls.playpause.click(function(){
+    //         if (video.paused) {
+    //             video.play();
+    //             $(this).text("Pause");    
+    //         } else {
+    //             video.pause();
+    //             $(this).text("Play");
+    //         }
+                    
+    //         $(this).toggleClass("paused"); 
+    //     });
+    // }); 
+    // video.addEventListener("ended", function() {
+    //     video.pause();
+    //     controls.playpause.text("Play");
+    //     controls.playpause.toggleClass("paused");
+    // });
+    // video.addEventListener("play", function() {
+    //     controls.playpause.text("Pause");
+    //     controls.playpause.toggleClass("paused");
+    // });
+                    
+    // video.addEventListener("pause", function() {
+    //     controls.playpause.text("Play");
+    //     controls.playpause.toggleClass("paused");
+    // });
+    // var controls = {
+    //     ...  
+    //     togglePlayback: function() {
+    //         (video.paused) ? video.play() : video.pause();
+    //     }
+    //     ...
+    // };
+                    
+    // controls.playpause.click(function(){
+    //     controls.togglePlayback();
+    // });
+    // controls.video.click(function() {
+    //     controls.togglePlayback();
+    // });
+    // var controls = {
+    //     ...
+    //     total: $("#total"),
+    //     buffered: $("#buffered"),
+    //     progress: $("#current"),
+    //     duration: $("#duration"),
+    //     currentTime: $("#currenttime"),
+    //     hasHours: false,
+    //     ...
+    // };
+    // video.addEventListener("canplay", function() {
+    //     controls.hasHours = (video.duration / 3600) >= 1.0;                    
+    //     controls.duration.text(formatTime(video.duration, controls.hasHours));
+    //     controls.currentTime.text(formatTime(0),controls.hasHours);
+    // }, false);
+    // function formatTime(time, hours) {
+    //     if (hours) {
+    //         var h = Math.floor(time / 3600);
+    //         time = time - h * 3600;
+                        
+    //         var m = Math.floor(time / 60);
+    //         var s = Math.floor(time % 60);
+                        
+    //         return h.lead0(2)  + ":" + m.lead0(2) + ":" + s.lead0(2);
+    //     } else {
+    //         var m = Math.floor(time / 60);
+    //         var s = Math.floor(time % 60);
+                        
+    //         return m.lead0(2) + ":" + s.lead0(2);
+    //     }
+    // }
+                
+    // Number.prototype.lead0 = function(n) {
+    //     var nz = "" + this;
+    //     while (nz.length < n) {
+    //         nz = "0" + nz;
+    //     }
+    //     return nz;
+    // };
+    // video.addEventListener("timeupdate", function() {
+    //     controls.currentTime.text(formatTime(video.currentTime, controls.hasHours));
+                        
+    //     var progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+    //     controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
+    // }, false);
+    // controls.total.click(function(e) {
+    //     var x = (e.pageX - this.offsetLeft)/$(this).width();
+    //     video.currentTime = x * video.duration;
+    // });
+    // video.addEventListener("progress", function() {
+    //     var buffered = Math.floor(video.buffered.end(0)) / Math.floor(video.duration);
+    //     controls.buffered[0].style.width =  Math.floor(buffered * controls.total.width()) + "px";
+    // }, false);
+    // controls.dynamic.click(function() {
+    //     var classes = this.getAttribute("class");
+    
+    //     if (new RegExp('\\boff\\b').test(classes)) {
+    //         classes = classes.replace(" off", "");
+    //     } else {
+    //         classes = classes + " off";
+    //     }
+    
+    //     this.setAttribute("class", classes);
+                        
+    //     video.muted = !video.muted;
+    // });
    
 
 });

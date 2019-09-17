@@ -180,7 +180,7 @@ function validateField(field) {
     }
 };
 
- /////////// стили инпутов
+/////////// стили инпутов
 const phone = document.querySelector('#formphone');
 phone.addEventListener('keydown', function (e) {
     let isDigit = false;
@@ -265,127 +265,121 @@ function loop(direction) {
     }
 }
 /////jquery code
-$(window).on('load', function () {
-    //// стили по меню и кнопкам
-    // $('.nav__section-button').on('click', e => {
-    //     $('html, body').animate({
-    //         'scrollTop': $('.form').offset().top
-    //     }, 1000)
-    // });
-    // $('.btn-price').on('click', e => {
-    //     $('html, body').animate({
-    //         'scrollTop': $('.form').offset().top
-    //     }, 1000)
-    // });
-    $('.nav__link-hover').on('click', function () {
-        $('body').css({
-            'overflow': 'auto'
-        });
-        $('.menu__section-hover').css({
-            'display': 'none'
-        });
+
+
+$('.nav__link-hover').on('click', function () {
+    $('body').css({
+        'overflow': 'auto'
     });
-    $('.arrow-scroll__btn').on('click', e => {
-        $('html, body').animate({
-            'scrollTop': $('.section--block-two').offset().top
-        }, 1000)
+    $('.menu__section-hover').css({
+        'display': 'none'
     });
-    //// one page scroll
-    const sections = $('.section');
-    const display = $('.maincontent');
-    const fixed = $('.fixed-menu__item');
-    let inscroll = false;
-    const mobileDetect = new MobileDetect(window.navigator.userAgent);
-    const isMobile = mobileDetect.mobile();
-    const countPosition = sectionEq => {
-        return `${sectionEq * -100}%`;
+});
+$('.arrow-scroll__btn').on('click', e => {
+    $('html, body').animate({
+        'scrollTop': $('.section--block-two').offset().top
+    }, 1000)
+});
+
+
+//// one page scroll
+const sections = $('.section');
+const display = $('.maincontent');
+const fixed = $('.fixed-menu__item');
+let inscroll = false;
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
+const countPosition = sectionEq => {
+    return `${sectionEq * -100}%`;
+}
+const unBlockScroll = () => {
+    const transitionDuration = 1000;
+    const touchScrollInertion = 300;
+    setTimeout(() => {
+        inscroll = false;
+    }, transitionDuration + touchScrollInertion); ///это метод задержки
+}
+const performTransition = sectionEq => {
+    if (inscroll) return;
+    inscroll = true;
+    const position = countPosition(sectionEq);
+    sections
+        .eq(sectionEq)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+    fixed
+        .eq(sectionEq)
+        .addClass("fixed-menu__item--active")
+        .siblings()
+        .removeClass("fixed-menu__item--active");
+    display.css({
+        transform: `translateY(${position})`
+    });
+    unBlockScroll();
+};
+const scrollViewport = direction => {
+    const activeSection = sections.filter('.active');
+    const nextSection = activeSection.next();
+    const prevSection = activeSection.prev();
+    if (direction === 'next' && nextSection.length) {
+        performTransition(nextSection.index());
     }
-    const unBlockScroll = () => {
-        const transitionDuration = 1000;
-        const touchScrollInertion = 300;
-        setTimeout(() => {
-            inscroll = false;
-        }, transitionDuration + touchScrollInertion); ///это метод задержки
+    if (direction === 'prev' && prevSection.length) {
+        performTransition(prevSection.index());
     }
-    const performTransition = sectionEq => {
-        if (inscroll) return;
-        inscroll = true;
-        const position = countPosition(sectionEq);
-        sections
-            .eq(sectionEq)
-            .addClass("active")
-            .siblings()
-            .removeClass("active");
-        fixed
-            .eq(sectionEq)
-            .addClass("fixed-menu__item--active")
-            .siblings()
-            .removeClass("fixed-menu__item--active");
-        display.css({
-            transform: `translateY(${position})`
-        });
-        unBlockScroll();
-    };
-    const scrollViewport = direction => {
-        const activeSection = sections.filter('.active');
-        const nextSection = activeSection.next();
-        const prevSection = activeSection.prev();
-        if (direction === 'next' && nextSection.length) {
-            performTransition(nextSection.index());
-        }
-        if (direction === 'prev' && prevSection.length) {
-            performTransition(prevSection.index());
-        }
+}
+$(document).on("wheel", e => {
+    const deltaY = e.originalEvent.deltaY;
+    if (deltaY > 0) {
+        scrollViewport("next");
     }
-    $(document).on("wheel", e => {
-        const deltaY = e.originalEvent.deltaY;
-        if (deltaY > 0) {
-            scrollViewport("next");
-        }
-        if (deltaY < 0) {
+    if (deltaY < 0) {
+        scrollViewport("prev");
+    }
+});
+$(document).on("keydown", e => {
+    const tagName = e.target.tagName.toLowerCase();
+    const userTypingInInput = tagName === "input" || tagName === "textarea";
+    if (userTypingInInput) return;
+    switch (e.keyCode) {
+        case 38:
             scrollViewport("prev");
-        }
-    });
-    $(document).on("keydown", e => {
-        const tagName = e.target.tagName.toLowerCase();
-        const userTypingInInput = tagName === "input" || tagName === "textarea";
-        if (userTypingInInput) return;
-        switch (e.keyCode) {
-            case 38:
-                scrollViewport("prev");
-                break;
-            case 40:
-                scrollViewport("next");
-                break;
-        }
-    });
+            break;
+        case 40:
+            scrollViewport("next");
+            break;
+    }
+});
 
-    $('.wrapper').on('touchmove', e => e.preventDefault())
+$('.wrapper').on('touchmove', e => e.preventDefault())
 
-    $('[data-scroll-to]').on("click", e => {
+$('[data-scroll-to]').on("click", e => {
+    e.preventDefault();
+    const target = parseInt($(e.currentTarget).attr("data-scroll-to"));
+    performTransition(target);
+});
+/// touchstart, touchmove, touchend.
+if (isMobile) {
+
+    window.addEventListener('touchmove', e => {
         e.preventDefault();
-        const target = parseInt($(e.currentTarget).attr("data-scroll-to"));
-        performTransition(target);
-    });
-    /// touchstart, touchmove, touchend.
-    if (isMobile) {
+    }, { passive: false })
 
-        window.addEventListener('touchmove', e => {
-        e.preventDefault();
-        }, {passive: false})
-        
-        $('body').swipe({
+    $('body').swipe({
         swipe: function (event, direction) {
-        let scrollDirection;
-        
-        if (direction === 'up') scrollDirection = 'next'
-        if (direction === 'down') scrollDirection = 'prev'
-        
-        scrollViewport(scrollDirection);
+            let scrollDirection;
+
+            if (direction === 'up') scrollDirection = 'next'
+            if (direction === 'down') scrollDirection = 'prev'
+
+            scrollViewport(scrollDirection);
         }
-        })
-        }
-});   
+    })
+}
+
 
     ////// видеоплеер
     // $(document).ready(function(){
@@ -393,9 +387,9 @@ $(window).on('load', function () {
     //         video: $("#myvideo"),
     //         playpause: $("#playpause")                 
     //     };
-                    
+
     //     var video = controls.video[0];
-                   
+
     //     controls.playpause.click(function(){
     //         if (video.paused) {
     //             video.play();
@@ -404,7 +398,7 @@ $(window).on('load', function () {
     //             video.pause();
     //             $(this).text("Play");
     //         }
-                    
+
     //         $(this).toggleClass("paused"); 
     //     });
     // }); 
@@ -417,7 +411,7 @@ $(window).on('load', function () {
     //     controls.playpause.text("Pause");
     //     controls.playpause.toggleClass("paused");
     // });
-                    
+
     // video.addEventListener("pause", function() {
     //     controls.playpause.text("Play");
     //     controls.playpause.toggleClass("paused");
@@ -429,7 +423,7 @@ $(window).on('load', function () {
     //     }
     //     ...
     // };
-                    
+
     // controls.playpause.click(function(){
     //     controls.togglePlayback();
     // });
@@ -455,19 +449,19 @@ $(window).on('load', function () {
     //     if (hours) {
     //         var h = Math.floor(time / 3600);
     //         time = time - h * 3600;
-                        
+
     //         var m = Math.floor(time / 60);
     //         var s = Math.floor(time % 60);
-                        
+
     //         return h.lead0(2)  + ":" + m.lead0(2) + ":" + s.lead0(2);
     //     } else {
     //         var m = Math.floor(time / 60);
     //         var s = Math.floor(time % 60);
-                        
+
     //         return m.lead0(2) + ":" + s.lead0(2);
     //     }
     // }
-                
+
     // Number.prototype.lead0 = function(n) {
     //     var nz = "" + this;
     //     while (nz.length < n) {
@@ -477,7 +471,7 @@ $(window).on('load', function () {
     // };
     // video.addEventListener("timeupdate", function() {
     //     controls.currentTime.text(formatTime(video.currentTime, controls.hasHours));
-                        
+
     //     var progress = Math.floor(video.currentTime) / Math.floor(video.duration);
     //     controls.progress[0].style.width = Math.floor(progress * controls.total.width()) + "px";
     // }, false);
@@ -491,18 +485,18 @@ $(window).on('load', function () {
     // }, false);
     // controls.dynamic.click(function() {
     //     var classes = this.getAttribute("class");
-    
+
     //     if (new RegExp('\\boff\\b').test(classes)) {
     //         classes = classes.replace(" off", "");
     //     } else {
     //         classes = classes + " off";
     //     }
-    
+
     //     this.setAttribute("class", classes);
-                        
+
     //     video.muted = !video.muted;
     // });
-   
+
 
 
 

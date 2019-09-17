@@ -2,7 +2,6 @@
     background: url(../../img/bg_work.png) center center no-repeat;
     background-size: cover;
     position: relative;
-    // height: 100vh;
 }
 
 .container__work {
@@ -11,63 +10,6 @@
     justify-content: center;
     align-items: center;
 }
-
-.title__work {
-    color: #f9b43b;
-    font-family: gagalin-regular;
-    font-size: 4.5rem;
-    font-weight: 400;
-    line-height: 4rem;
-    margin: 0 0 3.13rem 0;
-    text-align: center;
-}
-
-.controls span {
-    display:inline-block;
-}
-        
-.playpause {
-    background:#eee;
-    color:#333;
-    padding:0 5px;
-    font-size:12pt;
-    text-transform:uppercase;
-    width:50px;
-}
-
-.progress {
-    width:290px;
-}
-            
-.total {
-    width:100%;                
-    background:#999;
-}
-            
-.buffered {
-    background:#ccc;
-}
-            
-.current {
-    background:#eee;
-    line-height:0;
-    height:10px;
-}
-            
-.time {
-    color:#999;
-    font-size:12pt;
-}
-
-.dynamic {
-    fill:#333;
-    padding:0 5px;
-}
-            
-.dynamic.off {
-    fill:#ccc;
-}
-
 
 .section__work-play {
     fill: #f9b43b;

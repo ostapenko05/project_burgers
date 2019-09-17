@@ -1,7 +1,6 @@
 .form {
     background: url(../../img/bg_form.png) center center no-repeat;
     background-size: cover;
-    // height: 100vh;
 }
 
 .form__column {
@@ -337,18 +336,3 @@ textarea {
     font-weight: 300;
     line-height: 1rem;
 }
-
-// .form__input-textarea {
-//     min-width: 100%;
-//     min-height: 5rem;
-//     background: #fff;
-//     border-radius: 0.19rem;
-//     border: none;
-//     padding: .4rem;
-//     box-sizing: border-box;
-//     font-family: ubuntu-regular;
-
-//     @include phone {
-//         min-height: 4rem;
-//     }
-// }

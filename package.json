@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "6.9.0",
+  "description": "",
+  "main": "package.json",
+  "scripts": {
+    "test": "npm install gulp --save-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ostapenko05/project_burgers.git"
+  },
+  "keywords": [],
+  "author": "Arkadiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ostapenko05/project_burgers/issues"
+  },
+  "homepage": "https://github.com/ostapenko05/project_burgers#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

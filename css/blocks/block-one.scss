@@ -94,7 +94,7 @@
 }
 
 .block1__leftside {
-
+   max-width: 90%;
    margin-right: .81rem;
 
    @include tablets {
@@ -159,7 +159,7 @@
    @include phone {
       justify-content: center;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0 0;
 
    }
@@ -182,7 +182,7 @@
    @include phone {
       text-align: center;
       padding: 0 15%;
-      font-size: 3rem;
+      font-size: 2rem;
    }
 }
 

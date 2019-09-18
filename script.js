@@ -263,6 +263,9 @@ function loop(direction) {
         items.insertBefore(items.lastElementChild, items.firstElementChild);
     }
 }
+/// player video
+
+
 /////jquery code
 $('.nav__link-hover').on('click', function () {
     $('body').css({
@@ -374,3 +377,4 @@ if (isMobile) {
         }
     })
 }
+

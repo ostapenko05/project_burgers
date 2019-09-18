@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru_RU">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
    <link rel="stylesheet" href="css/layout/main.css">
    <title>MrBurger</title>
 </head>
+
 <body>
    <div class="wrapper">
       <div class="maincontent">
@@ -56,7 +58,7 @@
                   </div>
                </div>
                <button type="button" class="arrow-scroll">
-                  <svg data-scroll-to="1"class="arrow-scroll__btn">
+                  <svg data-scroll-to="1" class="arrow-scroll__btn">
                      <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
                   </svg>
                </button>
@@ -959,9 +961,35 @@
          <section class="section work">
             <div class="container container__work">
                <div class="title__work">как мы работаем</div>
-               <svg class="section__work-play">
-                  <use xlink:href="./css/layout/sprite.svg#play"></use>
-               </svg>
+               <div class="player">
+
+                  <div class="player__wrapper">
+                     <video preload="auto" controls loop 
+                     class="work__video" width="85%" 
+                     src="./video/Hamburger - 1015.mp4" 
+                     type="video/mp4">
+                     </video>
+                  </div>
+
+                  <!-- <div id="controls" class="hidden player__controls">
+                     <a id="playBtn">
+                        <div class="work-play"></div>
+                        <div class="work__pause"></div>
+                     </a>
+                     <div class="player__playback">
+                        <input class="playback__way" type="range" step="0.1" min="0" max="1" value="1.0" id="volume">
+                     </div>
+                     <div class="work__time">
+                        <span id="timer">00:00</span>
+                        <span id="timer">00:00</span>
+                     </div>
+                  </div> -->
+
+                  <svg class="section__work-play">
+                     <use xlink:href="./css/layout/sprite.svg#play"></use>
+                  </svg>
+
+               </div>
             </div>
          </section>
          <section class="section form">
@@ -1051,7 +1079,8 @@
             </div>
          </section>
          <section class="section contacts">
-               <iframe src="https://www.google.com/maps/d/embed?mid=1qyeOM2bVPuWmhhdZtNnqLHWzjux12yTT" width="100%" height="100%"></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1qyeOM2bVPuWmhhdZtNnqLHWzjux12yTT" width="100%"
+               height="100%"></iframe>
             <div class="container container__contacts">
                <footer class="footer">
                   <address class="footer__contacts-tel">
@@ -1138,4 +1167,5 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
    <script src="./script.js"></script>
 </body>
+
 </html>

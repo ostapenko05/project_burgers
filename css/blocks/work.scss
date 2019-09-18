@@ -2,13 +2,90 @@
     background: url(../../img/bg_work.png) center center no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.container__work {
+.player {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 0;
+}
+
+.player__wrapper {
+    text-align: center;
+    font-size: 0;
+}
+
+.player__playback {
+    width: 60%;
+}
+
+.work-play {
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-left-width: .44rem;
+    border-left-color: #fff;
+    border-right-width: 0;
+    // margin: .63rem .56rem 0 0;
+    cursor: pointer;
+    // display: none;
+}
+
+.work__pause {
+    width: 2px;
+    height: 1rem;
+    background: #fff;
+
+    // display: none;
+    &::before {
+        width: 2px;
+        height: 1rem;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        transform: translateX(10px);
+    }
+}
+
+.playback__way {
+    width: 90%;
+}
+
+.player__controls {
+    width: 85%;
+    background: #222;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    // font-size: 0;
+}
+
+.player__controls a input {
+    cursor: pointer;
+}
+
+.title__work {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    text-align: center;
+    color: #333;
+    font-family: gagalin-regular;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+    text-align: center;
+    @include phone {
+        left: 10%;
+    }
 }
 
 .section__work-play {
@@ -18,17 +95,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
 
     @include phone {
-        left: 45%;
-        top: 60%;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
         width: 4rem;
         height: 4rem;
     }
-}
-
-.section__work-volume {
-    fill: #fff;
-    width: 1.4rem;
-    height: 1.4rem;
 }

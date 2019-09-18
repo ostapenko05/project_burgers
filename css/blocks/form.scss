@@ -1,6 +1,9 @@
 .form {
     background: url(../../img/bg_form.png) center center no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form__column {

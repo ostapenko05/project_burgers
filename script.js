@@ -378,3 +378,8 @@ if (isMobile) {
     })
 }
 
+$(document).ready(function(){
+	$('.overlay').click(function() {
+		$(this).remove();
+	});
+});

@@ -7,7 +7,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "gulp": "gulp"
+    "gulp" : "gulp"
   },
   "repository": {
     "type": "git",

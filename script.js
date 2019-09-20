@@ -263,7 +263,7 @@ function loop(direction) {
         items.insertBefore(items.lastElementChild, items.firstElementChild);
     }
 }
-/// player video
+
 
 
 /////jquery code
@@ -378,9 +378,137 @@ if (isMobile) {
     })
 }
 
-$(document).ready(function(){
-	$('.overlay').click(function() {
-		$(this).remove();
-	});
+$(document).ready(function () {
+    $('.overlay').click(function () {
+        $(this).remove();
+    });
 });
- 
+
+
+
+// $('.section__work-play').on('click', e => {
+//     const video = document.querySelector('.work__video');
+//     const svgPlay = document.querySelector('.section__work-play');
+//     const play = document.querySelector('#play');
+//         $('.work__video').play()
+        
+//     });
+/// player video
+
+const video = document.querySelector('#video');
+const videoBtn = document.querySelector('#playBtn');
+const progress = document.querySelector('#progress');
+const progressTime = document.querySelector('#progressTime');
+const allTime = document.querySelector('#allTime');
+const workPlay = document.querySelector('#workplay');
+
+video.ontimeupdate = progressUpdate;
+
+videoBtn.addEventListener('click', e => {
+   
+   if (video.paused) {
+      video.play();
+   }else{
+      video.pause();
+      //video.currentTime = 0; //сбросить время
+      //video.playbackRate = 2; //в два раза быстрее проигрывается
+      //video.volume = this.value / 100; //регулировка громкости
+   }
+})
+
+video.addEventListener('click', e => {
+
+   if (video.paused) {
+      video.play();
+   } else {
+      video.pause();
+   }
+})
+
+
+workPlay.addEventListener('click', e => {
+
+    if (video.paused) {
+       video.play();
+       
+    } else {
+       video.pause();
+    }
+ })
+
+progress.addEventListener('click', function() {
+
+   let widthProgress = this.offsetWidth;
+   let targetClick = event.offsetX;
+
+   this.value = (100 * targetClick) / widthProgress;
+   video.pause();
+   video.currentTime = video.duration * (targetClick / widthProgress);
+   video.play();
+})
+
+
+progress.addEventListener('mousedown', function () {
+
+   let widthProgress = this.offsetWidth;
+   let targetClick = event.offsetX;
+
+   this.value = (100 * targetClick) / widthProgress;
+   video.pause();
+   video.currentTime = video.duration * (targetClick / widthProgress);
+
+      this.addEventListener('mousemove', function () {
+
+         let widthProgress = this.offsetWidth;
+         let targetClick = event.offsetX;
+
+         this.value = (100 * targetClick) / widthProgress;
+      })
+})
+
+progress.addEventListener('mouseup', function () {
+
+   let widthProgress = this.offsetWidth;
+   let targetClick = event.offsetX;
+
+   this.value = (100 * targetClick) / widthProgress;
+   video.currentTime = video.duration * (targetClick / widthProgress);
+   video.play();
+})
+
+
+function progressUpdate() {
+   let d = video.duration; //полное время
+   let c = video.currentTime; //прогресс времени
+
+   console.log(video.duration);
+   progress.value = (100 * c) / d;
+   progressTime.textContent = '00:' + Math.floor(c);
+
+   if (video.currentTime < 10) {
+      progressTime.textContent = '00:0' + Math.floor(c);
+   }
+
+   // allTime.textContent = '00:' + Math.floor(d);
+}
+
+// $('.arrow-scroll__btn').on('click', e => {
+//     $('html, body').animate({
+//         'scrollTop': $('.section--block-two').offset().top
+//     }, 1000)
+// });
+// const video = document.querySelector('.work__video');
+// const svgPlay = document.querySelector('.section__work-play');
+// const play = document.querySelector('#play');
+// $(document).ready(function() {
+//     $('.svgPlay').click(function() {
+//         console.log(click);
+//      }
+// });
+
+
+// function svgPlay('click', => {
+
+// })
+
+

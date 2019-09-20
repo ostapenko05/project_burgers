@@ -263,7 +263,7 @@ function loop(direction) {
         items.insertBefore(items.lastElementChild, items.firstElementChild);
     }
 }
-/// player video
+
 
 
 /////jquery code
@@ -378,9 +378,8 @@ if (isMobile) {
     })
 }
 
-$(document).ready(function(){
-	$('.overlay').click(function() {
-		$(this).remove();
-	});
+$(document).ready(function () {
+    $('.overlay').click(function () {
+        $(this).remove();
+    });
 });
- 

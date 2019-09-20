@@ -959,17 +959,20 @@
             </ul>
          </section>
          <section class="section work">
-            <div class="container container__work">
+            <div class="container">
                <div class="title__work">как мы работаем</div>
+   
                <div class="player">
+   
                   <div class="player__wrapper">
-                     <video loop id="video" width="100%" height="85%">
-                        <source src="video/Hamburger - 1015.mp4" type="video/mp4" poster="">
+                     <video id="video" width="100%" height="85%">
+                        <source src="./video/Hamburger - 1015.mp4" type="video/mp4" poster="">
                      </video>
                   </div>
+   
                   <div id="controls" class="player__controls">
                      <div class="player__start">
-                        <a id="playBtn" class="play-button"></a>
+                        <a class="play-button" id="playBtn"></a>
                      </div>
                      <div class="player__playback">
                         <progress id="progress" max="100" value="0"></progress>
@@ -980,10 +983,9 @@
                         <span id="alltime">00:18</span>
                      </div>
                   </div>
-                  <!-- <svg id="workplay" class="section__work-play">
-                     <use xlink:href="./css/layout/sprite.svg#play"></use>
-                  </svg> -->
-               </div>
+   
+               </div> 
+   
             </div>
          </section>
          <section class="section form">
@@ -1161,6 +1163,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
    <script src="./script.js"></script>
+   <script src="./video.js"></script>
 </body>
 
 </html>

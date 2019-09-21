@@ -2,17 +2,17 @@
 const hoverMenu = document.querySelector('#menu__section-close');
 const hamburgerMenu = document.querySelector('#menu__hamb-act');
 const cross = document.querySelector('#menu__cross');
-const scroll = document.querySelector('body');
+// const scroll = document.querySelector('body');
 const navHover = document.querySelectorAll('.nav__link-hover');
 hamburgerMenu.addEventListener('click', function (e) {
     e.preventDefault();
     hoverMenu.style.display = 'block';
-    scroll.style.overflow = 'hidden';
+    // scroll.style.transform = 'none';
 });
 cross.addEventListener('click', function (e) {
     e.preventDefault();
     hoverMenu.style.display = 'none';
-    scroll.style.overflow = 'auto';
+    // scroll.style.transform = 'none';
 });
 ///////////секция команды вертикальный аккордеон
 const team = document.querySelector('.team'),
@@ -65,21 +65,22 @@ for (let i = 0; i < menuBlockLength; i++) {
 const reviews = document.querySelector('.reviews'),
     overlay = document.querySelector('.reviews__fon'),
     popupText = document.querySelector('.popup__text'),
-    bg = document.querySelector('body'),
+    bg = document.querySelector('.maincontent'),
     rmx = document.querySelector("#x");
 reviews.addEventListener('click', e => {
     let elem = e.target;
-    bg.style.overflow = 'hidden';
+    
     if (elem.tagname = '.reviews__btn') {
         let modalText = elem.previousElementSibling.innerHTML;
         popupText.innerHTML = modalText;
         overlay.style.display = 'block';
+        // bg.style.transform = 'fixed';
     };
 });
 rmx.addEventListener('click', function (e) {
     e.preventDefault();
     overlay.style.display = 'none';
-    bg.style.overflow = 'auto';
+    // bg.style.createElement = 'transition: transform .5s;';
 });
 ///////////////////////// валидация и запрос на сервер по форме
 const myform = document.querySelector("#myform");

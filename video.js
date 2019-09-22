@@ -18,14 +18,20 @@ volume.addEventListener('input', function() {
     let v = this.value;
     video.volume = v / 100;
 
-    if (v === 0) {
+    console.log(videoVolume.value);
+
+    if (videoVolume.value == 0) {
         volumeX.style.display = 'block';
+    } else {
+        volumeX.style.display = 'none';
     }
 })
 
 bigButton.addEventListener('click', e => {
     bigButton.style.display = 'none';
     video.play();
+    videoBtn.classList.add('play-button--pause');
+    svgButton.style.display = 'none';
 })
 
 videoBtn.addEventListener('click', e => {

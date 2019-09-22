@@ -2,1085 +2,1044 @@
 <html lang="ru_RU">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-   <link rel="stylesheet" href="./css/layout/main.css">
-   <title>MrBurger</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="stylesheet" href="./css/layout/main.css">
+    <title>MrBurger</title>
 </head>
 
 <body>
-   <div class="wrapper">
-      <div class="maincontent">
-         <section class="section section--block active">
-            <div class="container">
-               <header class="header">
-                  <img class="logo" src="./img/logo.png" alt="логотип MrBurger">
-                  <nav class="nav">
-                     <ul class="nav__list">
-                        <li class="nav__item">
-                           <a href data-scroll-to="1" class="nav__link">о нас</a>
-                        </li>
-                        <li class="nav__item">
-                           <a href data-scroll-to="2" class="nav__link">бургеры</a>
-                        </li>
-                        <li class="nav__item">
-                           <a href data-scroll-to="3" class="nav__link">команда</a>
-                        </li>
-                        <li class="nav__item">
-                           <a href data-scroll-to="4" class="nav__link">меню</a>
-                        </li>
-                        <li class="nav__item">
-                           <a href data-scroll-to="5" class="nav__link">отзывы</a>
-                        </li>
-                        <li class="nav__item">
-                           <a href data-scroll-to="6" class="nav__link">как мы работаем</a>
-                        </li>
-                        <li class="nav__item">
-                           <a href data-scroll-to="8" class="nav__link">контакты</a>
-                        </li>
-                     </ul>
-                     <button data-scroll-to="7" type="button" class="nav__section-button">заказать</button>
-                     <div id="menu__hamb-act" class="menu__hamb menu__hamb_active">
-                        <a href="#" class="menu__hamb-button">
-                           <span class="menu__hamb-lines"></span>
-                        </a>
-                     </div>
-                  </nav>
-               </header>
-               <div class="content-block">
-                  <div class="block1__leftside">
-                     <img src="./img/burgers-drops.png" alt="Burger" class="block1__leftside-burger">
-                  </div>
-                  <div class="block1__rightside">
-                     <div class="block1__rightside-title">мы делаем</div>
-                     <div class="block1__rightside-text">натуральные бургеры</div>
-                  </div>
-               </div>
-               <button type="button" class="arrow-scroll">
+    <div class="wrapper">
+        <div class="maincontent">
+            <section class="section section--block active">
+                <div class="container">
+                    <header class="header">
+                        <img class="logo" src="./img/logo.png" alt="логотип MrBurger">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href data-scroll-to="1" class="nav__link">о нас</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href data-scroll-to="2" class="nav__link">бургеры</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href data-scroll-to="3" class="nav__link">команда</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href data-scroll-to="4" class="nav__link">меню</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href data-scroll-to="5" class="nav__link">отзывы</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href data-scroll-to="6" class="nav__link">как мы работаем</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href data-scroll-to="8" class="nav__link">контакты</a>
+                                </li>
+                            </ul>
+                            <button data-scroll-to="7" type="button" class="nav__section-button">заказать</button>
+                            <div id="menu__hamb-act" class="menu__hamb menu__hamb_active">
+                                <a href="#" class="menu__hamb-button">
+                                    <span class="menu__hamb-lines"></span>
+                                </a>
+                            </div>
+                        </nav>
+                    </header>
+                    <div class="content-block">
+                        <div class="block1__leftside">
+                            <img src="./img/burgers-drops.png" alt="Burger" class="block1__leftside-burger">
+                        </div>
+                        <div class="block1__rightside">
+                            <div class="block1__rightside-title">мы делаем</div>
+                            <div class="block1__rightside-text">натуральные бургеры</div>
+                        </div>
+                    </div>
+                    <button type="button" class="arrow-scroll">
                   <svg data-scroll-to="1" class="arrow-scroll__btn">
                      <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
                   </svg>
                </button>
-               <div id="menu__section-close" class="menu__section-hover">
-                  <div class="menu__hover">
-                     <img class="menu-hover-logo" src="./img/logo.png" alt="logo MrBurger">
-                     <div id="menu__cross" class="menu__hover-x">
-                        <a href="#" class="menu__hover-button">
-                           <span class="menu__hover-line menu__hover-line_active"></span>
-                        </a>
-                     </div>
-                  </div>
-                  <nav class="menu__m-nav">
-                     <ul class="nav__list-hover">
-                        <li class="nav__item-hover">
-                           <a href data-scroll-to="1" class="nav__link-hover">о нас</a>
-                        </li>
-                        <li class="nav__item-hover">
-                           <a href data-scroll-to="2" class="nav__link-hover">бургеры</a>
-                        </li>
-                        <li class="nav__item-hover">
-                           <a href data-scroll-to="3" class="nav__link-hover">команда</a>
-                        </li>
-                        <li class="nav__item-hover">
-                           <a href data-scroll-to="4" class="nav__link-hover">меню</a>
-                        </li>
-                        <li class="nav__item-hover">
-                           <a href data-scroll-to="5" class="nav__link-hover">отзывы</a>
-                        </li>
-                        <li class="nav__item-hover">
-                           <a href data-scroll-to="6" class="nav__link-hover">как мы работаем</a>
-                        </li>
-                        <li class="nav__item-hover">
-                           <a href data-scroll-to="8" class="nav__link-hover">контакты</a>
-                        </li>
-                     </ul>
-                  </nav>
-               </div>
-            </div>
-         </section>
-         <section id="block" class="section section--block-two">
-            <div class="container container__block-two">
-               <div class="block-two__title">мы лучшие</div>
-               <ul class="content__list">
-                  <li class="content__list-section">
-                     <svg class="list-section__meat">
+                    <div id="menu__section-close" class="menu__section-hover">
+                        <div class="menu__hover">
+                            <img class="menu-hover-logo" src="./img/logo.png" alt="logo MrBurger">
+                            <div id="menu__cross" class="menu__hover-x">
+                                <a href="#" class="menu__hover-button">
+                                    <span class="menu__hover-line menu__hover-line_active"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="menu__m-nav">
+                            <ul class="nav__list-hover">
+                                <li class="nav__item-hover">
+                                    <a href data-scroll-to="1" class="nav__link-hover">о нас</a>
+                                </li>
+                                <li class="nav__item-hover">
+                                    <a href data-scroll-to="2" class="nav__link-hover">бургеры</a>
+                                </li>
+                                <li class="nav__item-hover">
+                                    <a href data-scroll-to="3" class="nav__link-hover">команда</a>
+                                </li>
+                                <li class="nav__item-hover">
+                                    <a href data-scroll-to="4" class="nav__link-hover">меню</a>
+                                </li>
+                                <li class="nav__item-hover">
+                                    <a href data-scroll-to="5" class="nav__link-hover">отзывы</a>
+                                </li>
+                                <li class="nav__item-hover">
+                                    <a href data-scroll-to="6" class="nav__link-hover">как мы работаем</a>
+                                </li>
+                                <li class="nav__item-hover">
+                                    <a href data-scroll-to="8" class="nav__link-hover">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section id="block" class="section section--block-two">
+                <div class="container container__block-two">
+                    <div class="block-two__title">мы лучшие</div>
+                    <ul class="content__list">
+                        <li class="content__list-section">
+                            <svg class="list-section__meat">
                         <use xlink:href="./css/layout/sprite.svg#meat"></use>
                      </svg>
-                     <div class="content__text">
-                        <h1>100% свежее мясо</h1>
-                        <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
-                           неравномерен.</p>
-                     </div>
-                  </li>
-                  <li class="content__list-section">
-                     <svg class="list-section__hand">
+                            <div class="content__text">
+                                <h1>100% свежее мясо</h1>
+                                <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="content__list-section">
+                            <svg class="list-section__hand">
                         <use xlink:href="./css/layout/sprite.svg#hand"></use>
                      </svg>
-                     <div class="content__text">
-                        <h1>Ручная сборка</h1>
-                        <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое
-                           полустишье притягивает сюжетный реформаторский пафос.</p>
-                     </div>
-                  </li>
-                  <li class="content__list-section">
-                     <svg class="list-section__natural">
+                            <div class="content__text">
+                                <h1>Ручная сборка</h1>
+                                <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишье притягивает сюжетный реформаторский пафос.</p>
+                            </div>
+                        </li>
+                        <li class="content__list-section">
+                            <svg class="list-section__natural">
                         <use xlink:href="./css/layout/sprite.svg#natural"></use>
                      </svg>
-                     <div class="content__text">
-                        <h1>Натуральные ингредиенты</h1>
-                        <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
-                           неравномерен.</p>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-         </section>
-         <section class="section burgers">
-            <button id="left" type="button" class="arrow-scroll-left slider__btn">
+                            <div class="content__text">
+                                <h1>Натуральные ингредиенты</h1>
+                                <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section burgers">
+                <button id="left" type="button" class="arrow-scroll-left slider__btn">
                <svg class="arrow-scroll__btn-left">
                   <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
                </svg>
             </button>
-            <div class="container slider">
-               <div class="items" id="items">
-                  <div class="section__slider">
-                     <div class="section__slider-left">
-                        <div class="section__ingred">
-                           <svg class="section__ingred-pic">
+                <div class="container slider">
+                    <div class="items" id="items">
+                        <div class="section__slider">
+                            <div class="section__slider-left">
+                                <div class="section__ingred">
+                                    <svg class="section__ingred-pic">
                               <use xlink:href="./css/layout/sprite.svg#burger"></use>
                            </svg>
-                           <div class="section__ingred-title">состав</div>
-                           <ul class="section__ingred-list">
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-beef">
+                                    <div class="section__ingred-title">состав</div>
+                                    <ul class="section__ingred-list">
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-beef">
                                     <use xlink:href="./css/layout/sprite.svg#beef"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Говядина</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>300&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-buns">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Говядина</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>300&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-buns">
                                     <use xlink:href="./css/layout/sprite.svg#buns"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Булочки</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>100&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-salad">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Булочки</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>100&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-salad">
                                     <use xlink:href="./css/layout/sprite.svg#salad"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Зелень</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>70&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-sauce">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Зелень</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>70&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-sauce">
                                     <use xlink:href="./css/layout/sprite.svg#sauce"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Соус</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>150&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cucumber">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Соус</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>150&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cucumber">
                                     <use xlink:href="./css/layout/sprite.svg#cucumber"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Овощи</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>200&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cheese">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Овощи</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>200&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cheese">
                                     <use xlink:href="./css/layout/sprite.svg#cheese"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Сыр</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>80&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="section__picture">
-                           <img class="section__picture-box" src="./img/dark_burger.png" alt="dark burger">
-                        </div>
-                        <div class="section__kkal">
-                           <p class="section__kkal-number">1200</p>
-                           <svg class="section__kkal-pic">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Сыр</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>80&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section__picture">
+                                    <img class="section__picture-box" src="./img/dark_burger.png" alt="dark burger">
+                                </div>
+                                <div class="section__kkal">
+                                    <p class="section__kkal-number">1200</p>
+                                    <svg class="section__kkal-pic">
                               <use xlink:href="./css/layout/sprite.svg#kkal"></use>
                            </svg>
-                           <p>ккал</p>
+                                    <p>ккал</p>
+                                </div>
+                            </div>
+                            <div class="section__slider-right">
+                                <div class="section__title">
+                                    dark beef burger
+                                </div>
+                                <div class="section__text-burger">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                </div>
+                                <div class="section__price">
+                                    <h1>500</h1>
+                                    <p>рублей</p>
+                                    <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="section__slider-right">
-                        <div class="section__title">
-                           dark beef burger
-                        </div>
-                        <div class="section__text-burger">
-                           <p>Ваш старый добрый знакомый, с рубленым бифштексом
-                              из 100% говядины, тремя кусочками нежнейшего сыра
-                              эмменталь, двумя помидорами, луком, салатом и
-                              соусом гриль теперь с добавлением экзотического
-                              соуса чураско.
-                           </p>
-                        </div>
-                        <div class="section__price">
-                           <h1>500</h1>
-                           <p>рублей</p>
-                           <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="section__slider">
-                     <div class="section__slider-left">
-                        <div class="section__ingred">
-                           <svg class="section__ingred-pic">
+                        <div class="section__slider">
+                            <div class="section__slider-left">
+                                <div class="section__ingred">
+                                    <svg class="section__ingred-pic">
                               <use xlink:href="./css/layout/sprite.svg#burger"></use>
                            </svg>
-                           <div class="section__ingred-title">состав</div>
-                           <ul class="section__ingred-list">
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-beef">
+                                    <div class="section__ingred-title">состав</div>
+                                    <ul class="section__ingred-list">
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-beef">
                                     <use xlink:href="./css/layout/sprite.svg#beef"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Говядина</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>300&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-buns">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Говядина</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>300&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-buns">
                                     <use xlink:href="./css/layout/sprite.svg#buns"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Булочки</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>100&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-salad">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Булочки</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>100&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-salad">
                                     <use xlink:href="./css/layout/sprite.svg#salad"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Зелень</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>70&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-sauce">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Зелень</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>70&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-sauce">
                                     <use xlink:href="./css/layout/sprite.svg#sauce"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Соус</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>150&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cucumber">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Соус</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>150&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cucumber">
                                     <use xlink:href="./css/layout/sprite.svg#cucumber"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Овощи</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>200&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cheese">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Овощи</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>200&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cheese">
                                     <use xlink:href="./css/layout/sprite.svg#cheese"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Сыр</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>80&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="section__picture">
-                           <img class="section__picture-box" src="./img/Spicy_Shrimp_Burger.png.png" alt="dark burger">
-                        </div>
-                        <div class="section__kkal">
-                           <p class="section__kkal-number">1200</p>
-                           <svg class="section__kkal-pic">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Сыр</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>80&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section__picture">
+                                    <img class="section__picture-box" src="./img/Spicy_Shrimp_Burger.png.png" alt="dark burger">
+                                </div>
+                                <div class="section__kkal">
+                                    <p class="section__kkal-number">1200</p>
+                                    <svg class="section__kkal-pic">
                               <use xlink:href="./css/layout/sprite.svg#kkal"></use>
                            </svg>
-                           <p>ккал</p>
+                                    <p>ккал</p>
+                                </div>
+                            </div>
+                            <div class="section__slider-right">
+                                <div class="section__title">
+                                    Shrimp Burger
+                                </div>
+                                <div class="section__text-burger">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                </div>
+                                <div class="section__price">
+                                    <h1>500</h1>
+                                    <p>рублей</p>
+                                    <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="section__slider-right">
-                        <div class="section__title">
-                           Spicy Shrimp Burger
-                        </div>
-                        <div class="section__text-burger">
-                           <p>Ваш старый добрый знакомый, с рубленым бифштексом
-                              из 100% говядины, тремя кусочками нежнейшего сыра
-                              эмменталь, двумя помидорами, луком, салатом и
-                              соусом гриль теперь с добавлением экзотического
-                              соуса чураско.
-                           </p>
-                        </div>
-                        <div class="section__price">
-                           <h1>500</h1>
-                           <p>рублей</p>
-                           <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="section__slider">
-                     <div class="section__slider-left">
-                        <div class="section__ingred">
+                        <div class="section__slider">
+                            <div class="section__slider-left">
+                                <div class="section__ingred">
 
-                           <svg class="section__ingred-pic">
+                                    <svg class="section__ingred-pic">
                               <use xlink:href="./css/layout/sprite.svg#burger"></use>
                            </svg>
-                           <div class="section__ingred-title">состав</div>
-                           <ul class="section__ingred-list">
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-beef">
+                                    <div class="section__ingred-title">состав</div>
+                                    <ul class="section__ingred-list">
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-beef">
                                     <use xlink:href="./css/layout/sprite.svg#beef"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Говядина</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>300&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-buns">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Говядина</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>300&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-buns">
                                     <use xlink:href="./css/layout/sprite.svg#buns"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Булочки</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>100&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-salad">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Булочки</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>100&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-salad">
                                     <use xlink:href="./css/layout/sprite.svg#salad"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Зелень</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>70&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-sauce">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Зелень</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>70&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-sauce">
                                     <use xlink:href="./css/layout/sprite.svg#sauce"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Соус</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>150&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cucumber">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Соус</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>150&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cucumber">
                                     <use xlink:href="./css/layout/sprite.svg#cucumber"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Овощи</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>200&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cheese">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Овощи</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>200&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cheese">
                                     <use xlink:href="./css/layout/sprite.svg#cheese"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Сыр</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>80&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="section__picture">
-                           <img class="section__picture-box" src="./img/burger_sandwich_PNG4124.png.png"
-                              alt="dark burger">
-                        </div>
-                        <div class="section__kkal">
-                           <p class="section__kkal-number">1200</p>
-                           <svg class="section__kkal-pic">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Сыр</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>80&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section__picture">
+                                    <img class="section__picture-box" src="./img/burger_sandwich_PNG4124.png.png" alt="dark burger">
+                                </div>
+                                <div class="section__kkal">
+                                    <p class="section__kkal-number">1200</p>
+                                    <svg class="section__kkal-pic">
                               <use xlink:href="./css/layout/sprite.svg#kkal"></use>
                            </svg>
-                           <p>ккал</p>
+                                    <p>ккал</p>
+                                </div>
+                            </div>
+                            <div class="section__slider-right">
+                                <div class="section__title">
+                                    burger sandwich
+                                </div>
+                                <div class="section__text-burger">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                </div>
+                                <div class="section__price">
+                                    <h1>500</h1>
+                                    <p>рублей</p>
+                                    <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="section__slider-right">
-                        <div class="section__title">
-                           burger sandwich
-                        </div>
-                        <div class="section__text-burger">
-                           <p>Ваш старый добрый знакомый, с рубленым бифштексом
-                              из 100% говядины, тремя кусочками нежнейшего сыра
-                              эмменталь, двумя помидорами, луком, салатом и
-                              соусом гриль теперь с добавлением экзотического
-                              соуса чураско.
-                           </p>
-                        </div>
-                        <div class="section__price">
-                           <h1>500</h1>
-                           <p>рублей</p>
-                           <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="section__slider">
-                     <div class="section__slider-left">
-                        <div class="section__ingred">
+                        <div class="section__slider">
+                            <div class="section__slider-left">
+                                <div class="section__ingred">
 
-                           <svg class="section__ingred-pic">
+                                    <svg class="section__ingred-pic">
                               <use xlink:href="./css/layout/sprite.svg#burger"></use>
                            </svg>
-                           <div class="section__ingred-title">состав</div>
-                           <ul class="section__ingred-list">
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-beef">
+                                    <div class="section__ingred-title">состав</div>
+                                    <ul class="section__ingred-list">
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-beef">
                                     <use xlink:href="./css/layout/sprite.svg#beef"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Говядина</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>300&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-buns">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Говядина</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>300&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-buns">
                                     <use xlink:href="./css/layout/sprite.svg#buns"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Булочки</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>100&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-salad">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Булочки</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>100&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-salad">
                                     <use xlink:href="./css/layout/sprite.svg#salad"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Зелень</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>70&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-sauce">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Зелень</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>70&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-sauce">
                                     <use xlink:href="./css/layout/sprite.svg#sauce"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Соус</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>150&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cucumber">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Соус</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>150&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cucumber">
                                     <use xlink:href="./css/layout/sprite.svg#cucumber"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Овощи</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>200&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cheese">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Овощи</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>200&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cheese">
                                     <use xlink:href="./css/layout/sprite.svg#cheese"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Сыр</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>80&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="section__picture">
-                           <img class="section__picture-box" src="./img/cheese.png" alt="dark burger">
-                        </div>
-                        <div class="section__kkal">
-                           <p class="section__kkal-number">1200</p>
-                           <svg class="section__kkal-pic">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Сыр</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>80&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section__picture">
+                                    <img class="section__picture-box" src="./img/cheese.png" alt="dark burger">
+                                </div>
+                                <div class="section__kkal">
+                                    <p class="section__kkal-number">1200</p>
+                                    <svg class="section__kkal-pic">
                               <use xlink:href="./css/layout/sprite.svg#kkal"></use>
                            </svg>
-                           <p>ккал</p>
+                                    <p>ккал</p>
+                                </div>
+                            </div>
+                            <div class="section__slider-right">
+                                <div class="section__title">
+                                    Chiken burger
+                                </div>
+                                <div class="section__text-burger">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                </div>
+                                <div class="section__price">
+                                    <h1>500</h1>
+                                    <p>рублей</p>
+                                    <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="section__slider-right">
-                        <div class="section__title">
-                           Chiken burger
-                        </div>
-                        <div class="section__text-burger">
-                           <p>Ваш старый добрый знакомый, с рубленым бифштексом
-                              из 100% говядины, тремя кусочками нежнейшего сыра
-                              эмменталь, двумя помидорами, луком, салатом и
-                              соусом гриль теперь с добавлением экзотического
-                              соуса чураско.
-                           </p>
-                        </div>
-                        <div class="section__price">
-                           <h1>500</h1>
-                           <p>рублей</p>
-                           <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="section__slider">
-                     <div class="section__slider-left">
-                        <div class="section__ingred">
+                        <div class="section__slider">
+                            <div class="section__slider-left">
+                                <div class="section__ingred">
 
-                           <svg class="section__ingred-pic">
+                                    <svg class="section__ingred-pic">
                               <use xlink:href="./css/layout/sprite.svg#burger"></use>
                            </svg>
-                           <div class="section__ingred-title">состав</div>
-                           <ul class="section__ingred-list">
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-beef">
+                                    <div class="section__ingred-title">состав</div>
+                                    <ul class="section__ingred-list">
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-beef">
                                     <use xlink:href="./css/layout/sprite.svg#beef"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Говядина</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>300&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-buns">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Говядина</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>300&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-buns">
                                     <use xlink:href="./css/layout/sprite.svg#buns"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Булочки</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>100&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-salad">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Булочки</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>100&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-salad">
                                     <use xlink:href="./css/layout/sprite.svg#salad"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Зелень</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>70&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-sauce">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Зелень</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>70&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-sauce">
                                     <use xlink:href="./css/layout/sprite.svg#sauce"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Соус</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>150&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cucumber">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Соус</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>150&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cucumber">
                                     <use xlink:href="./css/layout/sprite.svg#cucumber"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Овощи</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>200&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                              <li class="section__ingred-item">
-                                 <svg class="section_ingred-cheese">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Овощи</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>200&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="section__ingred-item">
+                                            <svg class="section_ingred-cheese">
                                     <use xlink:href="./css/layout/sprite.svg#cheese"></use>
                                  </svg>
-                                 <div class="section__ingred-text">
-                                    <div class="section__ingred-text-left">
-                                       <h4>Сыр</h4>
-                                    </div>
-                                    <div class="section__ingred-text-right">
-                                       <h4>80&nbsp;г</h4>
-                                    </div>
-                                 </div>
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="section__picture">
-                           <img class="section__picture-box" src="./img/nyc_cheese.png" alt="dark burger">
-                        </div>
-                        <div class="section__kkal">
-                           <p class="section__kkal-number">1200</p>
-                           <svg class="section__kkal-pic">
+                                            <div class="section__ingred-text">
+                                                <div class="section__ingred-text-left">
+                                                    <h4>Сыр</h4>
+                                                </div>
+                                                <div class="section__ingred-text-right">
+                                                    <h4>80&nbsp;г</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="section__picture">
+                                    <img class="section__picture-box" src="./img/nyc_cheese.png" alt="dark burger">
+                                </div>
+                                <div class="section__kkal">
+                                    <p class="section__kkal-number">1200</p>
+                                    <svg class="section__kkal-pic">
                               <use xlink:href="./css/layout/sprite.svg#kkal"></use>
                            </svg>
-                           <p>ккал</p>
-                        </div>
-                     </div>
-                     <div class="section__slider-right">
-                        <div class="section__title">
-                           Diner Bacon Cheese burger
-                        </div>
-                        <div class="section__text-burger">
-                           <p>Ваш старый добрый знакомый, с рубленым бифштексом
-                              из 100% говядины, тремя кусочками нежнейшего сыра
-                              эмменталь, двумя помидорами, луком, салатом и
-                              соусом гриль теперь с добавлением экзотического
-                              соуса чураско.
-                           </p>
-                        </div>
-                        <div class="section__price">
-                           <h1>500</h1>
-                           <p>рублей</p>
-                           <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
-                        </div>
-                     </div>
+                                    <p>ккал</p>
+                                </div>
+                            </div>
+                            <div class="section__slider-right">
+                                <div class="section__title">
+                                    Bacon Cheese burger
+                                </div>
+                                <div class="section__text-burger">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                </div>
+                                <div class="section__price">
+                                    <h1>500</h1>
+                                    <p>рублей</p>
+                                    <button type="submit" data-scroll-to="7" class="btn-price">Заказать</button>
+                                </div>
+                            </div>
 
-                  </div>
-               </div>
-            </div>
-            <button id="right" type="button" class="arrow-scroll-right slider__btn">
+                        </div>
+                    </div>
+                </div>
+                <button id="right" type="button" class="arrow-scroll-right slider__btn">
                <svg class="arrow-scroll__btn-right">
                   <use xlink:href="./css/layout/sprite.svg#scroll_down"></use>
                </svg>
             </button>
-         </section>
-         <section class="section team">
-            <div class="team__block-right">
-               <div class="team__block-in">
-                  <div class="team__title">
-                     команда
-                  </div>
-                  <ul class="team__list">
-                     <li class="team__member">
-                        <div class="team__name">
-                           <div class="team__triangle"></div>
-                           <h2>дэниэл рэдклиф</h2>
+            </section>
+            <section class="section team">
+                <div class="team__block-right">
+                    <div class="team__block-in">
+                        <div class="team__title">
+                            команда
                         </div>
-                        <div class="team__hover-block">
-                           <img src="./img/Slice_12.png" class="team__pic" alt="">
-                           <div class="team__text">
-                              <h3>Оператор</h3>
-                              <p>С радостью поможет подобрать
-                                 идеальный бургер и оформить заказ.</p>
-                           </div>
+                        <ul class="team__list">
+                            <li class="team__member">
+                                <div class="team__name">
+                                    <div class="team__triangle"></div>
+                                    <h2>дэниэл рэдклиф</h2>
+                                </div>
+                                <div class="team__hover-block">
+                                    <img src="./img/Slice_12.png" class="team__pic" alt="">
+                                    <div class="team__text">
+                                        <h3>Оператор</h3>
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__member">
+                                <div class="team__name">
+                                    <div class="team__triangle"></div>
+                                    <h2>ричард джеймс</h2>
+                                </div>
+                                <div class="team__hover-block">
+                                    <img src="./img/Slice_12.png" class="team__pic" alt="">
+                                    <div class="team__text">
+                                        <h3>Оператор</h3>
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__member">
+                                <div class="team__name">
+                                    <div class="team__triangle"></div>
+                                    <h2>джейк финн</h2>
+                                </div>
+                                <div class="team__hover-block">
+                                    <img src="./img/Slice_12.png" class="team__pic" alt="">
+                                    <div class="team__text">
+                                        <h3>Оператор</h3>
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__member">
+                                <div class="team__name">
+                                    <div class="team__triangle"></div>
+                                    <h2>николай иванов</h2>
+                                </div>
+                                <div class="team__hover-block">
+                                    <img src="./img/Slice_12.png" class="team__pic" alt="">
+                                    <div class="team__text">
+                                        <h3>Оператор</h3>
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section menu">
+                <div class="menu__title">
+                    меню
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__block">
+                        <a href="#" class="menu__trigger">
+                            <img src="./img/meat_eat.png" class="menu__pic" alt="">
+                            <span class="trigger__text">для мясоедов</span>
+                        </a>
+                        <div class="menu__content">
+                            <div class="menu__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus ullam ipsam blanditiis, atque ad, accusamus porro provident nostrum totam aspernatur, labore debitis voluptatum cumque excepturi aut autem. Laborum,
+                                hic.
+                            </div>
                         </div>
-                     </li>
-                     <li class="team__member">
-                        <div class="team__name">
-                           <div class="team__triangle"></div>
-                           <h2>ричард джеймс</h2>
+                    </li>
+                    <li class="menu__block">
+                        <a href="#" class="menu__trigger">
+                            <img src="./img/vegan_menu.png" class="menu__pic" alt="">
+                            <span class="trigger__text">вегетарианское</span>
+                        </a>
+                        <div class="menu__content">
+                            <div class="menu__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus ullam ipsam blanditiis, atque ad, accusamus porro provident nostrum totam aspernatur, labore debitis voluptatum cumque excepturi aut autem. Laborum,
+                                hic.
+                            </div>
                         </div>
-                        <div class="team__hover-block">
-                           <img src="./img/Slice_12.png" class="team__pic" alt="">
-                           <div class="team__text">
-                              <h3>Оператор</h3>
-                              <p>С радостью поможет подобрать
-                                 идеальный бургер и оформить заказ.</p>
-                           </div>
+                    </li>
+                    <li class="menu__block">
+                        <a href="#" class="menu__trigger">
+                            <img src="./img/diet_menu.png" class="menu__pic" alt="">
+                            <span class="trigger__text">диетическое</span>
+                        </a>
+                        <div class="menu__content">
+                            <div class="menu__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus ullam ipsam blanditiis, atque ad, accusamus porro provident nostrum totam aspernatur, labore debitis voluptatum cumque excepturi aut autem. Laborum,
+                                hic.
+                            </div>
                         </div>
-                     </li>
-                     <li class="team__member">
-                        <div class="team__name">
-                           <div class="team__triangle"></div>
-                           <h2>джейк финн</h2>
+                    </li>
+                </ul>
+            </section>
+            <section class="section section--reviews">
+                <ul class="reviews">
+                    <li class="reviews__block" style="background-image: url(./img/avtor_1.png)">
+                        <div class="reviews__block-hover">
+                            <div class="reviews__text">
+                                <h2>Константин Cпилберг</h2>
+                                <p>1 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <button class="reviews__button reviews__btn" type="button"></button>
+                    </li>
+                    <li class="reviews__block" style="background-image: url(./img/avtor_2.png)">
+                        <div class="reviews__block-hover">
+                            <div class="reviews__text">
+                                <h2>Константин Cпилберг</h2>
+                                <p>2 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <button class="reviews__button reviews__btn" type="button"></button>
                         </div>
-                        <div class="team__hover-block">
-                           <img src="./img/Slice_12.png" class="team__pic" alt="">
-                           <div class="team__text">
-                              <h3>Оператор</h3>
-                              <p>С радостью поможет подобрать
-                                 идеальный бургер и оформить заказ.</p>
-                           </div>
+                    </li>
+                    <li class="reviews__block" style="background-image: url(./img/avtor_3.png)">
+                        <div class="reviews__block-hover">
+                            <div class="reviews__text">
+                                <h2>Константин Cпилберг</h2>
+                                <p>3 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <button class="reviews__button reviews__btn" type="button"></button>
                         </div>
-                     </li>
-                     <li class="team__member">
-                        <div class="team__name">
-                           <div class="team__triangle"></div>
-                           <h2>николай иванов</h2>
+                    </li>
+                    <li class="reviews__block" style="background-image: url(./img/avtor_4.png)">
+                        <div class="reviews__block-hover">
+                            <div class="reviews__text">
+                                <h2>Константин Cпилберг</h2>
+                                <p>4 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <button class="reviews__button reviews__btn" type="button"></button>
                         </div>
-                        <div class="team__hover-block">
-                           <img src="./img/Slice_12.png" class="team__pic" alt="">
-                           <div class="team__text">
-                              <h3>Оператор</h3>
-                              <p>С радостью поможет подобрать
-                                 идеальный бургер и оформить заказ.</p>
-                           </div>
+                    </li>
+                    <li class="reviews__block" style="background-image: url(./img/avtor_5.png)">
+                        <div class="reviews__block-hover">
+                            <div class="reviews__text">
+                                <h2>Константин Cпилберг</h2>
+                                <p>5 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <button class="reviews__button reviews__btn" type="button"></button>
                         </div>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </section>
-         <section class="section menu">
-            <div class="menu__title">
-               меню
-            </div>
-            <ul class="menu__list">
-               <li class="menu__block">
-                  <a href="#" class="menu__trigger">
-                     <img src="./img/meat_eat.png" class="menu__pic" alt="">
-                     <span class="trigger__text">для мясоедов</span>
-                  </a>
-                  <div class="menu__content">
-                     <div class="menu__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda temporibus ullam ipsam blanditiis, atque ad,
-                        accusamus porro provident nostrum totam aspernatur, labore
-                        debitis voluptatum cumque excepturi aut autem. Laborum, hic.
-                     </div>
-                  </div>
-               </li>
-               <li class="menu__block">
-                  <a href="#" class="menu__trigger">
-                     <img src="./img/vegan_menu.png" class="menu__pic" alt="">
-                     <span class="trigger__text">вегетарианское</span>
-                  </a>
-                  <div class="menu__content">
-                     <div class="menu__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda temporibus ullam ipsam blanditiis, atque ad,
-                        accusamus porro provident nostrum totam aspernatur, labore
-                        debitis voluptatum cumque excepturi aut autem. Laborum, hic.
-                     </div>
-                  </div>
-               </li>
-               <li class="menu__block">
-                  <a href="#" class="menu__trigger">
-                     <img src="./img/diet_menu.png" class="menu__pic" alt="">
-                     <span class="trigger__text">диетическое</span>
-                  </a>
-                  <div class="menu__content">
-                     <div class="menu__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda temporibus ullam ipsam blanditiis, atque ad,
-                        accusamus porro provident nostrum totam aspernatur, labore
-                        debitis voluptatum cumque excepturi aut autem. Laborum, hic.
-                     </div>
-                  </div>
-               </li>
-            </ul>
-         </section>
-         <section class="section section--reviews">
-            <ul class="reviews">
-               <li class="reviews__block" style="background-image: url(./img/avtor_1.png)">
-                  <div class="reviews__block-hover">
-                     <div class="reviews__text">
-                        <h2>Константин Cпилберг</h2>
-                        <p>1 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не
-                           думал,
-                           что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-                     </div>
-                     <button class="reviews__button reviews__btn" type="button"></button>
-               </li>
-               <li class="reviews__block" style="background-image: url(./img/avtor_2.png)">
-                  <div class="reviews__block-hover">
-                     <div class="reviews__text">
-                        <h2>Константин Cпилберг</h2>
-                        <p>2 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не
-                           думал,
-                           что булочки могут
-                           быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-                     </div>
-                     <button class="reviews__button reviews__btn" type="button"></button>
-                  </div>
-               </li>
-               <li class="reviews__block" style="background-image: url(./img/avtor_3.png)">
-                  <div class="reviews__block-hover">
-                     <div class="reviews__text">
-                        <h2>Константин Cпилберг</h2>
-                        <p>3 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не
-                           думал,
-                           что булочки могут
-                           быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-                     </div>
-                     <button class="reviews__button reviews__btn" type="button"></button>
-                  </div>
-               </li>
-               <li class="reviews__block" style="background-image: url(./img/avtor_4.png)">
-                  <div class="reviews__block-hover">
-                     <div class="reviews__text">
-                        <h2>Константин Cпилберг</h2>
-                        <p>4 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не
-                           думал,
-                           что булочки могут
-                           быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-                     </div>
-                     <button class="reviews__button reviews__btn" type="button"></button>
-                  </div>
-               </li>
-               <li class="reviews__block" style="background-image: url(./img/avtor_5.png)">
-                  <div class="reviews__block-hover">
-                     <div class="reviews__text">
-                        <h2>Константин Cпилберг</h2>
-                        <p>5 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не
-                           думал,
-                           что булочки могут
-                           быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-                     </div>
-                     <button class="reviews__button reviews__btn" type="button"></button>
-                  </div>
-               </li>
-               <li class="reviews__block" style="background-image: url(./img/avtor_6.png)">
-                  <div class="reviews__block-hover">
-                     <div class="reviews__text">
-                        <h2>Константин Cпилберг</h2>
-                        <p>6 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не
-                           думал,
-                           что булочки могут
-                           быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-                     </div>
-                     <button class="reviews__button reviews__btn" type="button"></button>
-                  </div>
-               </li>
-               <li class="reviews__block" style="background-image: url(./img/avtor_7.png)">
-                  <div class="reviews__block-hover">
-                     <div class="reviews__text">
-                        <h2>Константин Cпилберг</h2>
-                        <p>7 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не
-                           думал,
-                           что булочки могут
-                           быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-                     </div>
-                     <button class="reviews__button reviews__btn" type="button"></button>
-                  </div>
-               </li>
-               <li class="reviews__block" style="background-image: url(./img/avtor_8.png)">
-                  <div class="reviews__block-hover">
-                     <div class="reviews__text">
-                        <h2>Константин Cпилберг</h2>
-                        <p>8 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не
-                           думал,
-                           что булочки могут
-                           быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
-                     </div>
-                     <button class="reviews__button reviews__btn" type="button"></button>
-                  </div>
-               </li>
-            </ul>
-         </section>
-         <section class="section work">
-            <div class="container">
-               <div class="title__work">как мы работаем</div>
-   
-               <div class="player">
-   
-                  <div class="player__wrapper">
-                     <video id="video" width="100%" height="85%">
-                        <source src="./video/Hamburger - 1015.mp4" type="video/mp4" poster="">
-                     </video>
-                  </div>
-   
-                  <div id="controls" class="player__controls">
-                     <div class="player__start">
-                        <a class="play-button" id="playBtn"></a>
-                     </div>
-                     <div class="player__playback">
-                        <progress id="progress" max="100" value="0"></progress>
-                        <!-- <input class="playback__way" type="range" step="0.01" min="0" max="100" value="50" id="volume" /> -->
-                     </div>
-                     <div class="player__duration">
-                        <span id="progressTime">00:00</span>
-                        <span id="alltime">00:18</span>
-                     </div>
-                  </div>
-   
-               </div> 
-   
-            </div>
-         </section>
-         <section class="section form">
-            <div class="container container__form">
-               <div class="title__form">закажите доставку</div>
-               <div class="form__area">
-                  <form id="myform" action="" class="form__elem">
-                     <div class="form__column">
-                        <div class="form__row">
-                           <label class="form__block">
+                    </li>
+                    <li class="reviews__block" style="background-image: url(./img/avtor_6.png)">
+                        <div class="reviews__block-hover">
+                            <div class="reviews__text">
+                                <h2>Константин Cпилберг</h2>
+                                <p>6 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <button class="reviews__button reviews__btn" type="button"></button>
+                        </div>
+                    </li>
+                    <li class="reviews__block" style="background-image: url(./img/avtor_7.png)">
+                        <div class="reviews__block-hover">
+                            <div class="reviews__text">
+                                <h2>Константин Cпилберг</h2>
+                                <p>7 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <button class="reviews__button reviews__btn" type="button"></button>
+                        </div>
+                    </li>
+                    <li class="reviews__block" style="background-image: url(./img/avtor_8.png)">
+                        <div class="reviews__block-hover">
+                            <div class="reviews__text">
+                                <h2>Константин Cпилберг</h2>
+                                <p>8 Мысли все о них и о них, и о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <button class="reviews__button reviews__btn" type="button"></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="section work">
+                <div class="container">
+                    <div class="title__work">как мы работаем</div>
+
+                    <div class="player">
+
+                        <div class="player__wrapper">
+                            <video loop id="video" width="100%" height="85%">
+                              <source src="video/Car_Washer_-_6594.mp4" type="video/mp4" poster="">
+                           </video>
+                        </div>
+
+                        <div id="controls" class="player__controls">
+                            <div class="player__start" id="playBtn">
+                                <svg class="play-button">
+                                       <use xlink:href="./css/layout/sprite.svg#play"></use>
+                                 </svg>
+                                <!-- <a class="play-button" id="playBtn"></a> -->
+                            </div>
+                            <!-- <div class="player__duration">
+                                <span id="progressTime">00:00</span>
+                            </div> -->
+                            <div class="player__playback">
+                                <input class="playback__way" type="range" min="0" max="100" value="0" id="progress" />
+                            </div>
+                            <!-- <div class="player__duration">
+                                <span id="alltime">00:19</span>
+                            </div> -->
+                            <svg class="work__volume">
+                              <use xlink:href="./css/layout/sprite.svg#volume"></use>
+                           </svg>
+                            <!-- <div class="work__volume-x">x</div> -->
+                            <div class="player__volume">
+                                <input class="playback__way" type="range" min="0" max="100" value="10" id="volume" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <svg class="work__play">
+                     <use xlink:href="./css/layout/sprite.svg#play"></use>
+                  </svg>
+
+                </div>
+            </section>
+            <section class="section form">
+                <div class="container container__form">
+                    <div class="title__form">закажите доставку</div>
+                    <div class="form__area">
+                        <form id="myform" action="" class="form__elem">
+                            <div class="form__column">
+                                <div class="form__row">
+                                    <label class="form__block">
                               <div class="form__block-title">Имя</div>
                               <input type="text" class="form__input" name="name" required>
                               <div class="error"></div>
                            </label>
-                           <label class="form__block">
+                                    <label class="form__block">
                               <div class="form__block-title">Телефон</div>
                               <input id="formphone" type="text" class="form__input" name="phone" required>
                               <div class="error"></div>
                            </label>
-                        </div>
-                        <div class="form__row">
-                           <label class="form__block">
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__block">
                               <div class="form__block-title">Улица</div>
                               <input type="text" class="form__input" name="street" required>
                               <div class="error"></div>
                            </label>
-                        </div>
-                        <div class="form__row form__row-location">
-                           <label class="form__block form__block-loc">
+                                </div>
+                                <div class="form__row form__row-location">
+                                    <label class="form__block form__block-loc">
                               <div class="form__block-title">Дом</div>
                               <input type="text" class="form__input" name="home" required>
                               <div class="error"></div>
                            </label>
-                           <label class="form__block form__block-loc">
+                                    <label class="form__block form__block-loc">
                               <div class="form__block-title">Корпус</div>
                               <input type="text" class="form__input" name="sect" required>
                               <div class="error"></div>
                            </label>
-                           <label class="form__block form__block-loc">
+                                    <label class="form__block form__block-loc">
                               <div class="form__block-title">Квартира</div>
                               <input id="formjustNumber" type="text" class="form__input" name="appartment" required>
                               <div class="error"></div>
                            </label>
-                           <label class="form__block form__block-end">
+                                    <label class="form__block form__block-end">
                               <div class="form__block-title">Этаж</div>
                               <input id="formNumber" type="text" class="form__input" name="level" required>
                               <div class="error"></div>
                            </label>
-                        </div>
-                     </div>
-                     <div class="form__column">
-                        <label class="form__block-area">
+                                </div>
+                            </div>
+                            <div class="form__column">
+                                <label class="form__block-area">
                            <div class="form__block-title">Комментарий</div>
                            <textarea class="form__input" name="comment" required></textarea>
                            <div class="error"></div>
                         </label>
-                        <div class="radio__section">
-                           <label class="radio">
+                                <div class="radio__section">
+                                    <label class="radio">
                               <input name="radio__name" type="radio" checked="checked" class=radio__input>
                               <div class="radio__check">
                                  <div class="radio__check-circle"></div>
                               </div>
                               <div class="radio__block">Потребуется сдача</div>
                            </label>
-                           <label class="radio">
+                                    <label class="radio">
                               <input name="radio__name" type="radio" class="radio__input">
                               <div class="radio__check">
                                  <div class="radio__check-circle"></div>
                               </div>
                               <div class="radio__block">Оплата по карте</div>
                            </label>
-                           <div class="radio">
-                              <label class="checkbox">
+                                    <div class="radio">
+                                        <label class="checkbox">
                                  <input type="checkbox" class="checkbox__input" checked />
                                  <span class="checkbox__mark"></span>
                               </label>
-                              <span class="checkbox__content">Не перезванивать</span>
-                           </div>
-                        </div>
-                        <div class="button__section">
-                           <button id="send" type="submit" class="btn">Заказать</button>
-                           <button type="reset" class="res">Очистить</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </section>
-         <section class="section contacts">
-               <div class="overlay" onClick="style.pointerEvents='none'"></div>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1qyeOM2bVPuWmhhdZtNnqLHWzjux12yTT" width="100%"
-               height="100%"></iframe>
-            <div class="container container__contacts">
-               <footer class="footer">
-                  <address class="footer__contacts-tel">
+                                        <span class="checkbox__content">Не перезванивать</span>
+                                    </div>
+                                </div>
+                                <div class="button__section">
+                                    <button id="send" type="submit" class="btn">Заказать</button>
+                                    <button type="reset" class="res">Очистить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section contacts">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1qyeOM2bVPuWmhhdZtNnqLHWzjux12yTT" width="100%" height="100%"></iframe>
+                </div>
+                <div class="container container__contacts">
+                    <footer class="footer">
+                        <address class="footer__contacts-tel">
                      <h3>Санкт-Петербург,ул.Бабушкина,д.12/1,15</h3>
                      <div class="footer__tel">
                         <svg class="footer__phone">
@@ -1090,7 +1049,7 @@
                            +7(812) 377-13-77</a>
                      </div>
                   </address>
-                  <address class="footer-contacts-soc">
+                        <address class="footer-contacts-soc">
                      <ul class="footer__social">
                         <li class="social__item">
                            <svg class="social-vk">
@@ -1114,56 +1073,56 @@
                         </li>
                      </ul>
                   </address>
-               </footer>
+                    </footer>
+                </div>
+            </section>
             </div>
-         </section>
-      </div>
-      <ul class="fixed-menu">
-         <li class="fixed-menu__item fixed-menu__item--active">
-            <a class="fixed-menu__dot" href data-scroll-to="0"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a class="fixed-menu__dot" href data-scroll-to="1"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a class="fixed-menu__dot" href data-scroll-to="2"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a class="fixed-menu__dot" href data-scroll-to="3"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a class="fixed-menu__dot" href data-scroll-to="4"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a class="fixed-menu__dot" href data-scroll-to="5"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a class="fixed-menu__dot" href data-scroll-to="6"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a class="fixed-menu__dot" href data-scroll-to="7"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a class="fixed-menu__dot" href data-scroll-to="8"></a>
-         </li>
-      </ul>
-      <div id="revmodal" class="reviews__fon">
-         <div class="reviews__modal">
-            <a id="x" class="reviews__modal-x">
-               <div class="reviews__modal-lines"></div>
-            </a>
-            <div class="popup__text">
+            <ul class="fixed-menu">
+                <li class="fixed-menu__item fixed-menu__item--active">
+                    <a class="fixed-menu__dot" href data-scroll-to="0"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__dot" href data-scroll-to="1"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__dot" href data-scroll-to="2"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__dot" href data-scroll-to="3"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__dot" href data-scroll-to="4"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__dot" href data-scroll-to="5"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__dot" href data-scroll-to="6"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__dot" href data-scroll-to="7"></a>
+                </li>
+                <li class="fixed-menu__item">
+                    <a class="fixed-menu__dot" href data-scroll-to="8"></a>
+                </li>
+            </ul>
+            <div id="revmodal" class="reviews__fon">
+                <div class="reviews__modal">
+                    <a id="x" class="reviews__modal-x">
+                        <div class="reviews__modal-lines"></div>
+                    </a>
+                    <div class="popup__text">
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="form__row-block">
-      </div>
-   </div>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
-   <script src="./script.js"></script>
-   <script src="./video.js"></script>
+            <div class="form__row-block">
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+        <script src="./script.js"></script>
+        <script src="./video.js"></script>
 </body>
 
 </html>

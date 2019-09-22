@@ -3,16 +3,19 @@ const hoverMenu = document.querySelector('#menu__section-close');
 const hamburgerMenu = document.querySelector('#menu__hamb-act');
 const cross = document.querySelector('#menu__cross');
 const scroll = document.querySelector('body');
+// const scrollMain = document.querySelector('.wrapper');
 const navHover = document.querySelectorAll('.nav__link-hover');
 hamburgerMenu.addEventListener('click', function (e) {
     e.preventDefault();
     hoverMenu.style.display = 'block';
     scroll.style.overflow = 'hidden';
+    // scrollMain.style.remove('transform');
 });
 cross.addEventListener('click', function (e) {
     e.preventDefault();
     hoverMenu.style.display = 'none';
     scroll.style.overflow = 'auto';
+    // scrollMain.style.transform = 'translateY()';
 });
 ///////////секция команды вертикальный аккордеон
 const team = document.querySelector('.team'),
@@ -70,6 +73,7 @@ const reviews = document.querySelector('.reviews'),
 reviews.addEventListener('click', e => {
     let elem = e.target;
     bg.style.overflow = 'hidden';
+    
     if (elem.tagname = '.reviews__btn') {
         let modalText = elem.previousElementSibling.innerHTML;
         popupText.innerHTML = modalText;
@@ -267,19 +271,19 @@ function loop(direction) {
 
 
 /////jquery code
-$('.nav__link-hover').on('click', function () {
-    $('body').css({
-        'overflow': 'auto'
-    });
-    $('.menu__section-hover').css({
-        'display': 'none'
-    });
-});
-$('.arrow-scroll__btn').on('click', e => {
-    $('html, body').animate({
-        'scrollTop': $('.section--block-two').offset().top
-    }, 1000)
-});
+// $('.nav__link-hover').on('click', function () {
+//     $('body').css({
+//         'overflow': 'auto'
+//     });
+//     $('.menu__section-hover').css({
+//         'display': 'none'
+//     });
+// });
+// $('.arrow-scroll__btn').on('click', e => {
+//     $('html, body').animate({
+//         'scrollTop': $('.section--block-two').offset().top
+//     }, 1000)
+// });
 //// one page scroll
 const sections = $('.section');
 const display = $('.maincontent');
@@ -376,10 +380,28 @@ if (isMobile) {
             scrollViewport(scrollDirection);
         }
     })
-}
+};
 
-$(document).ready(function () {
-    $('.overlay').click(function () {
-        $(this).remove();
-    });
-});
+// function initMap() {
+//     var coordinates = {lat: 59.940052, lng: 30.328103},
+    
+//         map = new google.maps.Map(document.getElementById('map'), {
+//             center: coordinates
+//         });
+// };
+
+
+// zoom: number — определяет первоначальный масштаб.
+// disableDefaultUI: boolean – убирает элементы управления.
+// scrollwheel: boolean — отключает масштабирование колесиком мыши (бывает полезно, если карта на всю ширину страницы и перебивает прокрутку вниз).
+// $(document).ready(function () {
+//     $('.overlay').on(function () {
+//         $('.overlay').scrollwheel = false
+//     });
+// });
+
+// $('.overlay').on('scrollwheel', e => {
+//     scrollwheel = false
+// });
+
+// disableDefaultUI: boolean

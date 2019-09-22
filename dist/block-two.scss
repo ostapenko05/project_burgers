@@ -18,9 +18,11 @@
    text-transform: uppercase;
    color: #2f3234;
    margin-bottom: 3.44rem;
+   margin-top: 10rem;
 
    @include phone {
       margin-bottom: 0%;
+      margin-top: 0rem;
       font-size: 3.5rem;
    }
 }
@@ -103,10 +105,10 @@
    }
 }
 
-.content__text h1{
+.content__text h1 {
    color: #2f3234;
    font-family: Lifehack;
-   font-size:  1.5rem;
+   font-size: 1.5rem;
    font-weight: 500;
    line-height: 1.76rem;
    text-align: center;
@@ -117,7 +119,7 @@
    }
 }
 
-.content__text p{
+.content__text p {
    opacity: 0.8;
    color: #2f3234;
    font-family: Ubuntu-regular;

@@ -166,9 +166,10 @@ video {
 }
 
 .work__volume-x {
-    color: #626262;
+    color: #fff;
     font-size: 1rem;
-    // position: relative;
-    left: -2%;
+    font-family: ubuntu-regular;
+    position: absolute;
+    left: -25%;
     display: none;
 }
